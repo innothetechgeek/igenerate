@@ -116,11 +116,10 @@ class Authentication_model extends App_Model
                     $this->create_autologin($user->$_id, $staff);
                 }
                 
-                if(!$user->agent_name){ //if not agent
-                   
-                    $this->update_login_info($user->$_id, $staff);
+               
+                   $this->update_login_info($user->$_id, $staff);
 
-                }
+                
                
             } else {
                 return ['two_factor_auth' => true, 'user' => $user];
