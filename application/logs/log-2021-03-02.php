@@ -39,3 +39,7 @@ ERROR - 2021-03-02 19:15:04 --> Severity: Warning --> array_keys() expects param
 ERROR - 2021-03-02 19:15:22 --> Severity: Notice --> Undefined variable: email C:\wamp64\www\igenerate\application\controllers\Authentication.php 486
 ERROR - 2021-03-02 19:15:26 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
 ERROR - 2021-03-02 19:15:27 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 18:38:24 --> 404 Page Not Found: /index
+ERROR - 2021-03-02 19:38:42 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:38:43 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 18:39:26 --> 404 Page Not Found: /index
