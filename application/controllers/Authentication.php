@@ -533,8 +533,8 @@ class Authentication extends ClientsController
         $questions = $this->db->get('tblagent_signup_questions')->result();
 
         $this->load->library('email');
-        $fromemail="innosela@gmail.com";
-        $toemail = "innothetechgeek@gmail.com";
+        $fromemail="admin@jnzsoftware.co.za";
+        $toemail = "hazel@igenerate.co.za";
         $subject = "New Agent Registration";
         // $mesg = $this->load->view('template/email',$data,true);
         // or
@@ -555,28 +555,46 @@ class Authentication extends ClientsController
         );
 
         $mesg = $this->load->view('email/agentsignup',['data' =>  $data],true);
-        
-        $config=array(
 
-            'charset'=>'utf-8',
-            'wordwrap'=> TRUE,
-            'mailtype' => 'html',
-            // Host
-            'smtp_host' =>'smtp.mailtrap.io',
-            // Port
-            'smtp_port' => 2525,
-            // User
-            'smtp_user' => 'b5016198047a1d',
-            // Pass
-            'smtp_pass' => 'b08c6fc050f2e5',
-            'newline' => "\r\n",
 
-        );
+        if(ENVIROMENT == 'development'){
+           
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+                    // Host
+                    'smtp_host' =>'smtp.mailtrap.io',
+                    // Port
+                    'smtp_port' => 2525,
+                    // User
+                    'smtp_user' => 'b5016198047a1d',
+                    // Pass
+                    'smtp_pass' => 'b08c6fc050f2e5',
+                    'newline' => "\r\n",
+            );
+        }else{
+           
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+                    // Host
+                    'smtp_host' =>'ssl://smtp.gmail.com',
+                    // Port
+                    'smtp_port' => 465,
+                    // User
+                    'smtp_user' => 'innosela@gmail.com',
+                    // Pass
+                    'smtp_pass' => '199422020z26#4',
+                    'newline' => "\r\n",
+            );
+            
+
+        }
  
         $this->email->initialize($config);
         
         $this->email->to($toemail);
-        $this->email->from($fromemail, "Title");
+        $this->email->from($fromemail, "Igener8 System");
         $this->email->subject($subject);
         $this->email->message($mesg);
         $mail = $this->email->send();
