@@ -12,7 +12,7 @@
   padding: 10px;">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center p-0 mt-3 mb-2">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2><strong>Agent Signup</strong></h2>
+                <h2><strong>Business Partner Signup</strong></h2>
                 <p>Fill all form field to go to next step</p>
                 <div class="row">
                     <div class="col-md-12 mx-0">
@@ -84,27 +84,27 @@
                                 <div class="form-card">
                                     <h2 class="fs-title">Terms And Conditions</h2>
                                         <ul class = "agent-signup-terms">
-                                            <li>Subject to the agreement to and compliance with the terms of this
-                                            agreement ,we grant to you a non-exclusive ,non transferable ,non
-                                            sharable ,revocable limited license to use the service (including the
-                                            software in connection with the services )Solely for your commercial
-                                            use to the services in accordance with this agreement.</li>
-                                            <li>You hereby give us permission to deduct R149 per month from
-                                            your debit card/or bank account.</li>
+                                            <li>.Subject to the agreement to and compliance with the terms of this
+                                                agreement ,we grant to you a non-exclusive ,non transferable ,non
+                                                sharable ,revocable limited license to use the service (including the
+                                                software in connection with the services )Solely for your commercial
+                                                use to the services in accordance with this agreement.</li>
+                                            <li>You hereby give us permission to deduct R199 ONCE OFF AND
+                                                R149 per month from your debit card/or bank account.</li>
                                             <li>In the event of the monthly iGEN APP usage fee of R149 per
-                                            month,not received by no later then the 7 th of the month,then your
-                                            services will be suspended immediately .And you will be required to
-                                            pay a fee of R99 as a reconnection FEE plus your prepaid amount of
-                                            R149 for the month that you decide to sign up with.</li>
+                                                month,not received by no later then the 7 th of the month,then your
+                                                services will be suspended immediately .And you will be required to
+                                                pay a fee of R99 as a reconnection FEE plus your prepaid amount of
+                                                R149 for the month that you decide to sign up with.</li>
 
                                             <li>All personal information supplied will only be used for the purpose
                                             of the iGEN APP and we will not release your personal details to any
                                             third party.</li>
-                                            <li>All client information that is gathered in any campaigns on the
-                                            iGEN APP,will need to be kept private and confidential . </li>
-                                            <li>You will not be allowed to lie to any client about the terms and
-                                            conditions of any campaign and this could lead to your termination
-                                            of using the iGEN APP. </li>
+                                            <li>5.All client information that is gathered in any campaigns on the
+iGEN APP,will need to be kept private and confidential.</li>
+                                            <li>6.You will not be allowed to mislead to any client about the terms
+and conditions of any campaign and this could lead to your
+termination of using the iGEN APP.</li>
                                             <li>PLEASE NOTE EACH CAMPAIGN WILL HAVE ITS OWN TERMS AND
                                             CONDITIONS DEPENDING ON CAMPAIGN LAWS,</li>
                                             <li><input  style = "width: initial; position:relative; top:1px;" type="checkbox" id="termsCheckBox" name="termsCheckBox"> <label for="terms">I accept terms & conditions</label> </li>

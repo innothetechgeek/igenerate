@@ -43,3 +43,15 @@ ERROR - 2021-03-02 18:38:24 --> 404 Page Not Found: /index
 ERROR - 2021-03-02 19:38:42 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
 ERROR - 2021-03-02 19:38:43 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
 ERROR - 2021-03-02 18:39:26 --> 404 Page Not Found: /index
+ERROR - 2021-03-02 19:43:52 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:43:52 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:44:43 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:44:43 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:44:51 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:44:51 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:52:08 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:52:08 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:52:49 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:52:49 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:52:54 --> Severity: Notice --> Undefined index: admin-auth C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
+ERROR - 2021-03-02 19:52:54 --> Severity: Warning --> array_keys() expects parameter 1 to be array, null given C:\wamp64\www\igenerate\application\libraries\assets\App_css.php 46
