@@ -48,7 +48,7 @@
                                                 Name: <span  style = "color: #51647c"><strong><?= $data['agent_name'] ?></strong></span>
                                             </li>
                                             <li>
-                                                Surname: <span  style = "color: #51647c"><strong><?= $data['agent_landline'] ?></strong></span>
+                                                Surname: <span  style = "color: #51647c"><strong><?= $data['nok_surname'] ?></strong></span>
                                             </li>
                                             <li>
                                                 Id Number: <span  style = "color: #51647c"><strong><?= $data['agent_idnumber'] ?></strong></span>

@@ -539,17 +539,17 @@ class Authentication extends ClientsController
         // $mesg = $this->load->view('template/email',$data,true);
         // or
         $data = array(
-            'agent_name' => 'Ela',
-            'agent_landline' => '0833444554',
-            'agent_idnumber' => '54545454545',
-            'agent_cellphone_number' => '0834455456',
-            'agent_landline' => '021334456',
-            'add_line1' => '290 watergang',
-            'add_line2' => '',
-            'add_city' => 'Cape Town',
-            'add_postal_code' => '7600',
-            'nok_name' => 'Lary',
-            'nok_surname' => 'Page',
+            'agent_name' => $this->input->post('agent_name'),
+            'agent_landline' => $this->input->post('agent_landline'),
+            'agent_idnumber' => $this->input->post('agent_idnumber'),
+            'agent_cellphone_number' => $this->input->post('agent_name'),
+            'add_line1' => $this->input->post('add_line1'),
+            'add_line2' => $this->input->post('add_line2'),
+            'add_city' => $this->input->post('add_city'),
+            'add_postal_code' => $this->input->post('add_postal_code'),
+            'nok_name' => $this->input->post('nok_name'),
+            'nok_surname' => $this->input->post('nok_surname'),
+            'nok_cell_number' => $this->input->post('nok_cell_number'),
             'questions' => $questions,
             'question_anwsers' => $this->input->post('question_anwsers')
         );
