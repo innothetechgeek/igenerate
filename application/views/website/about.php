@@ -254,7 +254,7 @@
 </div>
 <!-- //footer -->
 
-<?php $this->load->view('website/bottom_banner'); ?>
+ <?php $this->load->view('website/bottom_banner'); ?>
 
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 

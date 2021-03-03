@@ -62,7 +62,7 @@ class Authentication extends ClientsController
            
             redirect('clients');
             //maybe_redirect_to_previous_url();
-            die('here');
+    
         }
         if (get_option('allow_registration') == 1) {
             $data['title'] = _l('clients_login_heading_register');
@@ -465,7 +465,6 @@ class Authentication extends ClientsController
     public function generate_swify_payment_link($mobile,$payment_ref){
 
             $type = 1;
-            $amount = 149;
             $whatsapp = '';
             $contact_type = 'sms';
             
@@ -482,54 +481,102 @@ class Authentication extends ClientsController
                 $contact_type = '';
             }
             
-            $addvars = array(
-                'amount' => $amount,
+            $success_url = 'define later';
+            $cancel_url = 'define later';
+        
+            $request_params = array(
                 'payment_reference' => $payment_ref,
                 'own_amount' => '',
                 'merchant_id' => '',
                 'mobile' => $mobile,
-
                 'success_url' => '',
                 'error_url' => '',
                 'cancel_url' => '',
                 'notify_url' => '',
                 'recurring_start_day' => 31,
-                'send' => 1,
                 'contact_type' => $contact_type,
             );
             
-            $auth = base64_encode('jnzapi:jnzapi2020!');
-            // echo $auth; exit;
-            $request_url_base = "https://pay.swiffy.co.za/api";
-            $endpoint = "/v1/swiffy/payment-link";
-
-            $verify_hostname = false;
-            $curl = curl_init();
+          
             
-            curl_setopt_array($curl,
-            array(
-                    CURLOPT_URL => $request_url_base.$endpoint,
-                    CURLOPT_SSL_VERIFYPEER => $verify_hostname,
-                    CURLOPT_SSL_VERIFYHOST => $verify_hostname,
-                    CURLOPT_RETURNTRANSFER => true,
-                    CURLOPT_HTTPHEADER => array("Authorization: Basic $auth",'Accept: application/json'),
-                    CURLOPT_POSTFIELDS => $addvars,
-                    )
-            );
-
-            $reply = curl_exec( $curl );
+            $this->created_scheduled_payment($request_params);
+            $this->create_once_off_payment_link($request_params);
         
-            if(! $reply) {
-                    echo curl_error($curl);
-                    curl_close($curl);
-                    exit;
-            }
+        
            
-            $response = json_decode($reply, true);
-        
-        
-            curl_close($curl);
     
+    }
+
+    public function created_scheduled_payment($request_params){
+
+        $auth = base64_encode('jnzapi:jnzapi2020!');
+        $request_params['recurring_start_day'] = date('Y-m-d',strtotime('first day of +1 month'));
+        $request_params['amount'] = 149;
+         // echo $auth; exit;
+         $request_url_base = "https://pay.swiffy.co.za/api";
+         $endpoint = "/v1/swiffy/recurring/payment-schedule";
+
+         $verify_hostname = false;
+         $curl = curl_init();
+         
+         curl_setopt_array($curl,
+         array(
+                 CURLOPT_URL => $request_url_base.$endpoint,
+                 CURLOPT_SSL_VERIFYPEER => $verify_hostname,
+                 CURLOPT_SSL_VERIFYHOST => $verify_hostname,
+                 CURLOPT_RETURNTRANSFER => true,
+                 CURLOPT_HTTPHEADER => array("Authorization: Basic $auth",'Accept: application/json'),
+                 CURLOPT_POSTFIELDS => $request_params,
+                 )
+         );
+
+         $reply = curl_exec( $curl );
+        
+         if(! $reply) {
+                 echo curl_error($curl);
+                 curl_close($curl);
+                 exit;
+         }
+        
+         $response = json_decode($reply, true);
+
+         curl_close($curl);
+    }
+
+    public function create_once_off_payment_link($request_params){
+
+        $request_params['amount'] = 199;
+        $request_params['send']  = 1;
+        $request_url_base = "https://pay.swiffy.co.za/api";
+        $endpoint = "/v1/swiffy/payment-link";
+        $auth = base64_encode('jnzapi:jnzapi2020!');
+
+        $verify_hostname = false;
+        $curl = curl_init();
+        
+        curl_setopt_array($curl,
+        array(
+                CURLOPT_URL => $request_url_base.$endpoint,
+                CURLOPT_SSL_VERIFYPEER => $verify_hostname,
+                CURLOPT_SSL_VERIFYHOST => $verify_hostname,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_HTTPHEADER => array("Authorization: Basic $auth",'Accept: application/json'),
+                CURLOPT_POSTFIELDS => $request_params,
+                )
+        );
+
+        $reply = curl_exec( $curl );
+        
+        if(! $reply) {
+                echo curl_error($curl);
+                curl_close($curl);
+                exit;
+        }
+       
+        $response = json_decode($reply, true);
+
+        curl_close($curl);
+
     }
     
    //for testing puroses:
