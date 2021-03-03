@@ -404,6 +404,8 @@ class Authentication extends ClientsController
             'password' => app_hash_password($this->input->post('password'))
         ];
 
+        var_dump('-----debuging-------');
+        die( $data );
         $this->db->insert('tblcontacts', $data);
 
 
