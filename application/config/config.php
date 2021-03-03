@@ -242,7 +242,8 @@ $config['directory_trigger']    = 'd';
 if (defined('APP_LOG_THRESHOLD')) {
     $config['log_threshold'] = APP_LOG_THRESHOLD;
 }
-$config['log_threshold'] = (ENVIRONMENT !== 'production' ? 1 : 1);
+//$config['log_threshold'] = (ENVIRONMENT !== 'production' ? 1 : 1);
+    $config['log_threshold'] = 1;
 /*
 |--------------------------------------------------------------------------
 | Error Logging Directory Path
