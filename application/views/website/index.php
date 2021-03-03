@@ -112,7 +112,7 @@
 		<!-- The Modal -->
     </div> 
 	<!-- //banner -->
-
+	 <?php $this->load->view('website/bottom_banner'); ?>
 	<!-- /banner_bottom_agile_info -->
     <div class="banner_bottom_agile_info">
 	    <div class="container">
@@ -494,11 +494,7 @@
 	
 </div>
 <!-- //footer -->
-<div id="bottom-banner">
-	<div>
-	<a href="<?php echo base_url();?>authentication/agent_signup" style = "color:#fff">THE POWER TO EARN AN INCOME
-		lies in your hands! 🎉 <span id = "banner-link">SIGN UP NOW </span></a> </div>
-	</div>
+
 
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- js -->
