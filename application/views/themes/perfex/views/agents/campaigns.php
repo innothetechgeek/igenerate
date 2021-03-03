@@ -285,8 +285,9 @@
                                 <?php 
                                     $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
                                     $btn_text =  $i != 1 ? "Coming soon" : "GET REFERAL LINK";
+                                    $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
                                 ?>
-                                <input class="btn btn-primary <?=$is_btn_disabled?>" data-toggle="modal" data-target="#exampleModal" data-referal-link = "test.com" class="btn btn-primary btn-sm mg-top-5" value = "<?=  $btn_text ?>">
+                                <input class="btn btn-primary <?=$is_btn_disabled?>" <?=  $data_target ?>  class="btn btn-primary btn-sm mg-top-5" value = "<?=  $btn_text ?>">
                             </div>
                         </div> 
                     </div>

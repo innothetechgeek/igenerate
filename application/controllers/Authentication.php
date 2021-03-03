@@ -583,10 +583,10 @@ class Authentication extends ClientsController
     public function sendAgentRegistrationEmail(){
             
         $questions = $this->db->get('tblagent_signup_questions')->result();
-
+        
         $this->load->library('email');
         $fromemail="admin@jnzsoftware.co.za";
-        $toemail = "hazel@igenerate.co.za";
+       
         $subject = "New Agent Registration";
         // $mesg = $this->load->view('template/email',$data,true);
         // or
@@ -609,34 +609,37 @@ class Authentication extends ClientsController
         $mesg = $this->load->view('email/agentsignup',['data' =>  $data],true);
 
 
-        if(ENVIROMENT == 'development'){
+        if(ENVIRONMENT == 'development'){
            
+            $toemail = "innosela@gmail.com";
+             // $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',
-                    // Host
-                    'smtp_host' =>'smtp.mailtrap.io',
+                   
+                    'smtp_host' =>'mail.tapandsell.co.za',
                     // Port
-                    'smtp_port' => 2525,
+                    'smtp_port' => 587,
                     // User
-                    'smtp_user' => 'b5016198047a1d',
+                    'smtp_user' => 'user@tapandsell.co.za',
                     // Pass
-                    'smtp_pass' => 'b08c6fc050f2e5',
+                    'smtp_pass' => 'FRr2s=dHJYPd',
                     'newline' => "\r\n",
             );
         }else{
            
+             $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',
-                    // Host
-                    'smtp_host' =>'ssl://smtp.gmail.com',
+
+                    'smtp_host' =>'mail.tapandsell.co.za',
                     // Port
-                    'smtp_port' => 465,
+                    'smtp_port' => 587,
                     // User
-                    'smtp_user' => 'innosela@gmail.com',
+                    'smtp_user' => 'user@tapandsell.co.za',
                     // Pass
-                    'smtp_pass' => '199422020z26#4',
+                    'smtp_pass' => 'FRr2s=dHJYPd',
                     'newline' => "\r\n",
             );
             
