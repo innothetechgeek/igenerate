@@ -40,27 +40,7 @@ if(ENVIRONMENT == 'development'){
 define('APP_ENC_KEY', '03cab6dffa49a10d4e33d8a0c3f033c6');
 
 if(ENVIRONMENT == 'development'){
-/**
- * Database Credentials
- * The hostname of your database server
- */
-define('APP_DB_HOSTNAME', 'localhost');
-/**
- * The username used to connect to the database
- */
-define('APP_DB_USERNAME', 'admin');
-/**
- * The password used to connect to the database
- */
-define('APP_DB_PASSWORD', '18421Ab3rry!');
-/**
- * The name of the database you want to connect to
- */
-define('APP_DB_NAME', 'igenerate');
-
-}else{
-
-    /**
+  /**
          * Database Credentials
          * The hostname of your database server
          */
@@ -77,6 +57,24 @@ define('APP_DB_NAME', 'igenerate');
          * The name of the database you want to connect to
          */
         define('APP_DB_NAME', 'jnz_crm');
+        
+
+}else{
+
+    define('APP_DB_HOSTNAME', 'localhost');
+    /**
+     * The username used to connect to the database
+     */
+    define('APP_DB_USERNAME', 'admin');
+    /**
+     * The password used to connect to the database
+     */
+    define('APP_DB_PASSWORD', '18421Ab3rry!');
+    /**
+     * The name of the database you want to connect to
+     */
+    define('APP_DB_NAME', 'igenerate');
+
 }
 
 /**
