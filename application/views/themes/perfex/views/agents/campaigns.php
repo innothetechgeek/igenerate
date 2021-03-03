@@ -388,7 +388,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <input type = "text"  id = "campain_1" value = "https://sa.formstack.com/forms/igen_personal_loan_capture_form" />
+        <input type = "hidden"  id = "campain_1" value = "https://sa.formstack.com/forms/igen_personal_loan_capture_form" />
         <button  onclick="copyRereralLink('campain_1')"  type="button" class="btn btn-primary">Copy Referal Link</button>
       </div>
     </div>

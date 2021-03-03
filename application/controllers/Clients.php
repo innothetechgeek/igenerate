@@ -21,15 +21,10 @@ class Clients extends ClientsController
     public function index()
     {
         $data['is_home'] = true;
-        $this->load->model('reports_model');
-        $data['payments_years'] = $this->reports_model->get_distinct_customer_invoices_years();
-
-        $data['project_statuses'] = $this->projects_model->get_project_statuses();
+      
         $data['title']          = get_company_name(get_client_user_id());
 
-        $sql = "SELECT * FROM tblcontacts WHERE user_id = ".$this->session->userdata('client_user_id');
 
-   
        $table = db_prefix() . 'contacts';
        $this->db->where('userid', $this->session->userdata('client_user_id'));
        $active_user = $this->db->get($table)->row();

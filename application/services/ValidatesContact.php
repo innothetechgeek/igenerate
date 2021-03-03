@@ -13,8 +13,8 @@ trait ValidatesContact
             redirect(site_url('authentication/login'));
         }
 
-        if (is_client_logged_in() && !is_contact_email_verified()) {
-            redirect(site_url('verification'));
-        }
+        // if (is_client_logged_in() && !is_contact_email_verified()) {
+        //     redirect(site_url('verification'));
+        // }
     }
 }
