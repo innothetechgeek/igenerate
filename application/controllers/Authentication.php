@@ -405,7 +405,8 @@ class Authentication extends ClientsController
         ];
 
         var_dump('-----debuging-------');
-        die( $data );
+        var_dump( $data );
+        die('----- debugging ends here -----');
         $this->db->insert('tblcontacts', $data);
 
 
