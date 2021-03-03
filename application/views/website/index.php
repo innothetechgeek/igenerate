@@ -488,9 +488,17 @@
 	</div>
 		<p class="copy-right">&copy 2021 iGener8. All rights reserved | Developed by <a href="#">JNZ Group PTY LTD</a></p>
 	</div>
+	
+
+
+	
 </div>
 <!-- //footer -->
-
+<div id="bottom-banner">
+	<div>
+	<a href="<?php echo base_url();?>authentication/agent_signup" style = "color:#fff">THE POWER TO EARN AN INCOME
+		lies in your hands! 🎉 <span id = "banner-link">SIGN UP NOW </span></a> </div>
+	</div>
 
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- js -->

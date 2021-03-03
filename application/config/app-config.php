@@ -20,7 +20,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 if(ENVIRONMENT == 'development'){
     define('APP_BASE_URL', 'http://localhost/igenerate/');
 }else{
-    define('APP_BASE_URL', 'http://igen.jnzsoftware.co.za/');
+    define('APP_BASE_URL', 'http://igenerate.co.za/');
 }
 
 
