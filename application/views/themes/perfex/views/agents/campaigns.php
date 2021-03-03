@@ -178,7 +178,7 @@
 
     .frontside .card,
     .backside .card {
-        height: 347px;
+        height: 363px;
     }
 
     .backside .card a {
