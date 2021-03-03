@@ -388,8 +388,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <input type = "hidden" id = "campain_1" value = "https://sa.formstack.com/forms/igen_personal_loan_capture_form" />
-        <button  onclick="copyRereralLink('#campain_1')"  type="button" class="btn btn-primary">Copy Referal Link</button>
+        <input type = "text"  id = "campain_1" value = "https://sa.formstack.com/forms/igen_personal_loan_capture_form" />
+        <button  onclick="copyRereralLink('campain_1')"  type="button" class="btn btn-primary">Copy Referal Link</button>
       </div>
     </div>
   </div>
@@ -401,11 +401,14 @@
 <script>
     function copyRereralLink(element) {
 
-        var $temp = $("<input>");
-        $("body").append($temp);
-        $temp.val($('#campain_1').val()).select();
+        var copyText = document.getElementById(element);
+
+        var copyText = document.getElementById(element);
+        copyText.type = 'text';
+        copyText.select();
         document.execCommand("copy");
-        $temp.remove();
+        copyText.type = 'hidden';
+      //  copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
         var x = document.getElementById("snackbar");
         x.className = "show";
