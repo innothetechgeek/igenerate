@@ -403,7 +403,7 @@ class Authentication extends ClientsController
             'userid' => $insert_id,
             'password' => app_hash_password($this->input->post('password'))
         ];
-           dfgf
+         
         // var_dump('-----debuging-------');
         // var_dump( $data );
         // die('----- debugging ends here -----');
