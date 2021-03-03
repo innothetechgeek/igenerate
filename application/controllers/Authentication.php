@@ -57,10 +57,12 @@ class Authentication extends ClientsController
 
             $this->load->model('announcements_model');
             $this->announcements_model->set_announcements_as_read_except_last_one(get_contact_user_id());
-
-            maybe_redirect_to_previous_url();
             
-            redirect(site_url());
+            
+           
+            redirect('clients');
+            //maybe_redirect_to_previous_url();
+            die('here');
         }
         if (get_option('allow_registration') == 1) {
             $data['title'] = _l('clients_login_heading_register');
@@ -331,7 +333,7 @@ class Authentication extends ClientsController
             
 
             //registration email to admin
-          //  $this->sendAgentRegistrationEmail();
+             $this->sendAgentRegistrationEmail();
             redirect('authentication/agent_signup_successful');
           
             $this->layout();
