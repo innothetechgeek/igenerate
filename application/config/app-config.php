@@ -47,15 +47,15 @@ define('APP_DB_HOSTNAME', 'localhost');
 /**
  * The username used to connect to the database
  */
-define('APP_DB_USERNAME', 'root');
+define('APP_DB_USERNAME', 'admin');
 /**
  * The password used to connect to the database
  */
-define('APP_DB_PASSWORD', '');
+define('APP_DB_PASSWORD', '18421Ab3rry!');
 /**
  * The name of the database you want to connect to
  */
-define('APP_DB_NAME', 'jnz_crm');
+define('APP_DB_NAME', 'igenerate');
 
 /**
  * @since  2.3.0
