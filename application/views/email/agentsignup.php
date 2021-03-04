@@ -42,7 +42,7 @@
                                 <td  valign="top">
                                     Hi <span>Admin, a new agent has signed up. Below are thier details:</span>
                                    
-                                    <p>Personal Details.</p>
+                                    <p>Personal Details:</p>
                                         <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                             <li>
                                                 Name: <span  style = "color: #51647c"><strong><?= $data['agent_name'] ?></strong></span>
@@ -61,7 +61,7 @@
                                             </li>
 
                                     </ul>
-                                    <p>Address.</p>
+                                    <p>Address:</p>
                                         <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                             <li>
                                                 Address Line1: <span  style = "color: #51647c"><strong><?= $data['add_line1'] ?></strong></span>
@@ -76,7 +76,7 @@
                                                Postal Code: <span  style = "color: #51647c"><strong><?= $data['add_postal_code'] ?></strong></span>
                                             </li>
                                     </ul>
-                                    <p>Next Of Kin.</p>
+                                    <p>Next Of Kin:</p>
                                         <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                             <li>
                                              Name: <span  style = "color: #51647c"><strong><?= $data['nok_name'] ?></strong></span>
@@ -88,7 +88,7 @@
                                              Cell Number: <span  style = "color: #51647c"><strong><?= $data['nok_cell_number'] ?></strong></span>
                                         </li>
                                     </ul>
-                                    <p>Question Unswers.</p>
+                                    <p>Question Unswers:</p>
                                         <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                             <?php foreach($data['questions'] as $key => $questionObj) { ?>
                                             <li>

@@ -10,9 +10,9 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--//tags -->
-<link href="<?php echo base_url();?>/assets/website/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url();?>/assets/website/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url();?>/assets/website/css/font-awesome.css" rel="stylesheet"> 
+<link href="<?php echo base_url();?>assets/website/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url();?>assets/website/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url();?>assets/website/css/font-awesome.css" rel="stylesheet"> 
 <!-- //for bootstrap working -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
@@ -429,10 +429,10 @@
 
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- js -->
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/jquery-2.1.4.min.js"></script>
 <!-- //js -->	
 	<!-- cart-js -->
-	<script src="<?php echo base_url();?>/assets/website/js/minicart.min.js"></script>
+	<script src="<?php echo base_url();?>assets/website/js/minicart.min.js"></script>
 <script>
 	// Mini Cart
 	paypal.minicart.render({
@@ -447,15 +447,15 @@
 	<!-- //cart-js --> 
 
 <!-- stats -->
-	<script src="<?php echo base_url();?>/assets/website/js/jquery.waypoints.min.js"></script>
-	<script src="<?php echo base_url();?>/assets/website/js/jquery.countup.js"></script>
+	<script src="<?php echo base_url();?>assets/website/js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo base_url();?>assets/website/js/jquery.countup.js"></script>
 	<script>
 		$('.counter').countUp();
 	</script>
 <!-- //stats -->
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/move-top.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/move-top.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/jquery.easing.min.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -483,6 +483,6 @@
 <!-- //here ends scrolling icon -->
 
 <!-- for bootstrap working -->
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/bootstrap.js"></script>
 </body>
 </html>
