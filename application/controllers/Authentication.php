@@ -586,7 +586,8 @@ class Authentication extends ClientsController
 
         $this->load->library('email');
         $fromemail="admin@jnzsoftware.co.za";
-        $toemail = "hazel@igenerate.co.za";
+       // $toemail = "hazel@igenerate.co.za";
+        $toemail = "jamie@jnz.co.za";
         $subject = "New Agent Registration";
         // $mesg = $this->load->view('template/email',$data,true);
         // or
@@ -607,9 +608,10 @@ class Authentication extends ClientsController
         );
 
         $mesg = $this->load->view('email/agentsignup',['data' =>  $data],true);
-
-
-        if(ENVIROMENT == 'development'){
+	
+	//	print_r($mesg); exit;
+	
+	if(ENVIROMENT == 'development'){
            
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
@@ -625,30 +627,43 @@ class Authentication extends ClientsController
                     'newline' => "\r\n",
             );
         }else{
-           
-            $config=array( 'charset'=>'utf-8',
+	  
+	$config=array( 
+			'charset'=>'utf-8',
+		   'protocol' => 'sendmail',
+
+			'mailpath' => '/usr/sbin/sendmail',
+		//	'charset' = 'iso-8859-1';
+
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',
                     // Host
-                    'smtp_host' =>'ssl://smtp.gmail.com',
+                    //'smtp_host' =>'ssl://smtp.gmail.com',
+                    'smtp_host' =>'mail.igenerate.co.za',
                     // Port
+                   // 'smtp_port' => 465,
                     'smtp_port' => 465,
                     // User
-                    'smtp_user' => 'innosela@gmail.com',
+                    //'smtp_user' => 'innosela@gmail.com',
+                    'smtp_user' => 'crm@igenerate.co.za',
                     // Pass
-                    'smtp_pass' => '199422020z26#4',
+                    //'smtp_pass' => '199422020z26#4',
+                    'smtp_pass' => '18421igenCrm#',
                     'newline' => "\r\n",
             );
             
 
         }
- 
+	//print_r($config); exit;
         $this->email->initialize($config);
         
         $this->email->to($toemail);
         $this->email->from($fromemail, "Igener8 System");
         $this->email->subject($subject);
         $this->email->message($mesg);
-        $mail = $this->email->send();
+	//$mail = $this->email->send();
+	if (!$this->email->send()) {
+    		show_error($this->email->print_debugger());
+	}	
     }
 }
