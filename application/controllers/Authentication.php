@@ -587,12 +587,7 @@ class Authentication extends ClientsController
         
         $this->load->library('email');
         $fromemail="admin@jnzsoftware.co.za";
-<<<<<<< HEAD
-       // $toemail = "hazel@igenerate.co.za";
-        $toemail = "jamie@jnz.co.za";
-=======
        
->>>>>>> 9cb84f4f46e7e0fc5e6e891babb220c69bd43d52
         $subject = "New Agent Registration";
         // $mesg = $this->load->view('template/email',$data,true);
         // or
@@ -613,16 +608,9 @@ class Authentication extends ClientsController
         );
 
         $mesg = $this->load->view('email/agentsignup',['data' =>  $data],true);
-<<<<<<< HEAD
-	
-	//	print_r($mesg); exit;
-	
-	if(ENVIROMENT == 'development'){
-=======
 
 
         if(ENVIRONMENT == 'development'){
->>>>>>> 9cb84f4f46e7e0fc5e6e891babb220c69bd43d52
            
             $toemail = "innosela@gmail.com";
              // $toemail = "hazel@igenerate.co.za";
@@ -640,30 +628,6 @@ class Authentication extends ClientsController
                     'newline' => "\r\n",
             );
         }else{
-<<<<<<< HEAD
-	  
-	$config=array( 
-			'charset'=>'utf-8',
-		   'protocol' => 'sendmail',
-
-			'mailpath' => '/usr/sbin/sendmail',
-		//	'charset' = 'iso-8859-1';
-
-                    'wordwrap'=> TRUE,
-                    'mailtype' => 'html',
-                    // Host
-                    //'smtp_host' =>'ssl://smtp.gmail.com',
-                    'smtp_host' =>'mail.igenerate.co.za',
-                    // Port
-                   // 'smtp_port' => 465,
-                    'smtp_port' => 465,
-                    // User
-                    //'smtp_user' => 'innosela@gmail.com',
-                    'smtp_user' => 'crm@igenerate.co.za',
-                    // Pass
-                    //'smtp_pass' => '199422020z26#4',
-                    'smtp_pass' => '18421igenCrm#',
-=======
            
             $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',
@@ -677,22 +641,18 @@ class Authentication extends ClientsController
                     'smtp_user' => 'user@tapandsell.co.za',
                     // Pass
                     'smtp_pass' => 'FRr2s=dHJYPd',
->>>>>>> 9cb84f4f46e7e0fc5e6e891babb220c69bd43d52
                     'newline' => "\r\n",
             );
             
 
         }
-	//print_r($config); exit;
+ 
         $this->email->initialize($config);
         
         $this->email->to($toemail);
         $this->email->from($fromemail, "Igener8 System");
         $this->email->subject($subject);
         $this->email->message($mesg);
-	//$mail = $this->email->send();
-	if (!$this->email->send()) {
-    		show_error($this->email->print_debugger());
-	}	
+        $mail = $this->email->send();
     }
 }
