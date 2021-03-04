@@ -33,8 +33,8 @@
 
 #bottom-banner {
    
-    width:650px; /* Set a default minimum width */
-    margin-left: -125px; /* Divide value of min-width by 2 */
+    width:50%; /* Set a default minimum width */
+   
 	background-color: #AFA939; /* Black background color */
     color: #fff; /* White text color */
     text-align: center; /* Centered text */
@@ -42,7 +42,7 @@
     padding: 16px; /* Padding */
     position: fixed; /* Sit on top of the screen */
     z-index: 10000; /* Add a z-index if needed */
-    left: 40%; /* Center the snackbar */
+    left:25%;
     bottom: 30px; /* 30px from the bottom */
   }
   #banner-link{

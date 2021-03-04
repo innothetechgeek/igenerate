@@ -112,7 +112,7 @@
 		<!-- The Modal -->
     </div> 
 	<!-- //banner -->
-	 <?php $this->load->view('website/bottom_banner'); ?>
+	
 	<!-- /banner_bottom_agile_info -->
     <div class="banner_bottom_agile_info">
 	    <div class="container">
@@ -613,5 +613,7 @@ $('.steps-nav > li > a').click(function(event) {
 </script>
 <!-- for bootstrap working -->
 <script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/bootstrap.js"></script>
+
+<?php $this->load->view('website/bottom_banner'); ?>
 </body>
 </html>
