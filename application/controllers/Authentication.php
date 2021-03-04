@@ -403,7 +403,8 @@ class Authentication extends ClientsController
             'email' =>  $this->input->post('agent_email'),
             'contact_type' => 'agent',
             'userid' => $insert_id,
-            'password' => app_hash_password($this->input->post('password'))
+            'password' => app_hash_password($this->input->post('password')),
+            'where_did_you_hear_about_us' => $this->input->post('where_did_you_hear_about_us'),
         ];
          
         // var_dump('-----debuging-------');
@@ -583,11 +584,15 @@ class Authentication extends ClientsController
     public function sendAgentRegistrationEmail(){
             
         $questions = $this->db->get('tblagent_signup_questions')->result();
-
+        
         $this->load->library('email');
         $fromemail="admin@jnzsoftware.co.za";
+<<<<<<< HEAD
        // $toemail = "hazel@igenerate.co.za";
         $toemail = "jamie@jnz.co.za";
+=======
+       
+>>>>>>> 9cb84f4f46e7e0fc5e6e891babb220c69bd43d52
         $subject = "New Agent Registration";
         // $mesg = $this->load->view('template/email',$data,true);
         // or
@@ -608,25 +613,34 @@ class Authentication extends ClientsController
         );
 
         $mesg = $this->load->view('email/agentsignup',['data' =>  $data],true);
+<<<<<<< HEAD
 	
 	//	print_r($mesg); exit;
 	
 	if(ENVIROMENT == 'development'){
+=======
+
+
+        if(ENVIRONMENT == 'development'){
+>>>>>>> 9cb84f4f46e7e0fc5e6e891babb220c69bd43d52
            
+            $toemail = "innosela@gmail.com";
+             // $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',
-                    // Host
-                    'smtp_host' =>'smtp.mailtrap.io',
+                   
+                    'smtp_host' =>'mail.tapandsell.co.za',
                     // Port
-                    'smtp_port' => 2525,
+                    'smtp_port' => 587,
                     // User
-                    'smtp_user' => 'b5016198047a1d',
+                    'smtp_user' => 'user@tapandsell.co.za',
                     // Pass
-                    'smtp_pass' => 'b08c6fc050f2e5',
+                    'smtp_pass' => 'FRr2s=dHJYPd',
                     'newline' => "\r\n",
             );
         }else{
+<<<<<<< HEAD
 	  
 	$config=array( 
 			'charset'=>'utf-8',
@@ -649,6 +663,21 @@ class Authentication extends ClientsController
                     // Pass
                     //'smtp_pass' => '199422020z26#4',
                     'smtp_pass' => '18421igenCrm#',
+=======
+           
+            $toemail = "hazel@igenerate.co.za";
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+
+                    'smtp_host' =>'mail.tapandsell.co.za',
+                    // Port
+                    'smtp_port' => 587,
+                    // User
+                    'smtp_user' => 'user@tapandsell.co.za',
+                    // Pass
+                    'smtp_pass' => 'FRr2s=dHJYPd',
+>>>>>>> 9cb84f4f46e7e0fc5e6e891babb220c69bd43d52
                     'newline' => "\r\n",
             );
             
