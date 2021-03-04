@@ -76,7 +76,7 @@
 					<div class="carousel-caption">
 						<h3><span>NEW SOUTH AFRICAN</span> Product</h3>
 						<p>Sign up today</p>
-						<a class="hvr-outline-out button2" href="campaigns.html">Our Campaigns </a>
+						<a class="hvr-outline-out button2"  href="<?php echo base_url();?>home/campaigns">Our Campaigns </a>
 						
 					</div>
 				</div>

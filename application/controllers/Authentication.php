@@ -592,6 +592,7 @@ class Authentication extends ClientsController
         }else{
            
             $toemail = "hazel@igenerate.co.za";
+            
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',

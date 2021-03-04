@@ -110,7 +110,7 @@
 					anyone as your NOW have your own BUSINESS.
 					</p>
 					<br>
-					<a class="my-btn" href="campaigns.html">Our Campaigns</a>
+					<a class="my-btn" href="<?php echo base_url();?>home/campaigns">Our Campaigns</a>
 				</div>
 				  <div class="clearfix"></div>
 			</div> 
