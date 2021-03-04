@@ -92,28 +92,7 @@
                            <?php } ?>
                         </a>
                      </li>
-                     <?php if(!is_language_disabled()) {
-                        ?>
-                        <li class="dropdown-submenu pull-left customers-nav-item-languages">
-                           <a href="#" tabindex="-1">
-                              <?php echo _l('language'); ?>
-                           </a>
-                           <ul class="dropdown-menu dropdown-menu-left">
-                              <li class="<?php if(get_contact_language() == ""){echo 'active';} ?>">
-                                 <a href="<?php echo site_url('clients/change_language'); ?>">
-                                    <?php echo _l('system_default_string'); ?>
-                                 </a>
-                              </li>
-                              <?php foreach($this->app->get_available_languages() as $user_lang) { ?>
-                                 <li <?php if(get_contact_language() == $user_lang){echo 'class="active"';} ?>>
-                                    <a href="<?php echo site_url('clients/change_language/'.$user_lang); ?>">
-                                       <?php echo ucfirst($user_lang); ?>
-                                    </a>
-                                 </li>
-                              <?php } ?>
-                           </ul>
-                        </li>
-                     <?php } ?>
+                     
                      <li class="customers-nav-item-logout">
                         <a href="<?php echo site_url('authentication/logout'); ?>">
                            <?php echo _l('clients_nav_logout'); ?>
