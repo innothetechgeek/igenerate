@@ -108,15 +108,19 @@
                         <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
                         <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
                     </svg>
-                    <div class="pricing-price"><span class="pricing-currency">R</span>1000
-                        <span class="pricing-period">/ annum</span>
+                    <div class="pricing-price"><span class="pricing-currency">R</span>R199<span class="pricing-period">ONCE OFF JOINING FEE</span>
                     </div>
-                    <h3 class="pricing-title">Option 1 <br> Upfront Annual Fee </h3>
+                    <h3 class="pricing-title">AND MONTHLY FEE OF R149 EVERY MONTH. </h3>
                 </div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature">Support</li>
-                    <li class="pricing-feature">Back end Processing</li>
-                    <li class="pricing-feature">Unlimited Credit Checks</li>
+                    <li class="pricing-feature">This will give you access to the program for 12 months</li>
+                    <li class="pricing-feature">You will access to unlimited campaigns</li>
+                    <li class="pricing-feature">You get access to unlimited credit checks which you can for R50 cash</li>
+					<li class="pricing-feature">You can access to a loan platform to do instant applications</li>
+					<li class="pricing-feature">You will get access to a rewards program that will give you savings on goods and services</li>
+					<li class="pricing-feature">You will get advice on the best technology and cheapest wifi options in SA</li>
+					<li class="pricing-feature">Unlimted platform support</li>
+					<li class="pricing-feature">Training of system and products.</li>
                 </ul>
                 <button class="pricing-action">Choose plan</button>
             </div>

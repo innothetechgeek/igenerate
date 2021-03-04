@@ -465,7 +465,7 @@ form#send .main-btn-rect i {
         
         @media screen and (min-width: 66.25em) {
             .pricing-palden .pricing-item {
-                margin: 1em -0.5em;
+           
             }
             .pricing-palden .pricing__item--featured {
                 margin: 0;
@@ -551,6 +551,9 @@ form#send .main-btn-rect i {
         
         .pricing-palden .pricing-feature {
             padding: 1em 0;
+			padding-bottom: .0em;
+			padding-top: .90em;
+			margin-top:0px;
         }
         
         .pricing-palden .pricing-action {
