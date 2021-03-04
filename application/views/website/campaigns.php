@@ -95,14 +95,32 @@
 				</div>
 				 <div class="col-md-8 ab_pic_w3ls_text_info">
 				    <h5>HOW WOULD YOU <span> EARN</span> MONEY</h5>
-					<p>Included in your monthly fee, you have access to unlimited credit check at no charge to you, which you can over the service at R50 cash to your client (3 of these covers your monthly Business App fee of R149).</p>
+					<p>Included in your monthly fee, you have access to unlimited campaigns,this will
+						includes campaigns where you can charge R50 cash and will also do campaigns
+						that will pay upto R3000(which is payable monthly to you. THE BIG CASH
+						MONEY SPINNER IS DOING LOAN APPLICATIONS AT R50 (3 of these covers
+						your monthly Business App fee of R149).This R50 is a direct profit to you in
+						your pocket.</p>
 
 					<h5>EARN R50 CASH BY DOING LOAN APPLICATION:</h5>
-					<p>You will charge your potential client R50 cash and fill the form below to do a loan application. 
-					Once you fill their details and click NEXT, the system will offer a free credit report and client will be called by call centres to finalise loan.</p>
-					<p>If the client does not want a loan, you can still charge R50 cash and do a credit report for.</p>
+					<p>
+					You will charge your potential client R50 cash and notify them that this R50 is a
+					service fee to do the APPLICATION .You will just need minimum details to
+					capture on your LOAN APPLICATION LINK. Once you fill their details and click
+					NEXT, the system will offer a free credit report (as well)and client will be called
+					by call centres to finalise loan.So you can tell them that they will receive a call
+					to notify them of their loan and a full application will be done as well via the
+					bank call centre.</p>
+
+ 					<p>If the client does not want a loan, you can still charge R50 cash and do a credit
+					report for. </p>
+
+					<p>All you need to do is sign up now as a business partner.And the when you log
+					onto your platform then you will be able to start earning money today.
+
+					</p>
 				
-                    <button type="button" class="main-btn-rect popup-btn" data-popup="popup-reg">Click me</button>
+                    <!-- <button type="button" class="main-btn-rect popup-btn" data-popup="popup-reg">Click me</button> -->
                     <div id="popup-reg" class="popup">
                       <div class="popup-content">
                         <div class="event-header">

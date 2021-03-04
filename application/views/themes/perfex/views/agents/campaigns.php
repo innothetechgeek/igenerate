@@ -284,7 +284,7 @@
                                 </li>
                                 <?php 
                                     $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
-                                    $btn_text =  $i != 1 ? "Coming soon" : "GET REFERAL LINK";
+                                    $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
                                     $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
                                 ?>
                                 <input class="btn btn-primary <?=$is_btn_disabled?>" <?=  $data_target ?>  class="btn btn-primary btn-sm mg-top-5" value = "<?=  $btn_text ?>">
@@ -389,8 +389,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <input type = "hidden"  id = "campain_1" value = "https://sa.formstack.com/forms/igen_personal_loan_capture_form" />
-        <button  onclick="copyRereralLink('campain_1')"  type="button" class="btn btn-primary">Copy Referal Link</button>
+        <input type = "hidden"  id = "campain_1" value = "" />
+        <a href = "https://sa.formstack.com/forms/igen_personal_loan_capture_form"  type="button" class="btn btn-primary" target="_blank" >Do Loan Application</a>
       </div>
     </div>
   </div>
