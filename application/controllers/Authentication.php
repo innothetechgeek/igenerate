@@ -403,7 +403,8 @@ class Authentication extends ClientsController
             'email' =>  $this->input->post('agent_email'),
             'contact_type' => 'agent',
             'userid' => $insert_id,
-            'password' => app_hash_password($this->input->post('password'))
+            'password' => app_hash_password($this->input->post('password')),
+            'where_did_you_hear_about_us' => $this->input->post('where_did_you_hear_about_us'),
         ];
          
         // var_dump('-----debuging-------');
@@ -628,7 +629,7 @@ class Authentication extends ClientsController
             );
         }else{
            
-             $toemail = "hazel@igenerate.co.za";
+            $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',

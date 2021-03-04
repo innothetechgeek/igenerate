@@ -11,10 +11,10 @@
 		function hideURLbar(){ window.scrollTo(0,1); } </script> -->
 <!--//tags -->
 <!--//tags -->
-<link href="<?php echo base_url();?>/assets/website/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url();?>/assets/website/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url();?>/assets/website/css/font-awesome.css" rel="stylesheet"> 
-<link href="<?php echo base_url();?>/assets/website/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<link href="<?php echo base_url();?>assets/website/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url();?>assets/website/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url();?>assets/website/css/font-awesome.css" rel="stylesheet"> 
+<link href="<?php echo base_url();?>assets/website/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <!-- //for bootstrap working -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
@@ -91,7 +91,7 @@
 	    <div class="container">
 			<div class="agile_ab_w3ls_info">
 				<div class="col-md-4 ab_pic_w3ls">
-				   	<img src="<?php echo base_url();?>/assets/website/images/home/cost.jpg" alt="iGENER8" class="img-responsive" />
+				   	<img src="<?php echo base_url();?>assets/website/images/home/cost.jpg" alt="iGENER8" class="img-responsive" />
 				</div>
 				 <div class="col-md-8 ab_pic_w3ls_text_info">
 				    <h5>HOW WOULD YOU <span> EARN</span> MONEY</h5>
@@ -181,7 +181,7 @@
 	
 
 
-    <div class="faq " style="    background-attachment: fixed; background-position: center;   background: linear-gradient(rgb(232 155 232 / 0%), rgb(23 22 23 / 0%)), url(<?php echo base_url();?>/assets/website/images/home/thumbs.png) no-repeat fixed top;     background-size: 310vh;">
+    <div class="faq " style="    background-attachment: fixed; background-position: center;   background: linear-gradient(rgb(232 155 232 / 0%), rgb(23 22 23 / 0%)), url(<?php echo base_url();?>assets/website/images/home/thumbs.png) no-repeat fixed top;     background-size: 310vh;">
     	<div class="container">
 			<div class="banner_bottom_agile_info " style="padding-bottom: 0% !important">
 				<div class="agile_ab_w3ls_info">
@@ -302,7 +302,7 @@
 	            <div class="col-sm-12 steps-content-parent">
 	                <div class="steps-content active" id="step1">
 	                    <div class="col-sm-12 col-md-7 image-parent">
-	                        <img src="<?php echo base_url();?>/assets/website/images/home/accessibility.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
+	                        <img src="<?php echo base_url();?>assets/website/images/home/accessibility.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
 	                    </div>
 	                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-parent">
 	                        <h2>Accessibility</h2>
@@ -317,7 +317,7 @@
 	            <div class="col-sm-12 steps-content-parent">
 	                <div class="steps-content " id="step2">
 	                    <div class="col-sm-12 col-md-7 image-parent">
-	                        <img src="<?php echo base_url();?>/assets/website/images/home/objective.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
+	                        <img src="<?php echo base_url();?>assets/website/images/home/objective.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
 	                    </div>
 	                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-parent">
 	                        <h2>Platform Objective</h2>
@@ -334,7 +334,7 @@
 	            <div class="col-sm-12 steps-content-parent">
 	                <div class="steps-content " id="step3">
 	                    <div class="col-sm-12 col-md-7 image-parent">
-	                        <img src="<?php echo base_url();?>/assets/website/images/home/income.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
+	                        <img src="<?php echo base_url();?>assets/website/images/home/income.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
 
 	                    </div>
 	                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-parent">
@@ -350,7 +350,7 @@
 	            <div class="col-sm-12 steps-content-parent">
 	                <div class="steps-content " id="step4">
 	                    <div class="col-sm-12 col-md-7 image-parent">
-	                        <img src="<?php echo base_url();?>/assets/website/images/home/remuneration.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
+	                        <img src="<?php echo base_url();?>assets/website/images/home/remuneration.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
 	                    </div>
 	                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-parent">
 	                        <h2>PAYMENTS to your Business</h2>
@@ -367,7 +367,7 @@
 	            <div class="col-sm-12 steps-content-parent">
 	                <div class="steps-content " id="step5">
 	                    <div class="col-sm-12 col-md-7 image-parent">
-	                        <img src="<?php echo base_url();?>/assets/website/images/home/withdrawl.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
+	                        <img src="<?php echo base_url();?>assets/website/images/home/withdrawl.png" style="width: 20%;" alt="iGener8 How it works steps" class="image">
 	                    </div>
 	                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 text-parent">
 	                        <h2>Cash Withdrawl</h2>
@@ -489,17 +489,17 @@
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 <!-- js -->
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
-<script src="<?php echo base_url();?>/assets/website/js/modernizr.custom.js"></script>
+<script src="<?php echo base_url();?>assets/website/js/modernizr.custom.js"></script>
 	<!-- Custom-JavaScript-File-Links --> 
 	<!-- cart-js -->
-	<script src="<?php echo base_url();?>/assets/website/js/minicart.min.js"></script>
+	<script src="<?php echo base_url();?>assets/website/js/minicart.min.js"></script>
 
 
 	<!-- //cart-js --> 
 <!-- script for responsive tabs -->						
-<script src="<?php echo base_url();?>/assets/website/js/easy-responsive-tabs.js"></script>
+<script src="<?php echo base_url();?>assets/website/js/easy-responsive-tabs.js"></script>
 <script>
 	$(document).ready(function () {
 	$('#horizontalTab').easyResponsiveTabs({
@@ -524,15 +524,15 @@
 </script>
 <!-- //script for responsive tabs -->		
 <!-- stats -->
-	<script src="<?php echo base_url();?>/assets/website/js/jquery.waypoints.min.js"></script>
-	<script src="<?php echo base_url();?>/assets/website/js/jquery.countup.js"></script>
+	<script src="<?php echo base_url();?>assets/website/js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo base_url();?>assets/website/js/jquery.countup.js"></script>
 	<script>
 		$('.counter').countUp();
 	</script>
 <!-- //stats -->
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/move-top.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/move-top.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/jquery.easing.min.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -612,6 +612,6 @@ $('.steps-nav > li > a').click(function(event) {
     $(target_tab_selector).addClass('active');
   });
 </script>
-<script type="text/javascript" src="<?php echo base_url();?>/assets/website/js/bootstrap.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/website/js/bootstrap.js"></script>
 </body>
 </html>

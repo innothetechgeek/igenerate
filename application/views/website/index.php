@@ -7,10 +7,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content=" " />
 <!--//tags -->
-<link href="<?php echo base_url();?>/assets/website/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url();?>/assets/website/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="<?php echo base_url();?>/assets/website/css/font-awesome.css" rel="stylesheet"> 
-<link href="<?php echo base_url();?>/assets/website/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<link href="<?php echo base_url();?>assets/website/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url();?>assets/website/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url();?>assets/website/css/font-awesome.css" rel="stylesheet"> 
+<link href="<?php echo base_url();?>assets/website/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <!-- //for bootstrap working -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
