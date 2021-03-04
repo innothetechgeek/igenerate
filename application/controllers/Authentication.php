@@ -487,6 +487,7 @@ class Authentication extends ClientsController
         
             $request_params = array(
                 'payment_reference' => $payment_ref,
+                'amount'=>"199",
                 'own_amount' => '',
                 'merchant_id' => '',
                 'mobile' => $mobile,
@@ -494,25 +495,22 @@ class Authentication extends ClientsController
                 'error_url' => '',
                 'cancel_url' => '',
                 'notify_url' => '',
+                'today_prorata'=>'1',
                 'recurring_start_day' => 31,
+                'prorated_amount' => '149',
                 'contact_type' => $contact_type,
             );
             
-          
-            
-            $this->created_scheduled_payment($request_params);
-            $this->create_once_off_payment_link($request_params);
-        
-        
-           
+            $this->send_payment_link($request_params);
+              
     
     }
 
-    public function created_scheduled_payment($request_params){
+    public function send_payment_link($request_params){
 
         $auth = base64_encode('jnzapi:jnzapi2020!');
         $request_params['recurring_start_day'] = date('Y-m-d',strtotime('first day of +1 month'));
-        $request_params['amount'] = 149;
+
          // echo $auth; exit;
          $request_url_base = "https://pay.swiffy.co.za/api";
          $endpoint = "/v1/swiffy/recurring/payment-schedule";
@@ -542,42 +540,6 @@ class Authentication extends ClientsController
          $response = json_decode($reply, true);
 
          curl_close($curl);
-    }
-
-    public function create_once_off_payment_link($request_params){
-
-        $request_params['amount'] = 199;
-        $request_params['send']  = 1;
-        $request_url_base = "https://pay.swiffy.co.za/api";
-        $endpoint = "/v1/swiffy/payment-link";
-        $auth = base64_encode('jnzapi:jnzapi2020!');
-
-        $verify_hostname = false;
-        $curl = curl_init();
-        
-        curl_setopt_array($curl,
-        array(
-                CURLOPT_URL => $request_url_base.$endpoint,
-                CURLOPT_SSL_VERIFYPEER => $verify_hostname,
-                CURLOPT_SSL_VERIFYHOST => $verify_hostname,
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_HTTPHEADER => array("Authorization: Basic $auth",'Accept: application/json'),
-                CURLOPT_POSTFIELDS => $request_params,
-                )
-        );
-
-        $reply = curl_exec( $curl );
-        
-        if(! $reply) {
-                echo curl_error($curl);
-                curl_close($curl);
-                exit;
-        }
-       
-        $response = json_decode($reply, true);
-
-        curl_close($curl);
-
     }
     
    //for testing puroses:
