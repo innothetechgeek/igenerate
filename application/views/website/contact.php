@@ -18,17 +18,6 @@
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!-- header -->
-<div class="header" id="home">
-	<div class="container">
-		<ul>
-		    <li> <a href="#" data-toggle="modal" data-target="#"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
-			<li> <a href="#" data-toggle="modal" data-target="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
-			<li><i class="fa fa-phone" aria-hidden="true"></i> Call : 087 655 7429</li>
-			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@igenerate.co.za">info@igenerate.co.za</a></li>
-		</ul>
-	</div>
-</div>
 
 <?php $this->load->view('website/header'); ?>
 <!-- Modal1 -->
