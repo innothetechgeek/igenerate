@@ -29,6 +29,8 @@ class Clients extends ClientsController
        $this->db->where('userid', $this->session->userdata('client_user_id'));
        $active_user = $this->db->get($table)->row();
 
+       $data['active_user'] =  $active_user;
+
        if($active_user->contact_type == "agent"){
 
         $this->data($data);

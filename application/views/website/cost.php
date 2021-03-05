@@ -89,7 +89,7 @@
 			<div class="agile_ab_w3ls_info">
 				 <div class="col-md-12 ab_pic_w3ls_text_info costing">
 				    <h5><span> So how much does it</span> cost?</h5>
-				    <p><strong>Once off joining fee is R199.</strong> Please note that once you start earning month,you will use your earnings to pay your APP USAGE FEE meaning Hard workers benefit.</p>
+				    <p><strong>Once off joining fee is R199.</strong> Please note that once you start earning monthly,you will use your earnings to pay your APP USAGE FEE meaning Hard workers benefit.</p>
 				</div>
 			</div> 
 		 </div> 
@@ -110,19 +110,20 @@
                     </svg>
                     <div class="pricing-price"><span class="pricing-currency">R</span>R199<span class="pricing-period">ONCE OFF JOINING FEE</span>
                     </div>
-                    <h3 class="pricing-title">AND MONTHLY FEE OF R149 EVERY MONTH. </h3>
+                    <h3 class="pricing-title">AND MONTHLY FEE OF R149 EVERY MONTH</h3>
                 </div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature">This will give you access to the program for 12 months</li>
-                    <li class="pricing-feature">You will access to unlimited campaigns</li>
+                    <li class="pricing-feature">This will give you access to the program for 12 months.</li>
+                    <li class="pricing-feature">You will access to unlimited campaigns </li>
                     <li class="pricing-feature">You get access to unlimited credit checks which you can for R50 cash</li>
 					<li class="pricing-feature">You can access to a loan platform to do instant applications</li>
 					<li class="pricing-feature">You will get access to a rewards program that will give you savings on goods and services</li>
 					<li class="pricing-feature">You will get advice on the best technology and cheapest wifi options in SA</li>
 					<li class="pricing-feature">Unlimted platform support</li>
-					<li class="pricing-feature">Training of system and products.</li>
+					<li class="pricing-feature">Training of system and products</li>
+					<li class="pricing-feature">Back end processing of campaigns</li>
                 </ul>
-                <button class="pricing-action">Choose plan</button>
+                <a href = "<?php echo base_url();?>authentication/agent_signup"  class="pricing-action">Choose plan</a>
             </div>
             <div class="pricing-item features-item ja-animate" data-animation="move-from-bottom" data-delay="item-2" style="min-height: 497px;">
                 <div class="pricing-deco">
@@ -132,18 +133,37 @@
                         <path class="deco-layer deco-layer--3" d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z" fill="#FFFFFF" opacity="0.7"></path>
                         <path class="deco-layer deco-layer--4" d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#FFFFFF"></path>
                     </svg>
-                    <div class="pricing-price"><span class="pricing-currency">R</span>149
-                        <span class="pricing-period">/ month</span>
+                    <div class="pricing-price"><span class="pricing-currency">R</span>R199<span class="pricing-period">ONCE OFF JOINING FEE</span>
                     </div>
-                    <h3 class="pricing-title">Option 3 <br> Upfront Monthly Fee</h3>
+                    <h3 class="pricing-title">AND R1000 PER YEAR(this is a savings of R788 per year)</h3>
                 </div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature">Support</li>
-                    <li class="pricing-feature">Back end Processing</li>
-                    <li class="pricing-feature">Unlimited Credit Checks</li>
+                    <li class="pricing-feature">This will give you access to the program for 12 months</li>
+                    <li class="pricing-feature">You will access to unlimited campaigns </li>
+                    <li class="pricing-feature">You get access to unlimited credit checks which you can for R50 cash</li>
+					<li class="pricing-feature">You can access to a loan platform to do instant applications.</li>
+					<li class="pricing-feature">You will get access to a rewards program that will give you savings on goods and services</li>
+					<li class="pricing-feature">You will get advice on the best technology and cheapest wifi options in SA</li>
+					<li class="pricing-feature">Unlimted platform support</li>
+					<li class="pricing-feature">Back end processing of campaigns</li>
                 </ul>
-                <button class="pricing-action">Choose plan</button>
+                <a href = "<?php echo base_url();?>authentication/agent_signup" class="pricing-action">Choose plan</a>
             </div>
+
+			<div class = "container costing">
+				<div class="row">
+					<div class="col-md-12" > 
+						<h4> SIGN UP PROCESS: </h4>  <br/> 
+						<ul style = "list-style-type:none"> 
+							<li>Click on SIGN UP and fill in your details</li>
+							<li>Your can use your email address as your username and choose any password(this will always be used to access our platform <a href ="<?php echo base_url();?>">www.igenerate.co.za</a> )</li>
+							<li>Once you sign up ,we will send you an sms to pay the once off of R199,when you click on the sms,it will take you to our JNZ payment platform (here you will fill in your debit or cheque or credit card details)</li>
+							<li>Once this is done and we receive your joining fee,we will send you a message to say your are active and can start earning money and you now have your own business</li>
+							<li>The platform will only you to do the easy every day money where you charge R50 and do a loan application for your client,and once you get used to the platform we will open up more campaigns for you</li>
+						</ul>
+					</div>
+				</div>
+			</div>
         </div>
     </section>
 

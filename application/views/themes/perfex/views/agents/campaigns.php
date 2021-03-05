@@ -29,9 +29,9 @@
         }
 
         #snackbar.show {
-        visibility: visible;
-        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
         }
 
         @-webkit-keyframes fadein {
@@ -256,11 +256,46 @@
 ?>
 <section id="team" class="pb-5">
 <div class="container">
-    <h5 class="section-title h1">OUR CAMPAINS</h5>
+
+    <h5 class="section-title h1">OUR CAMPAIGNS</h5>
+       <?php if(!$active_user->payment_received){ ?>
+        <div class="alert alert-secondary" role="alert" style = "font-size:18px;color: #383d41;
+                background-color: #e2e3e5;
+                border-color: #d6d8db; text-align:center">
+            Please click on the payment link that was sent to you, and make a payment to see our available campaigns!
+        </div>
+       <?php } else{ ?>
     <div class="row">
-        <?php 
         
-         $i = 1;
+        <!-- Campain -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <?php $is_disabled =  $i != 1 ?  "campain-disabled" : ""; ?>
+            <div class="image-flip" >
+                <div class="mainflip flip-0">
+                    <div class="frontside">
+                        <div class="card <?= $is_disabled ?>">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="<?= $earning_details['image'] ?>" alt="card image"></p>
+                                <h4 class="card-title  <?= $is_disabled ?>"><?php echo $earning ?></h4>
+                                 <ul>
+                                   <li> hello </li>   
+                                </li>
+                                <?php 
+                                    $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
+                                    $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
+                                    $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                ?>
+                                <input class="btn btn-primary"  class="btn btn-primary btn-sm mg-top-5" value = "">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <?php 
+        $i = 1;
         foreach($campaigns as $earning => $earning_details) { ?>
         <!-- Campain -->
         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -273,8 +308,7 @@
                                 <p><img class=" img-fluid" src="<?= $earning_details['image'] ?>" alt="card image"></p>
                                 <h4 class="card-title  <?= $is_disabled ?>"><?php echo $earning ?></h4>
                                  <ul>
-                                   
-                                      <?php  foreach($earning_details['referal_types'] as $key => $referal_type) { ?>
+                                    <?php  foreach($earning_details['referal_types'] as $key => $referal_type) { ?>
                                         
                                         <li> <?= $referal_type ?> </li>
                                         
@@ -291,36 +325,6 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="backside">
-                        <div class="card">
-                            <div class="card-body text-center mt-4">
-                                <h4 class="card-title">Sunlimetech</h4>
-                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-skype"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                            <i class="fa fa-google"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -331,6 +335,10 @@
         ?>
 
     </div>
+
+    <?php } ?>
+
+   
     <div id="snackbar">Referal Link copied to clipboard</div>
          
          <?php   
@@ -409,14 +417,12 @@
         copyText.select();
         document.execCommand("copy");
         copyText.type = 'hidden';
-      //  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
+        // copyText.setSelectionRange(0, 99999); /* For mobile devices */
         var x = document.getElementById("snackbar");
         x.className = "show";
         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-            }
 
-
+    }
 </script>
 </body>
 </html>

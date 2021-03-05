@@ -332,8 +332,8 @@ class Authentication extends ClientsController
             $this->generate_swify_payment_link($this->input->post('agent_cellphone_number'),$payment_ref);
             
 
-            //registration email to admin
-             $this->sendAgentRegistrationEmail();
+           //registration email to admin
+            $this->sendAgentRegistrationEmail();
             redirect('authentication/agent_signup_successful');
           
             $this->layout();
@@ -465,6 +465,9 @@ class Authentication extends ClientsController
 
     public function generate_swify_payment_link($mobile,$payment_ref){
 
+           
+
+
             $type = 1;
             $whatsapp = '';
             $contact_type = 'sms';
@@ -487,17 +490,17 @@ class Authentication extends ClientsController
         
             $request_params = array(
                 'payment_reference' => $payment_ref,
-                'amount'=>"199",
+                'amount'=>"10",
                 'own_amount' => '',
                 'merchant_id' => '',
                 'mobile' => $mobile,
                 'success_url' => '',
                 'error_url' => '',
                 'cancel_url' => '',
-                'notify_url' => '',
+                'notify_url' => base_url()."/swiffy/notify",
                 'today_prorata'=>'1',
                 'recurring_start_day' => 31,
-                'prorated_amount' => '149',
+                'prorated_amount' => '10',
                 'contact_type' => $contact_type,
             );
             

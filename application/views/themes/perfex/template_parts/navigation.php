@@ -14,7 +14,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="theme-navbar-collapse">
          <ul class="nav navbar-nav navbar-right">
-            <?php hooks()->do_action('customers_navigation_start'); ?>
+         <?php if(!is_client_logged_in()) { ?>
             <?php foreach($menu as $item_id => $item) { ?>
                <li class="customers-nav-item-<?php echo $item_id; ?>"
                   <?php echo _attributes_to_string(isset($item['li_attributes']) ? $item['li_attributes'] : []); ?>>
@@ -29,8 +29,15 @@
                   </a>
                </li>
             <?php } ?>
-            <?php hooks()->do_action('customers_navigation_end'); ?>
+
+         <?php } ?>
+         
             <?php if(is_client_logged_in()) { ?>
+               <li class="dropdown customers-nav-item-profile">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                     Hi <?=$contact->firstname?>, Welcome back !!
+                  </a>
+               </li>
                <li class="dropdown customers-nav-item-profile">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                      <img src="<?php echo contact_profile_image_url($contact->id,'thumb'); ?>" data-toggle="tooltip" data-title="<?php echo html_escape($contact->firstname . ' ' .$contact->lastname); ?>" data-placement="bottom" class="client-profile-image-small mright5">

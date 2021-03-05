@@ -106,7 +106,7 @@
 					We have a huge unemployment rate and we experience poverty amongst a huge part of our population. 
 					iGenerate will help YOU to open your own business for just R199 once off and R149 per month, this will enable you 
 					to earn a daily business income which equates to a weekly business income which becomes a monthly business income. 
-					And the GOOD news is the YOUR BUSINESS income here will be unlimited. And the good part is that you DO NOT work for 
+					And the GOOD news the YOUR BUSINESS income here will be unlimited. And the good part is that you DO NOT work for 
 					anyone as your NOW have your own BUSINESS.
 					</p>
 					<br>
