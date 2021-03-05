@@ -550,12 +550,11 @@ form#send .main-btn-rect i {
         }
         
         .pricing-palden .pricing-feature {
+			
             padding: 1em 0;
 			padding-top:0em;
 			padding-bottom: 0.80em;
 			font-size:95%;
-
-			
         }
 
 		.pricing-feature-list{

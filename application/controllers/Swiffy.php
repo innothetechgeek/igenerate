@@ -15,7 +15,7 @@ class Swiffy extends ClientsController{
         $this->db->where('id', 1);
         $this->db->update('tblcontacts');
 
-        file_put_contents("test.txt", $_REQUEST);
+        file_put_contents("test.txt", 'notify url hit');
 
         //var_dump(write_file(base_url()."assets/log.txt", 'hello'));
 
