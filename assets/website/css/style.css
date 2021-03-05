@@ -464,9 +464,9 @@ form#send .main-btn-rect i {
         }
         
         @media screen and (min-width: 66.25em) {
-            .pricing-palden .pricing-item {
+            /* .pricing-palden .pricing-item {
                 margin: 1em -0.5em;
-            }
+            } */
             .pricing-palden .pricing__item--featured {
                 margin: 0;
                 z-index: 10;
@@ -551,7 +551,17 @@ form#send .main-btn-rect i {
         
         .pricing-palden .pricing-feature {
             padding: 1em 0;
+			padding-top:0em;
+			padding-bottom: 0.80em;
+			font-size:95%;
+
+			
         }
+
+		.pricing-feature-list{
+			padding-left:1em  !important;
+			padding-right:1em  !important;
+		}
         
         .pricing-palden .pricing-action {
             font-weight: bold;
