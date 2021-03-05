@@ -85,19 +85,12 @@
    <!--/contact-->
     <div class="banner_bottom_agile_info">
 	    <div class="container">
-		  <div class="contact-grid-agile-w3s">
-				<div class="col-md-4 contact-grid-agile-w3">
-						<div class="contact-grid-agile-w31">
+		  <div class="contact-grid-agile-w3s" >
+				<div class="col-md-4 contact-grid-agile-w3" id = "contact-address">
+					<div class="contact-grid-agile-w31 offset-2">
 							<i class="fa fa-map-marker" aria-hidden="true"></i>
 							<h4>Address</h4>
 							<p>284 Oak Avenue, Randburg, Gauteng</span></p>
-						</div>
-					</div>
-					<div class="col-md-4 contact-grid-agile-w3">
-						<div class="contact-grid-agile-w32">
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							<h4>Call Us</h4>
-							<p>087 655 7429</span></p>
 						</div>
 					</div>
 					<div class="col-md-4 contact-grid-agile-w3">

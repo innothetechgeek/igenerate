@@ -600,6 +600,13 @@ form#send .main-btn-rect i {
     }
 }
 
+@media (min-width: 992px) {
+    
+	#contact-address{
+		margin-left:17%;
+	}
+}
+
 .aa-container-steps-parent .container .steps-section-title {
     text-align: center;
     margin-bottom: 85px;

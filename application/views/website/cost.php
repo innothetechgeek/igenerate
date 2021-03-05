@@ -157,7 +157,7 @@
 						<ul style = "list-style-type:none"> 
 							<li>Click on SIGN UP and fill in your details</li>
 							<li>Your can use your email address as your username and choose any password(this will always be used to access our platform <a href ="<?php echo base_url();?>">www.igenerate.co.za</a> )</li>
-							<li>Once you sign up ,we will send you an sms to pay the once off of R199,when you click on the sms,it will take you to our JNZ payment platform(here you will fill in your debit or cheque or credit card details</li>
+							<li>Once you sign up ,we will send you an sms to pay the once off of R199,when you click on the sms,it will take you to our JNZ payment platform (here you will fill in your debit or cheque or credit card details)</li>
 							<li>Once this is done and we receive your joining fee,we will send you a message to say your are active and can start earning money and you now have your own business</li>
 							<li>The platform will only you to do the easy every day money where you charge R50 and do a loan application for your client,and once you get used to the platform we will open up more campaigns for you</li>
 						</ul>
