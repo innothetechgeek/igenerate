@@ -497,7 +497,7 @@ class Authentication extends ClientsController
                 'success_url' => '',
                 'error_url' => '',
                 'cancel_url' => '',
-                'notify_url' => base_url()."/swiffy/notify",
+                'notify_url' => 'http://www.igenerate.co.za/swiffy/notify', //hardcoding it for now for testing purposes
                 'today_prorata'=>'1',
                 'recurring_start_day' => 31,
                 'prorated_amount' => '10',
