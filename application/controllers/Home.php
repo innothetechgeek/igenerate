@@ -27,7 +27,7 @@ class Home extends ClientsController {
 
     public function contact(){
 
-        $this->load->view('website/campaigns');
+        $this->load->view('website/contact');
 
     }
 
