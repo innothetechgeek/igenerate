@@ -78,7 +78,7 @@
 		<div class="top_nav_right">
 			<div class="wthreecartaits wthreecartaits2 cart cart box_1"> 
 				<ul class="nav navbar-nav menu__list">
-					<li class=" menu__item myitem"><a class="menu__link" href="contact.html">Contact Support</a></li>
+					<li class=" menu__item myitem"><a class="menu__link" href="<?php echo base_url();?>home/contact">Contact Support</a></li>
 				  </ul>
   
 			</div>

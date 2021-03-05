@@ -416,11 +416,11 @@
 				<div class="col-md-4 sign-gd">
 					<h4>Our <span>Information</span> </h4>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="campaigns.html">Campaigns</a></li>
-						<li><a href="cost.html">Costing</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="<?php echo base_url();?>home">Home</a></li>
+						<li><a href="<?php echo base_url();?>home/about"">About</a></li>
+						<li><a href="<?php echo base_url();?>home/campains">Campaigns</a></li>
+						<li><a href="<?php echo base_url();?>home/costing">Costing</a></li>
+						<li><a href="<?php echo base_url();?>home/contact">Contact</a></li>
 					</ul>
 				</div>
 				

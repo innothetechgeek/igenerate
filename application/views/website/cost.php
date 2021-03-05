@@ -89,7 +89,7 @@
 			<div class="agile_ab_w3ls_info">
 				 <div class="col-md-12 ab_pic_w3ls_text_info costing">
 				    <h5><span> So how much does it</span> cost?</h5>
-				    <p><strong>Once off joining fee is R199.</strong> Please note that once you start earning month,you will use your earnings to pay your APP USAGE FEE meaning Hard workers benefit.</p>
+				    <p><strong>Once off joining fee is R199.</strong> Please note that once you start earning monthly,you will use your earnings to pay your APP USAGE FEE meaning Hard workers benefit.</p>
 				</div>
 			</div> 
 		 </div> 
