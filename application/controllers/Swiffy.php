@@ -22,13 +22,14 @@ class Swiffy extends REST_Controller {
  
  
        
+        $response = file_get_contents('php://input');
 
          if($response->payment_status == 1){
 
             //update payment status so the person can be able to log into the system
             $this->db->set('payment_received', 1);
 
-            $response = file_get_contents('php://input');
+           
 
             $response = json_decode($response);
             $this->db->where('idnumber',  $response->payment_reference);
@@ -37,7 +38,7 @@ class Swiffy extends REST_Controller {
 
          }
 
-         file_put_contents("test2.txt",$entityBody);
+         file_put_contents("test2.txt",$response);
  
          //var_dump(write_file(base_url()."assets/log.txt", 'hello'));
  
