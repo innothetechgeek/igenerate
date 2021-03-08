@@ -25,8 +25,10 @@ class Swiffy extends REST_Controller {
          $this->db->set('payment_received', 1);
          $this->db->where('id', 1);
          $this->db->update('tblcontacts');
+
+         $entityBody = file_get_contents('php://input');
  
-         file_put_contents("test2.txt", $_REQUEST);
+         file_put_contents("test2.txt",$entityBody);
  
          //var_dump(write_file(base_url()."assets/log.txt", 'hello'));
  
