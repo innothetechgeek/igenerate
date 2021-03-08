@@ -258,7 +258,7 @@
 <div class="container">
 
     <h5 class="section-title h1">OUR CAMPAIGNS</h5>
-       <?php if($active_user->payment_received){ ?>
+       <?php if(!$active_user->payment_received){ ?>
         <div class="alert alert-secondary" role="alert" style = "font-size:18px;color: #383d41;
                 background-color: #e2e3e5;
                 border-color: #d6d8db; text-align:center">
