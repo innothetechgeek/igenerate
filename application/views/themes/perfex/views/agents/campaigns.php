@@ -258,7 +258,7 @@
 <div class="container">
 
     <h5 class="section-title h1">OUR CAMPAIGNS</h5>
-       <?php if(!$active_user->payment_received){ ?>
+       <?php if($active_user->payment_received){ ?>
         <div class="alert alert-secondary" role="alert" style = "font-size:18px;color: #383d41;
                 background-color: #e2e3e5;
                 border-color: #d6d8db; text-align:center">
@@ -266,32 +266,32 @@
         </div>
        <?php } else{ ?>
     <div class="row">
-        
+
         <!-- Campain -->
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <?php $is_disabled =  $i != 1 ?  "campain-disabled" : ""; ?>
-            <div class="image-flip" >
-                <div class="mainflip flip-0">
-                    <div class="frontside">
-                        <div class="card <?= $is_disabled ?>">
-                            <div class="card-body text-center">
-                                <p><img class=" img-fluid" src="<?= $earning_details['image'] ?>" alt="card image"></p>
-                                <h4 class="card-title  <?= $is_disabled ?>"><?php echo $earning ?></h4>
-                                 <ul>
-                                   <li> hello </li>   
-                                </li>
-                                <?php 
-                                    $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
-                                    $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
-                                    $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
-                                ?>
-                                <input class="btn btn-primary"  class="btn btn-primary btn-sm mg-top-5" value = "">
-                            </div>
-                        </div> 
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://www.buyundetectablecounterfeit.com/images/product/gallery/5c613c30aacecR%2050.jpg" alt="card image"></p>
+                                    <h4 class="card-title ">EARN R50 when you sign a client for:</h4>
+                                    <ul>
+                                    <li>Loan Application <br/> <strong>(you can charge your  face to face client R50 cash)<strong> <br/> </li>   
+                                    </li>
+                                    <?php 
+                                      //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
+                                     //   $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
+                                        // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                    ?>
+                                     <br/>
+                                    <buttom class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  class="btn btn-primary btn-sm mg-top-5" value = "">Terms & Conditions</button>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+       </div>
         
         
         <?php 
@@ -303,10 +303,10 @@
             <div class="image-flip" >
                 <div class="mainflip flip-0">
                     <div class="frontside">
-                        <div class="card <?= $is_disabled ?>">
+                        <div class="card  campain-disabled">
                             <div class="card-body text-center">
                                 <p><img class=" img-fluid" src="<?= $earning_details['image'] ?>" alt="card image"></p>
-                                <h4 class="card-title  <?= $is_disabled ?>"><?php echo $earning ?></h4>
+                                <h4 class="card-title campain-disabled"><?php echo $earning ?></h4>
                                  <ul>
                                     <?php  foreach($earning_details['referal_types'] as $key => $referal_type) { ?>
                                         
@@ -317,9 +317,12 @@
                                     ?>
                                 </li>
                                 <?php 
-                                    $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
-                                    $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
-                                    $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                    // $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
+                                    $is_btn_disabled = "btn-disabled";
+                                    // $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
+                                    $btn_text = 'Coming soon';
+                                    // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                    $data_target = '';
                                 ?>
                                 <input class="btn btn-primary <?=$is_btn_disabled?>" <?=  $data_target ?>  class="btn btn-primary btn-sm mg-top-5" value = "<?=  $btn_text ?>">
                             </div>
@@ -362,28 +365,14 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Choose a campaign</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </h5>
+       
       </div>
       <div class="modal-body">
-        <select name="campains" id="campains">
-            <?php 
-                $i = 1;
-                foreach($launch_campaign_referal_types as $earning => $earning_details) { ?>
-                    <?php foreach($earning_details['referal_types'] as $key => $referal_type) { ?>
-
-                        <?php $is_disabled = $i != 1 ? "disabled" : '' ?>
-                        <option value="" <?= $is_disabled ?> > <?= $referal_type ?></option>
-                    <?php
-                     $i++;
-                } ?>
-            <?php } 
-            
-            ?>
-        </select>
-           <h1>Terms and Conditions</h1>
          <ul style = "list-style-type: circle; margin-left:15px">
             <li>You can charge your client a minimum of R50 upto R100 cash to do a loan application for your client.</li>
             <li>We recommend R50 but it is your Business and you can charge what you see fit.</li>
