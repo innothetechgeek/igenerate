@@ -21,13 +21,22 @@ class Swiffy extends REST_Controller {
      public function index_post(){
  
  
-         //update payment status so the person can be able to log into the system
-         $this->db->set('payment_received', 1);
-         $this->db->where('id', 1);
-         $this->db->update('tblcontacts');
+       
 
-         $entityBody = file_get_contents('php://input');
- 
+         if($response->payment_status == 1){
+
+            //update payment status so the person can be able to log into the system
+            $this->db->set('payment_received', 1);
+
+            $response = file_get_contents('php://input');
+
+            $response = json_decode($response);
+            $this->db->where('idnumber',  $response->payment_reference);
+            $this->db->update('tblcontacts');
+
+
+         }
+
          file_put_contents("test2.txt",$entityBody);
  
          //var_dump(write_file(base_url()."assets/log.txt", 'hello'));

@@ -328,7 +328,7 @@ class Authentication extends ClientsController
             $this->create_agent_answers($agent_id);
             $this->create_agent_address($agent_id);
 
-            $payment_ref = $this->input->post('agent_name');
+            $payment_ref = $this->input->post('agent_idnumber');
             $this->generate_swify_payment_link($this->input->post('agent_cellphone_number'),$payment_ref);
             
 
@@ -497,7 +497,7 @@ class Authentication extends ClientsController
                 'success_url' => '',
                 'error_url' => '',
                 'cancel_url' => '',
-                'notify_url' => 'http://www.igenerate.co.za/swiffy/notify', //hardcoding it for now for testing purposes
+                'notify_url' => 'http://www.igenerate.co.za/swiffy/index_post', //hardcoding it for now for testing purposes
                 'today_prorata'=>'1',
                 'recurring_start_day' => 31,
                 'prorated_amount' => '10',
