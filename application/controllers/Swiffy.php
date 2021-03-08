@@ -23,6 +23,7 @@ class Swiffy extends REST_Controller {
  
        
         $response = file_get_contents('php://input');
+        $response = json_decode($response);
 
          if($response->payment_status == 1){
 
@@ -31,7 +32,7 @@ class Swiffy extends REST_Controller {
 
            
 
-            $response = json_decode($response);
+            
             $this->db->where('idnumber',  $response->payment_reference);
             $this->db->update('tblcontacts');
 
