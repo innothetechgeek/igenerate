@@ -77,8 +77,8 @@ class Authentication extends App_Controller
                 // is logged in
                 maybe_redirect_to_previous_url();
 
-                hooks()->do_action('after_staff_login');
-                redirect(admin_url());
+               
+                redirect('admin/agents/list');
             }
         }
 

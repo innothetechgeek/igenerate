@@ -33,9 +33,9 @@
                               <td> <?= $agent['lastname'] ?> </td>
                               <td><?= $agent['email'] ?></td>
                               <td>0833968710</td>
-                              <td>Taya Smith (0833968710)</td>
-                              <td>R0.00</td>
-                              <td ><a href = "#" onclick="edit_task(1);">Update Balance</a></td>
+                              <td><?= $agent['nok_name']. ' ' .$agent['nok_surname'] .' ('.$agent['nok_cell_number'] .')' ?></td>
+                              <td>R <?= empty($agent['wallet_balance']) ? 0.00 : $agent['wallet_balance']; ?></td>
+                              <td ><a href = "#" onclick = "displayBalanceModal(<?= $agent['userid'] ?>)" id = "update-balance">Update Balance</a></td>
                         </tr>
                      <?php } ?>
                      </tbody>
@@ -45,22 +45,26 @@
       </div>
    </div>
 
-    <div class="modal fade edit in" style = "display:none;" id="_task_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: block;">
+    <div class="modal fade edit in" style = "display:none;" id="balance_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: block;">
     <div class="modal-dialog" role="document">
    <div class="modal-content">
-      <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-         <h4 class="modal-title" id="myModalLabel">
-            Update User Balance</h4>
-      </div>
-      <div class="modal-body">
-          <label> New Balance &nbsp&nbsp&nbsp</label> 
-          <input type="text">
-      </div>
-      <div class="modal-footer">
-         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-         <button type="submit" class="btn btn-info">Save</button>
-      </div>
+      <form action = "<?=base_url()?>/admin/agents/updatebalance" method ="post">
+      <input type = "hidden" id = "userid" name = "userid"  value = ""/>
+      <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">
+               Update User Balance</h4>
+         </div>
+         <div class="modal-body">
+            <label> New Balance &nbsp&nbsp&nbsp</label> 
+            <input type="text" name = "new-balance">
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-info">Save</button>
+         </div>
+      </form>
    </div>
 </div>
 </script>
@@ -70,5 +74,25 @@
 </div>
 </div>
 <?php init_tail(); ?>
+
+<script>
+
+   function displayBalanceModal(user_id){
+
+      $('#userid').val(user_id);
+      $('#balance_modal').show();
+
+   
+
+   }
+  
+
+  $('.close').click(function(){
+
+   $('#balance_modal').hide();
+
+  })
+
+</script>
 </body>
 </html>
