@@ -21,93 +21,17 @@
             <i class="fa fa-gavel" aria-hidden="true"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownQuickLinks">
-               <?php
-                  foreach($quickActions as $key => $item){
-                   $url = '';
-                   if(isset($item['permission'])){
-                     if(!has_permission($item['permission'],'','create')){
-                      continue;
-                    }
-                  }
-                  if(isset($item['custom_url'])){
-                    $url = $item['url'];
-                  } else {
-                    $url = admin_url(''.$item['url']);
-                  }
-                  $href_attributes = '';
-                  if(isset($item['href_attributes'])){
-                    foreach ($item['href_attributes'] as $key => $val) {
-                      $href_attributes .= $key . '=' . '"' . $val . '"';
-                    }
-                  }
-                  ?>
-               <li>
-                  <a href="<?php echo $url; ?>" <?php echo $href_attributes; ?>>
-                  <i class="fa fa-plus-square-o"></i>
-                  <?php echo $item['name']; ?>
-                  </a>
-               </li>
-               <?php } ?>
+              
             </ul>
          </div>
       </li>
       <?php } ?>
-      <?php
-         hooks()->do_action('before_render_aside_menu');
-         ?>
-      <?php foreach($sidebar_menu as $key => $item){
-         if(isset($item['collapse']) && count($item['children']) === 0) {
-           continue;
-         }
-         ?>
-      <li class="menu-item-<?php echo $item['slug']; ?>"
-         <?php echo _attributes_to_string(isset($item['li_attributes']) ? $item['li_attributes'] : []); ?>>
-         <a href="<?php echo count($item['children']) > 0 ? '#' : $item['href']; ?>"
-          aria-expanded="false"
-          <?php echo _attributes_to_string(isset($item['href_attributes']) ? $item['href_attributes'] : []); ?>>
-             <i class="<?php echo $item['icon']; ?> menu-icon"></i>
+      <li class="menu-item-customers">
+         <a href="<?= base_url()?>admin/agents/list" aria-expanded="false">
+             <i class="fa fa-user-o menu-icon"></i>
              <span class="menu-text">
-             <?php echo _l($item['name'],'', false); ?>
-             </span>
-             <?php if(count($item['children']) > 0){ ?>
-             <span class="fa arrow"></span>
-             <?php } ?>
-         </a>
-         <?php if(count($item['children']) > 0){ ?>
-         <ul class="nav nav-second-level collapse" aria-expanded="false">
-            <?php foreach($item['children'] as $submenu){
-               ?>
-            <li class="sub-menu-item-<?php echo $submenu['slug']; ?>"
-              <?php echo _attributes_to_string(isset($submenu['li_attributes']) ? $submenu['li_attributes'] : []); ?>>
-              <a href="<?php echo $submenu['href']; ?>"
-               <?php echo _attributes_to_string(isset($submenu['href_attributes']) ? $submenu['href_attributes'] : []); ?>>
-               <?php if(!empty($submenu['icon'])){ ?>
-               <i class="<?php echo $submenu['icon']; ?> menu-icon"></i>
-               <?php } ?>
-               <span class="sub-menu-text">
-                  <?php echo _l($submenu['name'],'',false); ?>
-               </span>
-               </a>
-            </li>
-            <?php } ?>
-         </ul>
-         <?php } ?>
-      </li>
-      <?php hooks()->do_action('after_render_single_aside_menu', $item); ?>
-      <?php } ?>
-      <?php if($this->app->show_setup_menu() == true && (is_staff_member() || is_admin())){ ?>
-      <li<?php if(get_option('show_setup_menu_item_only_on_hover') == 1) { echo ' style="display:none;"'; } ?> id="setup-menu-item">
-         <a href="#" class="open-customizer"><i class="fa fa-cog menu-icon"></i>
-         <span class="menu-text">
-            <?php echo _l('setting_bar_heading'); ?>
-            <?php
-                if ($modulesNeedsUpgrade = $this->app_modules->number_of_modules_that_require_database_upgrade()) {
-                  echo '<span class="badge menu-badge bg-warning">' . $modulesNeedsUpgrade . '</span>';
-                }
-            ?>
-         </span>
-         </a>
-         <?php } ?>
+             Business Partners             </span>
+                      </a>
       </li>
       <?php hooks()->do_action('after_render_aside_menu'); ?>
       <?php $this->load->view('admin/projects/pinned'); ?>

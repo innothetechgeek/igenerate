@@ -26,17 +26,6 @@ class Tasks extends AdminController
         $data['custom_view'] = $this->input->get('custom_view') ? $this->input->get('custom_view') : '';
         $data['taskid']      = $id;
 
-        if ($this->input->get('kanban')) {
-            $this->switch_kanban(0, true);
-        }
-
-        $data['switch_kanban'] = false;
-        $data['bodyclass']     = 'tasks-page';
-
-        if ($this->session->userdata('tasks_kanban_view') == 'true') {
-            $data['switch_kanban'] = true;
-            $data['bodyclass']     = 'tasks-page kan-ban-body';
-        }
 
         $data['title'] = _l('tasks');
         $this->load->view('admin/tasks/manage', $data);

@@ -29,14 +29,11 @@ class Authentication_model extends App_Model
                 $table = db_prefix() . 'staff';
                 $_id   = 'staffid';
             }
+
+          
             $this->db->where('email', $email);
             $user = $this->db->get($table)->row();
 
-            //agent login
-            if(!$user){
-                $this->db->where('agent_email', $email);
-                $user = $this->db->get('tblagents')->row();
-            }
             
             if ($user) {
                 // Email is okey lets check the password now

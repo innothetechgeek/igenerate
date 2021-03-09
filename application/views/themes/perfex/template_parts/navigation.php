@@ -49,6 +49,11 @@
                            <?php echo _l('clients_nav_profile'); ?>
                         </a>
                      </li>
+                     <li class="customers-nav-item-edit-profile">
+                        <a href="<?= base_url()?>clients/wallet" style = "color:grey">
+                           My Wallet (coming soon)
+                        </a>
+                     </li>
                      <?php if($contact->is_primary == 1){ ?>
                         <?php if(can_loggged_in_user_manage_contacts()) { ?>
                            <li class="customers-nav-item-edit-profile">

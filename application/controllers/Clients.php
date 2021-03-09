@@ -47,6 +47,14 @@ class Clients extends ClientsController
 
        }
     }
+    
+
+    public function wallet(){
+
+        $this->view('agents/wallet');
+        $this->layout();
+
+    }
 
     public function announcements()
     {

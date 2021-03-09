@@ -50,16 +50,8 @@ ob_end_clean();
          <div class="mobile-navbar collapse" id="mobile-collapse" aria-expanded="false" style="height: 0px;" role="navigation">
             <ul class="nav navbar-nav">
                <li class="header-my-profile"><a href="<?php echo admin_url('profile'); ?>"><?php echo _l('nav_my_profile'); ?></a></li>
-               <li class="header-my-timesheets"><a href="<?php echo admin_url('staff/timesheets'); ?>"><?php echo _l('my_timesheets'); ?></a></li>
-               <li class="header-edit-profile"><a href="<?php echo admin_url('staff/edit_profile'); ?>"><?php echo _l('nav_edit_profile'); ?></a></li>
-               <?php if(is_staff_member()){ ?>
-                  <li class="header-newsfeed">
-                   <a href="#" class="open_newsfeed mobile">
-                     <?php echo _l('whats_on_your_mind'); ?>
-                  </a>
-               </li>
-            <?php } ?>
-            <li class="header-logout"><a href="#" onclick="logout(); return false;"><?php echo _l('nav_logout'); ?></a></li>
+             
+               <li class="header-logout"><a href="#" onclick="logout(); return false;"><?php echo _l('nav_logout'); ?></a></li>
          </ul>
       </div>
    </div>
@@ -75,44 +67,11 @@ ob_end_clean();
       </a>
       <ul class="dropdown-menu animated fadeIn">
          <li class="header-my-profile"><a href="<?php echo admin_url('profile'); ?>"><?php echo _l('nav_my_profile'); ?></a></li>
-         <li class="header-my-timesheets"><a href="<?php echo admin_url('staff/timesheets'); ?>"><?php echo _l('my_timesheets'); ?></a></li>
+        
          <li class="header-edit-profile"><a href="<?php echo admin_url('staff/edit_profile'); ?>"><?php echo _l('nav_edit_profile'); ?></a></li>
-         <?php if(!is_language_disabled()){ ?>
-            <li class="dropdown-submenu pull-left header-languages">
-               <a href="#" tabindex="-1"><?php echo _l('language'); ?></a>
-               <ul class="dropdown-menu dropdown-menu">
-                  <li class="<?php if($current_user->default_language == ""){echo 'active';} ?>"><a href="<?php echo admin_url('staff/change_language'); ?>"><?php echo _l('system_default_string'); ?></a></li>
-                  <?php foreach($this->app->get_available_languages() as $user_lang) { ?>
-                     <li<?php if($current_user->default_language == $user_lang){echo ' class="active"';} ?>>
-                     <a href="<?php echo admin_url('staff/change_language/'.$user_lang); ?>"><?php echo ucfirst($user_lang); ?></a>
-                  <?php } ?>
-               </ul>
-            </li>
-         <?php } ?>
          <li class="header-logout">
             <a href="#" onclick="logout(); return false;"><?php echo _l('nav_logout'); ?></a>
          </li>
-      </ul>
-   </li>
-   <?php if(is_staff_member()){ ?>
-      <li class="icon header-newsfeed">
-         <a href="#" class="open_newsfeed desktop" data-toggle="tooltip" title="<?php echo _l('whats_on_your_mind'); ?>" data-placement="bottom"><i class="fa fa-share fa-fw fa-lg" aria-hidden="true"></i></a>
-      </li>
-   <?php } ?>
-   <li class="icon header-todo">
-      <a href="<?php echo admin_url('todo'); ?>" data-toggle="tooltip" title="<?php echo _l('nav_todo_items'); ?>" data-placement="bottom"><i class="fa fa-check-square-o fa-fw fa-lg"></i>
-         <span class="label bg-warning icon-total-indicator nav-total-todos<?php if($current_user->total_unfinished_todos == 0){echo ' hide';} ?>"><?php echo $current_user->total_unfinished_todos; ?></span>
-      </a>
-   </li>
-   <li class="icon header-timers timer-button" data-placement="bottom" data-toggle="tooltip" data-title="<?php echo _l('my_timesheets'); ?>">
-      <a href="#" id="top-timers" class="dropdown-toggle top-timers" data-toggle="dropdown">
-         <i class="fa fa-clock-o fa-fw fa-lg" aria-hidden="true"></i>
-         <span class="label bg-success icon-total-indicator icon-started-timers<?php if ($totalTimers = count($startedTimers) == 0){ echo ' hide'; }?>">
-            <?php echo count($startedTimers); ?>
-         </span>
-      </a>
-      <ul class="dropdown-menu animated fadeIn started-timers-top width350" id="started-timers-top">
-         <?php $this->load->view('admin/tasks/started_timers',array('startedTimers'=>$startedTimers)); ?>
       </ul>
    </li>
    <li class="dropdown notifications-wrapper header-notifications" data-toggle="tooltip" title="<?php echo _l('nav_notifications'); ?>" data-placement="bottom">
