@@ -32,9 +32,9 @@
                               <td> <?= $agent['firstname'] ?> </td>
                               <td> <?= $agent['lastname'] ?> </td>
                               <td><?= $agent['email'] ?></td>
-                              <td>0833968710</td>
+                              <td><?= $agent['phonenumber'] ?></td>
                               <td>Taya Smith (0833968710)</td>
-                              <td>R0.00</td>
+                              <td>R <?= !empty($agent['wallet_balance']) ? $agent['wallet_balance'] : '0.00' ?></td>
                               <td ><a href = "#" onclick="edit_task(1);">Update Balance</a></td>
                         </tr>
                      <?php } ?>

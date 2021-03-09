@@ -12,7 +12,7 @@ class Agents extends AdminController
          $this->db->select('*');
 
          $this->db->from('tblcontacts');
-
+         $this->db->where('contact_type', 'agent');
          $agents = $this->db->get()->result_array();
          $data['agents'] =  $agents;
       
