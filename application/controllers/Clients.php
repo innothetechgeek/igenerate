@@ -64,12 +64,23 @@ class Clients extends ClientsController
     }
 
     public function withdrawalRequest(){
+
         
         $this->load->library('email');
         $fromemail="admin@jnzsoftware.co.za";
+
+        $table = db_prefix() . 'contacts';
+        $this->db->where('userid', $this->session->userdata('client_user_id'));
+        $active_user = $this->db->get($table)->row();
+ 
+        $data['agent_name'] =  $active_user->firstname. " ". $active_user->lastname;
        
-        $subject = "New Agent Registration";
-        $mesg = $this->load->view('email/agentsignup',['data' =>  $data],true);
+        $subject = "New Withdrawal Request";
+
+        $data['account_number'] = $this->input->post('account_number');  
+        $data['withdrawl_amount'] = $this->input->post('withdrawl_amount');
+        $withdrawal_amount = $this->input->post('account-number');
+        $mesg = $this->load->view('email/withdrawal_request',['data' =>  $data],true);
 
 
         if(ENVIRONMENT == 'development'){
@@ -80,13 +91,13 @@ class Clients extends ClientsController
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',
                    
-                    'smtp_host' =>'mail.tapandsell.co.za',
+                    'smtp_host' =>'mail.igenerate.co.za',
                     // Port
                     'smtp_port' => 587,
                     // User
-                    'smtp_user' => 'user@tapandsell.co.za',
+                    'smtp_user' => 'crm@igenerate.co.za',
                     // Pass
-                    'smtp_pass' => 'FRr2s=dHJYPd',
+                    'smtp_pass' => '18421igenCrm#',
                     'newline' => "\r\n",
             );
         }else{
@@ -97,13 +108,13 @@ class Clients extends ClientsController
                     'wordwrap'=> TRUE,
                     'mailtype' => 'html',
 
-                    'smtp_host' =>'mail.tapandsell.co.za',
+                    'smtp_host' =>'mail.igenerate.co.za',
                     // Port
                     'smtp_port' => 587,
                     // User
-                    'smtp_user' => 'user@tapandsell.co.za',
+                    'smtp_user' => 'crm@igenerate.co.za',
                     // Pass
-                    'smtp_pass' => 'FRr2s=dHJYPd',
+                    'smtp_pass' => '18421igenCrm#',
                     'newline' => "\r\n",
         );
         }

@@ -34,21 +34,22 @@
 
     <div class="row" style = "padding-left:15px; padding-right:15px">
         <div class="col-sm-4 " style = "text-align:center;border: 1px solid #EEEEEE; paddiging-top:150px; padding-bottom:150px; border-radius:15px">
-            <form action = "<?=base_url()?>/clients/withdrawal_request" method = "post">
+            <form action = "<?=base_url()?>/clients/withdrawalRequest" method = "post">
+                <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                 <h3>Withdraw</h3>
                 <div class="withdrawl-fields" style = "width:98%; text-align:left;" >
                     <hr/>
                     <label>Account number </label>
-                    <input  type = "number" id = "account-number" style = "padding-left:15px;width:100%; border-radius:15px" />
+                    <input  type = "number" name = "account_number" id = "account-number" style = "padding-left:15px;width:100%; border-radius:15px" />
                 </div>
 
                 <div class="withdrawl-fields" style = "margin-top:20px;width:98%; text-align:left;" >
                     <label>Withdrawal Amount</label>
-                    <input  type = "number" id = "account-number" style = "padding-left:15px;width:100%; border-radius:15px" />
+                    <input  type = "number"  name = "withdrawl_amount" id = "withdrawl-amount" style = "padding-left:15px;width:100%; border-radius:15px" />
                 </div>
 
                 <div class="withdrawl-fields" style = "margin-top:20px;width:98%; text-align:left;" >
-                    <button  type = "button" class="btn btn-primary" id = "account-number" style = "width:100%; border-radius:15px">Send Withdrawal Request</button>
+                    <button  type = "submit" class="btn btn-primary" style = "width:100%; border-radius:15px">Send Withdrawal Request</button>
                 </div>
             </form>
         </div>
