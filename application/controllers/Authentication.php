@@ -551,7 +551,7 @@ class Authentication extends ClientsController
         
             $request_params = array(
                 'payment_reference' => $payment_ref,
-                'amount'=>"199",
+                'amount'=>"348",
                 'own_amount' => '',
                 'merchant_id' => '',
                 'mobile' => $mobile,
@@ -559,9 +559,6 @@ class Authentication extends ClientsController
                 'error_url' => '',
                 'cancel_url' => '',
                 'notify_url' => 'http://www.igenerate.co.za/swiffy/index_post', //hardcoding it for now for testing purposes
-                'today_prorata'=>'1',
-                'recurring_start_day' => 31,
-                'prorated_amount' => '149',
                 'contact_type' => $contact_type,
             );
             
@@ -577,7 +574,7 @@ class Authentication extends ClientsController
 
          // echo $auth; exit;
          $request_url_base = "https://pay.swiffy.co.za/api";
-         $endpoint = "/v1/swiffy/recurring/payment-schedule";
+         $endpoint = "/v1/swiffy/payment-link";
 
          $verify_hostname = false;
          $curl = curl_init();

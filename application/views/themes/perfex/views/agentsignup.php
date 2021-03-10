@@ -139,6 +139,43 @@ termination of using the iGEN APP.</li>
         </div>
     </div>
 
+    <style>
+        #bottom-banner {
+            
+            width:50%; /* Set a default minimum width */
+            
+            background-color: #55667b; /* Black background color */
+            color: #fff; /* White text color */
+            text-align: center; /* Centered text */
+            border-radius: 2px; /* Rounded borders */
+            padding: 16px; /* Padding */
+            position: fixed; /* Sit on top of the screen */
+            z-index: 10000; /* Add a z-index if needed */
+            left:25%;
+            bottom: 30px; /* 30px from the bottom */
+            }
+            #banner-link{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 20px;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            border-top-color: rgb(0, 0, 0);
+            border-right-color: rgb(0, 0, 0);
+            border-left-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            }
+ 
+
+
+</style>
+
+<div id="bottom-banner">
+	<div>
+	<a href="http://localhost/igenerate/authentication/agent_signup" style="color:#fff">OPENING UP THE ECONOMY SPECIAL: Sign up now. PAY R199 once off registration plus pay R149 (once month premium) and get the REST OF 2021 FREE (So you pay R348 now) 🎉</div>
+</div>
+
+
 </div>
 <script>
 $(document).ready(function(){
@@ -274,6 +311,9 @@ $(document).ready(function(){
     }
 
 });
+
+
+
 </script>
 </body>
 </html>
