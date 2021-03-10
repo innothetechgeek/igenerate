@@ -334,6 +334,8 @@ class Authentication extends ClientsController
 
            //registration email to admin
             $this->sendAgentRegistrationEmail();
+
+            $this->sendAgentWelcomeEmail($this->input->post('agent_name'));
             redirect('authentication/agent_signup_successful');
           
             $this->layout();
@@ -414,6 +416,65 @@ class Authentication extends ClientsController
 
 
         return  $insert_id;
+
+    }
+
+    public function sendAgentWelcomeEmail($agent_name){
+
+         $this->load->library('email');
+        $fromemail="admin@jnzsoftware.co.za";
+       
+        $subject = "New Agent Registration";
+
+        
+        if(ENVIRONMENT == 'development'){
+           
+            $toemail = "innosela@gmail.com";
+             // $toemail = "hazel@igenerate.co.za";
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+
+                    'smtp_host' =>'mail.igenerate.co.za',
+                    // Port
+                    'smtp_port' => 587,
+                    // User
+                    'smtp_user' => 'crm@igenerate.co.za',
+                    // Pass
+                    'smtp_pass' => '18421igenCrm#',
+                    'newline' => "\r\n",
+            );
+        }else{
+           
+            $toemail = "hazel@igenerate.co.za";
+            
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+
+                    'smtp_host' =>'mail.igenerate.co.za',
+                    // Port
+                    'smtp_port' => 587,
+                    // User
+                    'smtp_user' => 'crm@igenerate.co.za',
+                    // Pass
+                    'smtp_pass' => '18421igenCrm#',
+                    'newline' => "\r\n",
+            );
+            
+
+        }  
+
+        $data['agent_name'] = $agent_name;
+        $mesg = $this->load->view('email/agent_welcome_mail.php',['data' =>  $data],true);
+ 
+        $this->email->initialize($config);
+        
+        $this->email->to($toemail);
+        $this->email->from($fromemail, "Igener8 System");
+        $this->email->subject($subject);
+        $this->email->message($mesg);
+        $mail = $this->email->send();
 
     }
 
@@ -580,34 +641,34 @@ class Authentication extends ClientsController
             $toemail = "innosela@gmail.com";
              // $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',
-                    'wordwrap'=> TRUE,
-                    'mailtype' => 'html',
-                   
-                    'smtp_host' =>'mail.tapandsell.co.za',
-                    // Port
-                    'smtp_port' => 587,
-                    // User
-                    'smtp_user' => 'user@tapandsell.co.za',
-                    // Pass
-                    'smtp_pass' => 'FRr2s=dHJYPd',
-                    'newline' => "\r\n",
+                'wordwrap'=> TRUE,
+                'mailtype' => 'html',
+
+                'smtp_host' =>'mail.igenerate.co.za',
+                // Port
+                'smtp_port' => 587,
+                // User
+                'smtp_user' => 'crm@igenerate.co.za',
+                // Pass
+                'smtp_pass' => '18421igenCrm#',
+                'newline' => "\r\n",
             );
         }else{
            
             $toemail = "hazel@igenerate.co.za";
             
             $config=array( 'charset'=>'utf-8',
-                    'wordwrap'=> TRUE,
-                    'mailtype' => 'html',
+                'wordwrap'=> TRUE,
+                'mailtype' => 'html',
 
-                    'smtp_host' =>'mail.tapandsell.co.za',
-                    // Port
-                    'smtp_port' => 587,
-                    // User
-                    'smtp_user' => 'user@tapandsell.co.za',
-                    // Pass
-                    'smtp_pass' => 'FRr2s=dHJYPd',
-                    'newline' => "\r\n",
+                'smtp_host' =>'mail.igenerate.co.za',
+                // Port
+                'smtp_port' => 587,
+                // User
+                'smtp_user' => 'crm@igenerate.co.za',
+                // Pass
+                'smtp_pass' => '18421igenCrm#',
+                'newline' => "\r\n",
             );
             
 
