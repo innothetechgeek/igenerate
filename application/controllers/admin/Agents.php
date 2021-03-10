@@ -12,8 +12,10 @@ class Agents extends AdminController
          $this->db->select('*');
 
          $this->db->from('tblcontacts');
-         $this->db->where('contact_type', 'agent');
+         $this->db->join('tblagent_next_of_kin', 'tblcontacts.userid = tblagent_next_of_kin.fk_agent_id');
+
          $agents = $this->db->get()->result_array();
+        
          $data['agents'] =  $agents;
       
 
@@ -21,6 +23,15 @@ class Agents extends AdminController
          $this->load->view('admin/agents/list', $data);
        
         
+    }
+
+    public function updateBalance(){
+
+        
+        $this->db->set('wallet_balance', $this->input->post('new-balance'), FALSE);
+        $this->db->where('userid', $this->input->post('userid'));
+        $this->db->update('tblcontacts'); // gives UPDATE mytable SET field = field+1 WHERE id = 2
+        redirect($_SERVER['HTTP_REFERER']);
     }
     
 }
