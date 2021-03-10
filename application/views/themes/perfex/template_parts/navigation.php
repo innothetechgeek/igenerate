@@ -50,8 +50,8 @@
                         </a>
                      </li>
                      <li class="customers-nav-item-edit-profile">
-                        <a href="<?= base_url()?>clients/wallet" style = "color:grey">
-                           My Wallet (coming soon)
+                        <a href="<?= base_url()?>clients/wallet">
+                           My Wallet
                         </a>
                      </li>
                      <?php if($contact->is_primary == 1){ ?>

@@ -51,6 +51,13 @@ class Clients extends ClientsController
 
     public function wallet(){
 
+        $table = db_prefix() . 'contacts';
+        $this->db->where('userid', $this->session->userdata('client_user_id'));
+        $active_user = $this->db->get($table)->row();
+ 
+        $data['active_user'] =  $active_user;
+ 
+        $this->data($data);
         $this->view('agents/wallet');
         $this->layout();
 
