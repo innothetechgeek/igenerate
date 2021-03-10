@@ -89,14 +89,11 @@
 			<div class="agile_ab_w3ls_info">
 				 <div class="col-md-12 ab_pic_w3ls_text_info costing">
 				    <h5><span> So how much does it</span> cost?</h5>
-				    <p><strong>Once off joining fee is R199.</strong> Please note that once you start earning monthly,you will use your earnings to pay your APP USAGE FEE meaning Hard workers benefit.</p>
+				    <p><strong>OPENING UP THE ECONOMY SPECIAL: Sign up now. Pay R199 once off registration plus pay R149 (once month premium) and get the REST OF 2021 FREE (SO you pay R348 now)</strong>. Please note that once you start earning monthly,you will use your earnings to pay your APP USAGE FEE meaning Hard workers benefit.</p>
 				</div>
 			</div> 
 		 </div> 
     </div>
-
-
-
 
     <section>
         <div class="pricing pricing-palden">
@@ -175,6 +172,11 @@
  
 				<a class="hvr-outline-out button2"  href="<?php echo base_url();?>home/campaigns">Our Campaigns</a>
 			</div>
+	</div>
+
+	<div id="bottom-banner">
+	<div>
+	<a href="<?php echo base_url();?>authentication/agent_signup" style = "color:#fff">OPENING UP THE ECONOMY SPECIAL: Sign up now. Pay R199 once off registration plus pay R149 (once month premium) and get the REST OF 2021 FREE  (SO you pay R348 now) 🎉 <span id = "banner-link">SIGN UP NOW </span></a> </div>
 	</div>
 
 	<!-- /banner_bottom_agile_info -->
@@ -297,6 +299,7 @@
 <!--grids-->
 <!-- footer -->
 <?php $this->load->view('website/footer'); ?>
+
 
 <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
