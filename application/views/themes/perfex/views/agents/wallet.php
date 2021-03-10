@@ -34,6 +34,7 @@
 
     <div class="row" style = "padding-left:15px; padding-right:15px">
         <div class="col-sm-4 " style = "text-align:center;border: 1px solid #EEEEEE; paddiging-top:150px; padding-bottom:150px; border-radius:15px">
+            <form action = "<?=base_url()?>/clients/withdrawal_request" method = "post">
                 <h3>Withdraw</h3>
                 <div class="withdrawl-fields" style = "width:98%; text-align:left;" >
                     <hr/>
@@ -49,6 +50,7 @@
                 <div class="withdrawl-fields" style = "margin-top:20px;width:98%; text-align:left;" >
                     <button  type = "button" class="btn btn-primary" id = "account-number" style = "width:100%; border-radius:15px">Send Withdrawal Request</button>
                 </div>
+            </form>
         </div>
     </div>
 

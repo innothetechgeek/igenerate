@@ -109,7 +109,7 @@
                             <tr>
                                 <td valign="top">
                                     <p style = "font-size: 11px;
-    color: #686f7a;" >Delivered by Vanguard 600 Harrison Street, 3rd Floor, Cape Town,  7600.</p>
+    color: #686f7a;" >Delivered by Igenerate 284 Oak Avenue, Randburg, Gauteng.</p>
                                 </td>
                             </tr>
                         </table>

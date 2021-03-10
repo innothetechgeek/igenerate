@@ -63,6 +63,61 @@ class Clients extends ClientsController
 
     }
 
+    public function withdrawalRequest(){
+        
+        $this->load->library('email');
+        $fromemail="admin@jnzsoftware.co.za";
+       
+        $subject = "New Agent Registration";
+        $mesg = $this->load->view('email/agentsignup',['data' =>  $data],true);
+
+
+        if(ENVIRONMENT == 'development'){
+           
+            $toemail = "innosela@gmail.com";
+             // $toemail = "hazel@igenerate.co.za";
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+                   
+                    'smtp_host' =>'mail.tapandsell.co.za',
+                    // Port
+                    'smtp_port' => 587,
+                    // User
+                    'smtp_user' => 'user@tapandsell.co.za',
+                    // Pass
+                    'smtp_pass' => 'FRr2s=dHJYPd',
+                    'newline' => "\r\n",
+            );
+        }else{
+           
+            $toemail = "hazel@igenerate.co.za";
+            
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+
+                    'smtp_host' =>'mail.tapandsell.co.za',
+                    // Port
+                    'smtp_port' => 587,
+                    // User
+                    'smtp_user' => 'user@tapandsell.co.za',
+                    // Pass
+                    'smtp_pass' => 'FRr2s=dHJYPd',
+                    'newline' => "\r\n",
+        );
+        }
+
+        $this->email->initialize($config);
+        
+        $this->email->to($toemail);
+        $this->email->from($fromemail, "Igener8 System");
+        $this->email->subject($subject);
+        $this->email->message($mesg);
+        $mail = $this->email->send();
+
+    }
+
     public function announcements()
     {
         $data['title']         = _l('announcements');
