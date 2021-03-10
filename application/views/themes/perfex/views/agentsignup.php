@@ -89,7 +89,7 @@
                                 <div class="form-card">
                                     <h2 class="fs-title">Terms And Conditions</h2>
                                         <ul class = "agent-signup-terms">
-                                            <li>.Subject to the agreement to and compliance with the terms of this
+                                            <li>Subject to the agreement to and compliance with the terms of this
                                                 agreement ,we grant to you a non-exclusive ,non transferable ,non
                                                 sharable ,revocable limited license to use the service (including the
                                                 software in connection with the services )Solely for your commercial
