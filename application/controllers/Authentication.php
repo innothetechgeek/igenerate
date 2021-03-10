@@ -555,6 +555,7 @@ class Authentication extends ClientsController
                 'own_amount' => '',
                 'merchant_id' => '',
                 'mobile' => $mobile,
+                 'send' => 1,
                 'success_url' => '',
                 'error_url' => '',
                 'cancel_url' => '',
