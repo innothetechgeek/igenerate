@@ -424,7 +424,7 @@ class Authentication extends ClientsController
          $this->load->library('email');
         $fromemail="admin@jnzsoftware.co.za";
        
-        $subject = "New Agent Registration";
+        $subject = "Welcome";
 
         
         if(ENVIRONMENT == 'development'){
