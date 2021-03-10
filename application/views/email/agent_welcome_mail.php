@@ -41,7 +41,7 @@
                             <tr>
                                 <td  valign="top">
                                     <br/>Hi <span> <?= $data['agent_name'] ?>, thank you for signing up on our website</span>
-                                    <p>Click <a href= "<?= base_url()?>authentication/login">here</a> to login into your account and view our available campaigns </p>                              
+                                    <p>Click <a href= "<?= base_url()?>authentication/login">here</a> to log into your account and view our available campaigns </p>                              
                                 </td>
                             </tr>
                         </table>
