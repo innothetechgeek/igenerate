@@ -170,10 +170,10 @@ termination of using the iGEN APP.</li>
 
 </style>
 
-<div id="bottom-banner">
+<!-- <div id="bottom-banner">
 	<div>
 	<a href="http://localhost/igenerate/authentication/agent_signup" style="color:#fff">OPENING UP THE ECONOMY SPECIAL: Sign up now. PAY R199 once off registration plus pay R149 (once month premium) and get the REST OF 2021 FREE (So you pay R348 now) 🎉</div>
-</div>
+</div> -->
 
 
 </div>
