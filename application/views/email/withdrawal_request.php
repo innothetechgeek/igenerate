@@ -22,11 +22,11 @@
 </style>
 <table border="0" cellpadding="0" style = "" cellspacing="0" height="100%" width="100%" id="bodyTable">
     <tr>
-        <td align="center" valign="top">
+        <td valign="top">
             <table border="0" style = "background:#fff;margin-top:25px" cellpadding="" cellspacing="0" width="580" id="emailContainer">
                 <tr>
                     <td  valign="top">
-                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailHeader" >
+                        <table border="0"  cellspacing="0" width="100%" id="emailHeader" >
                             <tr >
                                 <td style = "border-top: 4px solid #51647c; border-bottom:2px solid #51647c;"  valign="top" >
                                     <!-- <img width = "150" alt="" src="https://vanguard-wealth.com/upload/orig/logo_49391.png">  -->
@@ -36,8 +36,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" valign="top">
-                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailBody">
+                    <td  valign="top">
+                        <table border="0" cellpadding="" cellspacing="0" width="100%" id="emailBody">
                             <tr>
                                 <td  valign="top">
                                     Hi <span>Admin, a new withdrawal request has been submitted:</span>
@@ -54,21 +54,19 @@
                             </tr>
                         </table>
                     </td>
-                </tr>
-                
+                </tr>                
             </table>
             <tr>
-                    <td align="center" valign="top">
-                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailFooter">
-                            <tr>
-                                <td valign="top">
-                                    <p style = "font-size: 11px;
-    color: #686f7a;" >Delivered by Igenerate 284 Oak Avenue, Randburg, Gauteng.</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+                <td valign="top">
+                    <table border="0" cellspacing="0" width="100%" id="emailFooter">
+                        <tr>
+                            <td valign="top">
+                                <p style = "font-size: 11px;color: #686f7a;" >Delivered by Igenerate 284 Oak Avenue, Randburg, Gauteng.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
         </td>
     </tr>
 </table

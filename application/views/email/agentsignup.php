@@ -22,7 +22,7 @@
 </style>
 <table border="0" cellpadding="0" style = "" cellspacing="0" height="100%" width="100%" id="bodyTable">
     <tr>
-        <td align="center" valign="top">
+        <td valign="top">
             <table border="0" style = "background:#fff;margin-top:25px" cellpadding="" cellspacing="0" width="580" id="emailContainer">
                 <tr>
                     <td  valign="top">
@@ -36,7 +36,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" valign="top">
+                    <td  valign="top">
                         <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailBody">
                             <tr>
                                 <td  valign="top">
@@ -104,7 +104,7 @@
                 
             </table>
             <tr>
-                    <td align="center" valign="top">
+                    <td  valign="top">
                         <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailFooter">
                             <tr>
                                 <td valign="top">
