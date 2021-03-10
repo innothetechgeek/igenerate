@@ -335,7 +335,7 @@ class Authentication extends ClientsController
            //registration email to admin
             $this->sendAgentRegistrationEmail();
 
-            $this->sendAgentWelcomeEmail($this->input->post('agent_name'));
+            $this->sendAgentWelcomeEmail($this->input->post('agent_name'),$this->input->post('agent_email'));
             redirect('authentication/agent_signup_successful');
           
             $this->layout();
@@ -419,7 +419,7 @@ class Authentication extends ClientsController
 
     }
 
-    public function sendAgentWelcomeEmail($agent_name){
+    public function sendAgentWelcomeEmail($agent_name,$agent_email){
 
          $this->load->library('email');
         $fromemail="admin@jnzsoftware.co.za";
@@ -429,7 +429,7 @@ class Authentication extends ClientsController
         
         if(ENVIRONMENT == 'development'){
            
-            $toemail = "innosela@gmail.com";
+            $toemail = $agent_email;
              // $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
@@ -446,7 +446,7 @@ class Authentication extends ClientsController
             );
         }else{
            
-            $toemail = "hazel@igenerate.co.za";
+            $toemail = $agent_email;
             
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
