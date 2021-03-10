@@ -13,7 +13,7 @@ class Agents extends AdminController
 
          $this->db->from('tblcontacts');
          $this->db->join('tblagent_next_of_kin', 'tblcontacts.userid = tblagent_next_of_kin.fk_agent_id');
-
+         $this->db->order_by("id", "DESC");
          $agents = $this->db->get()->result_array();
         
          $data['agents'] =  $agents;

@@ -33,6 +33,15 @@
                                      <input type="email" name="agent_email" placeholder="Email" />
                                      <input id = "password" type="password" name="password" placeholder="Password" />
                                      <input id = "password_confirm" type="password" name="password_confirm" placeholder="Confirm Password" />
+                                     <label for="where_did_you_hear_about_us">Where did you hear about us ?</label> <br/>
+                                    <select name="where_did_you_hear_about_us" id="where_did_you_hear_about_us">
+                                        <option value="SMS">SMS</option>
+                                        <option value="Facebook">facebook</option>
+                                        <option value="Email">Email</option>
+                                        <option value="Radio">Radio</option>
+                                        <option value="Call centre">Call centre</option>
+                                        <option value="Referal">Referal</option>
+                                    </select> <br/> <br/>
                                 </div> <input type="button" name="next" class="next action-button" value="Next Step" />
                             </fieldset>
                             <fieldset id = "step2" class="tab">
@@ -42,11 +51,6 @@
                                     <input type="text" name="agent_name" placeholder="Name" /> 
                                     <input type="text" name="suname" placeholder="Surname" /> 
                                     <input type="number" name="agent_cellphone_number" placeholder="Cell Phone Number" /> 
-                                   
-                                    <label for="where_did_you_hear_about_us">Where did you hear about us ?</label> <br/>
-                                    <select name="where_did_you_hear_about_us" id="where_did_you_hear_about_us">
-                                        <option value="sms">SMS</option>
-                                    </select> <br/> <br/>
                                     <input type="number"  data-not-required = "true" name="agent_landline" placeholder="Landline Number (if available)" /> 
                                 </div> 
                                 <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 

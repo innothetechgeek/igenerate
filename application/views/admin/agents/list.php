@@ -23,6 +23,7 @@
                         <th class="duedate sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Due Date activate to sort column descending">Phone</th>
                         <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Assigned to activate to sort column ascending">Next Of Kin</th>
                         <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Assigned to activate to sort column ascending">Wallet Balance</th>
+                        <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Assigned to activate to sort column ascending">Lead Source</th>
                         <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Tags activate to sort column ascending">Action</th>
                         </tr>
                   </thead>
@@ -35,7 +36,9 @@
                               <td><?= $agent['phonenumber'] ?></td>
                               <td><?= $agent['nok_name']. ' ' .$agent['nok_surname'] .' ('.$agent['nok_cell_number'] .')' ?></td>
                               <td>R <?= empty($agent['wallet_balance']) ? 0.00 : $agent['wallet_balance']; ?></td>
+                              <td><?= $agent['where_did_you_hear_about_us'] ?></td>
                               <td ><a href = "#" onclick = "displayBalanceModal(<?= $agent['userid'] ?>)" id = "update-balance">Update Balance</a></td>
+                             
                         </tr>
                      <?php } ?>
                      </tbody>
