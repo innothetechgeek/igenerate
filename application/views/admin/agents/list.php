@@ -32,7 +32,7 @@
                               <td> <?= $agent['firstname'] ?> </td>
                               <td> <?= $agent['lastname'] ?> </td>
                               <td><?= $agent['email'] ?></td>
-                              <td>0833968710</td>
+                              <td><?= $agent['phonenumber'] ?></td>
                               <td><?= $agent['nok_name']. ' ' .$agent['nok_surname'] .' ('.$agent['nok_cell_number'] .')' ?></td>
                               <td>R <?= empty($agent['wallet_balance']) ? 0.00 : $agent['wallet_balance']; ?></td>
                               <td ><a href = "#" onclick = "displayBalanceModal(<?= $agent['userid'] ?>)" id = "update-balance">Update Balance</a></td>
