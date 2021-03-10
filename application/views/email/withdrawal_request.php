@@ -47,7 +47,7 @@
                                                 Business Partner Name: <span  style = "color: #51647c"><strong><?= $data['agent_name'] ?></strong></span>
                                             </li>
                                             <li>
-                                                Withdrawal Amount: <span  style = "color: #51647c"><strong><?= $data['nok_surname'] ?></strong></span>
+                                                Withdrawal Amount: <span  style = "color: #51647c"><strong><?= $data['withdrawal_amount'] ?></strong></span>
                                             </li>
                                          </ul>                                   
                                 </td>
