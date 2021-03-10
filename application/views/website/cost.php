@@ -174,10 +174,7 @@
 			</div>
 	</div>
 
-	<div id="bottom-banner">
-	<div>
-	<a href="<?php echo base_url();?>authentication/agent_signup" style = "color:#fff">OPENING UP THE ECONOMY SPECIAL: Sign up now. Pay R199 once off registration plus pay R149 (once month premium) and get the REST OF 2021 FREE  (SO you pay R348 now) 🎉 <span id = "banner-link">SIGN UP NOW </span></a> </div>
-	</div>
+	<?php $this->load->view('website/bottom_banner'); ?>
 
 	<!-- /banner_bottom_agile_info -->
     <div class="banner_bottom_agile_info">
@@ -316,6 +313,13 @@
 <!-- script for responsive tabs -->						
 <script src="<?php echo base_url();?>assets/website/js/easy-responsive-tabs.js"></script>
 <script>
+
+
+$(document).ready(function(){
+	
+	$("#bottom-banner").fadeIn(3000);
+	
+});
 	$(document).ready(function () {
 	$('#horizontalTab').easyResponsiveTabs({
 	type: 'default', //Types: default, vertical, accordion           

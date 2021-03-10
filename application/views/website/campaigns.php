@@ -414,6 +414,13 @@
 <!-- script for responsive tabs -->						
 <script src="<?php echo base_url();?>assets/website/js/easy-responsive-tabs.js"></script>
 <script>
+
+$(document).ready(function(){
+	
+	$("#bottom-banner").fadeIn(3000);
+	
+});
+
 	$(document).ready(function () {
 	$('#horizontalTab').easyResponsiveTabs({
 	type: 'default', //Types: default, vertical, accordion           
