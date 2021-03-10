@@ -78,7 +78,7 @@ class Clients extends ClientsController
         $subject = "New Withdrawal Request";
 
         $data['account_number'] = $this->input->post('account_number');  
-        $data['withdrawl_amount'] = $this->input->post('withdrawl_amount');
+        $data['withdrawal_amount'] = $this->input->post('withdrawal_amount');
         $withdrawal_amount = $this->input->post('account-number');
         $mesg = $this->load->view('email/withdrawal_request',['data' =>  $data],true);
 
@@ -126,6 +126,11 @@ class Clients extends ClientsController
         $this->email->subject($subject);
         $this->email->message($mesg);
         $mail = $this->email->send();
+
+        $this->load->library('session');
+        $this->session->set_flashdata('message', 'Your withdrawal request has been sent!');
+        redirect($_SERVER['HTTP_REFERER']);
+
 
     }
 

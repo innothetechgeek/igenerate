@@ -45,13 +45,15 @@
 
                 <div class="withdrawl-fields" style = "margin-top:20px;width:98%; text-align:left;" >
                     <label>Withdrawal Amount</label>
-                    <input  type = "number"  name = "withdrawl_amount" id = "withdrawl-amount" style = "padding-left:15px;width:100%; border-radius:15px" />
+                    <input  type = "number"  name = "withdrawal_amount" id = "withdrawl-amount" style = "padding-left:15px;width:100%; border-radius:15px" />
                 </div>
 
                 <div class="withdrawl-fields" style = "margin-top:20px;width:98%; text-align:left;" >
                     <button  type = "submit" class="btn btn-primary" style = "width:100%; border-radius:15px">Send Withdrawal Request</button>
                 </div>
             </form>
+            <br/>
+            <?= $this->session->flashdata('message');?>
         </div>
     </div>
 
