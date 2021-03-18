@@ -1595,4 +1595,15 @@ class Clients extends ClientsController
     {
         return total_rows(db_prefix() . 'contacts', 'id !=' . get_contact_user_id() . ' AND email="' . get_instance()->db->escape_str($email) . '"') > 0 ? false : true;
     }
+
+    public function matrix_form(){
+
+        $data = [];
+
+        $this->data($data);
+        $this->view('agents/matrixform');
+        $this->layout();
+        
+    }
+
 }
