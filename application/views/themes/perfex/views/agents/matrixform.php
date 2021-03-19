@@ -402,7 +402,7 @@
              </div>        
              <div class="row">
                 <div class="col-12">
-                    <h3 class="sub-heading">Banking Details</h3>
+                    <h3 class="sub-heading">Vehicle and Unit Details</h3>
                 </div>
              </div>
              <div class="row">
@@ -411,19 +411,22 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="tel_number_code">Account Name</label>
+                                <label for="tel_number_code">Vehicle Type: </label>&nbsp;&nbsp;&nbsp;
+                                <span for="tel_number_code">Passenger</span>&nbsp;
+                                <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                                <span for="tel_number_code">Commercial</span>&nbsp;
+                                <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="tel_number_code">Make</label>
                                 <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="tel_number_code">Bank Name</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Branch Name</label>
+                                <label for="tel_number_code">Model</label>
                                 <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
                             </div>
                         </div>
@@ -440,29 +443,25 @@
                    <div class="row">
                        <div class="col-sm-12">
                            <div class="form-group">
-                               <label for="tel_number_code">Current/Cheque</label>
-                               &nbsp
-                               <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">    
-
-                               &nbsp;&nbsp;&nbsp;
-                                <label for="tel_number_code">Current/Cheque</label>
-                                &nbsp
-                               <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
-
+                                <div class="form-group">
+                                    <label for="tel_number_code">Registration</label>
+                                    <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                </div>
                            </div>       
 
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
-                               <label for="tel_number_code">Account Number</label>
+                               <label for="tel_number_code">Model</label>
                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Branch Code</label>
-                               <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
-                           </div>
+                            <label for="tel_number_code">Colour: </label>&nbsp;&nbsp;&nbsp;
+                            <span for="tel_number_code">Passenger</span>&nbsp;
+                            <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                            <span for="tel_number_code">Commercial</span>&nbsp;
+                            <input class="" name="tel_number_code" type="checkbox" id="tel_number_code"> <br/><br/>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
