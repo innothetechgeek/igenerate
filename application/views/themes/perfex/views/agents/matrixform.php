@@ -12,6 +12,7 @@
             border-bottom: 1px solid #868585;
             border-radius: 0;
             box-shadow: none;
+            height: 24px !important;
         }
 
         .custom-form-control{
@@ -21,6 +22,11 @@
             box-shadow: none  !important;
             position:relative;
             top:-10px;
+        }
+
+        input[type=checkbox]{
+            position:relative;
+            top:2px;
         }
 
         label {
