@@ -206,13 +206,13 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="street_address">Street Address</label>
-                                <input class="form-control" name="postal_address_line1" type="text" id="street_address">
+                                <input class="form-control" name="postal_address[][postal_address_line_1]" type="text" id="street_address">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="street_address (line 2)">Street Address (line 2)</label>
-                                <input class="form-control" name="postal_address_line2" type="text">
+                                <input class="form-control" name="postal_address[]postal_address_line_2" type="text">
                             </div>
                         </div>
                     </div>
@@ -220,13 +220,13 @@
                 <div class="col-sm-5">
                     <div class="form-group">
                         <label for="city_1">City / Town</label>
-                        <input class="form-control" name="postal_city" type="text">
+                        <input class="form-control" name="postal_address[][city]" type="text">
                     </div>
                 </div>
                 <div class="col-sm-7">
                     <div class="form-group">
                         <label for="state">Province / State</label>
-                        <select name="fk_province" class="form-control">
+                        <select name="postal_address[][province]" class="form-control">
                             <option value="">Please Select</option>
                             <option value="1">Eastern Cape</option>
                             <option value="2">Free State</option>
@@ -243,7 +243,7 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                                                 <label for="postal_code_1">Postal Code</label>
-                        <input class="form-control" name="postal_code" type="text" value="">
+                        <input class="form-control" name="postal_address[][postal_code]" type="text" value="">
                     </div>
                 </div>
                 </div>       
@@ -257,31 +257,31 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">ID Number (if natural person)</label>
-                                <input class="form-control" name="contact_1_idnumber" type="text">
+                                <input class="form-control" name="emergy_contact1[][contact_1_idnumber]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Work)</label>
-                                <input class="form-control" name="contact1_tel_nu" type="text">
+                                <input class="form-control" name="emergy_contact1[][tel_number_(home)]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Home)</label>
-                                <input class="form-control" name="contact1_tel_nu_home" type="text">
+                                <input class="form-control" name="emergy_contact1[][tel_number_home]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Cell Number</label>
-                                <input class="form-control" name="contact1_cell_nu" type="text" >
+                                <input class="form-control" name="emergy_contact1[][cell_number]" type="text" >
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Relationship / Position</label>
-                                <input class="form-control" name="contact1_relation" type="text">
+                                <input class="form-control" name="emergy_contact1[][relationship]" type="text">
                             </div>
                         </div>
                     </div>                        
@@ -292,31 +292,31 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">ID Number (if natural person)</label>
-                                <input class="form-control" name="contact2_id_number" type="text" id="tel_number_code">
+                                <input class="form-control" name="emergy_contact2[][idnumber]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Work)</label>
-                                <input class="form-control" name="contact2_tel_nu" type="text" id="tel_number_code">
+                                <input class="form-control" name="emergy_contact2[][work_tel_number]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Home)</label>
-                                <input class="form-control" name="contact2_tel_nu_home" type="text" id="tel_number_code">
+                                <input class="form-control" name="emergy_contact2[][work_tel_number]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Cell Number</label>
-                                <input class="form-control" name="contact1_cell_nu" type="text" id="tel_number_code">
+                                <input class="form-control" name="emergy_contact2[][cell_number]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Relationship / Position</label>
-                                <input class="form-control" name="contact2_relation" type="text">
+                                <input class="form-control" name="emergy_contact2[relationship]" type="text">
                             </div>
                         </div>
                     </div>                        
@@ -334,13 +334,13 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Name</label>
-                                <input class="form-control" name="driver_name" type="text">
+                                <input class="form-control" name="driver_details[][name]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Address</label>
-                                <input class="form-control" name="driver_address" type="text">
+                                <input class="form-control" name="driver_details[][address]" type="text">
                             </div>
                         </div>
                     </div>
@@ -351,19 +351,19 @@
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Tel. No (Work)</label>
-                               <input class="form-control" name="driver_tel_nu" type="text">
+                               <input class="form-control" name="driver_details[][tel_nu]" type="text">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Tel. No (Home)</label>
-                               <input class="form-control" name="driver_tel_nu_home" type="text">
+                               <input class="form-control" name="driver_details[][tel_nu_home]" type="text">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Cell No</label>
-                               <input class="form-control" name="driver_cell_nu" type="text" >
+                               <input class="form-control" name="driver_details[][cell_nu]" type="text" >
                            </div>
                        </div>
                    </div>
@@ -382,25 +382,25 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Account Name</label>
-                                <input class="form-control" name="account_number" type="text" id="tel_number_code">
+                                <input class="form-control" name="banking_details[][account_number]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Bank Name</label>
-                                <input class="form-control" name="bank_number" type="text" id="tel_number_code">
+                                <input class="form-control" name="banking_details[][bank_number]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Branch Name</label>
-                                <input class="form-control" name="branch_name" type="text" id="tel_number_code">
+                                <input class="form-control" name="banking_details[][branch_name]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Authorised Signature 1 X</label></strong>
-                                <input class="form-control" name="bank_details_signature1" type="text" id="tel_number_code">
+                                <input class="form-control" name="banking_details[][bank_details_signature1]" type="text" id="tel_number_code">
                             </div>
                         </div>
                     </div>
@@ -412,12 +412,12 @@
                            <div class="form-group">
                                <label for="tel_number_code">Current/Cheque</label>
                                &nbsp
-                               <input class="" name="Current/Check" type="checkbox" id="tel_number_code">    
+                               <input class="" name="banking_details[]['account_type]" type="checkbox" id="tel_number_code">    
 
                                &nbsp;&nbsp;&nbsp;
                                 <label for="Current/Cheque">Current/Cheque</label>
                                 &nbsp
-                               <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                               <input class="" name="banking_details[]['account_type]" type="checkbox" id="tel_number_code">
 
                            </div>       
 
@@ -425,19 +425,19 @@
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Account Number</label>
-                               <input class="form-control" name="account_number" type="text" id="tel_number_code">
+                               <input class="form-control" name="banking_details[][account_number]" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Branch Code</label>
-                               <input class="form-control" name="branch" type="text" id="tel_number_code">
+                               <input class="form-control" name="banking_details[][branch]" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Authorised Signature 2 X</label></strong>
-                                <input class="form-control" name="bank_details_signature1" type="text" id="tel_number_code">
+                                <input class="form-control" name="banking_details[][authorised_signature_1]" type="text" id="tel_number_code">
                            </div>
                        </div>
                    </div>
@@ -456,33 +456,33 @@
                             <div class="form-group">
                                 <label for="tel_number_code">Vehicle Type: </label>&nbsp;&nbsp;&nbsp;
                                 <span for="tel_number_code">Passenger</span>&nbsp;
-                                <input class="" name="vehicle_type" type="checkbox" value = "Passenger" id="tel_number_code">
+                                <input class="" name="vehicle_details[][vehicle_type]" type="checkbox" value = "Passenger" id="tel_number_code">
                                 <span for="tel_number_code">Commercial</span>&nbsp;
-                                <input class="" name="tel_number_code" value = "Commercial" type="checkbox" id="tel_number_code">
+                                <input class="" name="vehicle_details[][vehicle_type]" value = "Commercial" type="checkbox" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Make</label>
-                                <input class="form-control" name="make" type="text">
+                                <input class="form-control" name="vehicle_details[][make]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Model</label>
-                                <input class="form-control" name="model" type="text">
+                                <input class="form-control" name="vehicle_details[][model]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Window Etching No</label></strong>
-                                <input class="form-control" name="window_etching" type="text">
+                                <input class="form-control" name="vehicle_details[][window_etching_no]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Equipment cost</label></strong>
-                                <input class="form-control" name="equipment_cost" type="text">
+                                <input class="form-control" name="vehicle_details[][equipment_cost]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -494,13 +494,13 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Amount due to installer (R)</label></strong>
-                                <input class="form-control" name="amount_due_intaller" type="text">
+                                <input class="form-control" name="vehicle_details[][amount_due_intaller]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Monthly subscription fee due to Matrix (R)</label></strong>
-                                <input class="form-control" name="matrix_monthly_subscription" type="text">
+                                <input class="form-control" name="vehicle_details[][monthly_subscription_fee_due_to_matrix]" type="text">
                             </div>
                         </div>
                     </div>
@@ -512,7 +512,7 @@
                            <div class="form-group">
                                 <div class="form-group">
                                     <label for="tel_number_code">Registration</label>
-                                    <input class="form-control" name="registration_nu" type="text" id="tel_number_code">
+                                    <input class="form-control" name="vehicle_details[][registration]" type="text" id="tel_number_code">
                                 </div>
                            </div>       
 
@@ -526,9 +526,9 @@
                        <div class="col-sm-12">
                             <label for="tel_number_code">Colour: </label>&nbsp;&nbsp;&nbsp;
                             <span for="tel_number_code">Dark</span>&nbsp;
-                            <input class="" name="vehicle_color" value = "Light" type="checkbox" id="tel_number_code">
+                            <input class="" name="vehicle_details[][vehicle_color]" value = "Light" type="checkbox" id="tel_number_code">
                             <span for="tel_number_code">Light</span>&nbsp;
-                            <input class="" name="vehicle_color"  value = "Dark" type="checkbox" id="tel_number_code"> <br/><br/>
+                            <input class="" name="vehicle_details[][vehicle_color]"  value = "Dark" type="checkbox" id="tel_number_code"> <br/><br/>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
