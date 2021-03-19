@@ -533,31 +533,31 @@
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Chassis No</label></strong>
-                                <input class="form-control" name="vehicle_chasis_nu" type="text" id="tel_number_code">
+                                <input class="form-control" name="vehicle_details[][chassis_no]" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-6">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Module Code</label></strong>
-                                <input class="form-control" name="module_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="vehicle_details[][module_code]" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-6">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Beacon Code</label></strong>
-                                <input class="form-control" name="baecon_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="vehicle_details[][baecon_code]" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Equipment Serial No</label></strong>
-                                <input class="form-control" name="equipment_serial_nu" type="text" id="tel_number_code">
+                                <input class="form-control" name="vehicle_details[][equipment_serial_nu]" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">TS/TD (Remote) Number Sticker</label></strong>
-                                <input class="form-control" name="td_number_sticker" type="text">
+                                <input class="form-control" name="vehicle_details[][td_number_sticker]" type="text">
                            </div>
                        </div>
                    </div>
@@ -575,19 +575,19 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Signature X</label>
-                                <input class="form-control" name="tc_and_c_signature" type="text" id="tel_number_code">
+                                <input class="form-control" name="terms_and_conditions[][signature]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Name in print</label>
-                                <input class="form-control" name="name_in_print" type="text" id="tel_number_code">
+                                <input class="form-control" name="terms_and_conditions[][name_in_print]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Date</label>
-                                <input class="form-control" name="date" type="text" id="tel_number_code">
+                                <input class="form-control" name="terms_and_conditions[][date]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -614,25 +614,25 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Signature: Fitment Centre</label>
-                                <input class="form-control" name="fitment_center_signature" type="text">
+                                <input class="form-control" name="declaration[][fitness_center_signature]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Date</label>
-                                <input class="form-control" name="fitment_signature_date" type="text" >
+                                <input class="form-control" name="declaration[][date]" type="text" >
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Fitment Centre Name</label>
-                                <input class="form-control" name="fitment_center_name" type="text">
+                                <input class="form-control" name="declaration[][fitment_center_name]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Fitment Centre Code</label>
-                                <input class="form-control" name="fitment_center_code" type="text">
+                                <input class="form-control" name="declaration[][fitment_center_code]" type="text">
                             </div>
                         </div>
                     </div>                        
