@@ -20,7 +20,7 @@
             border-radius: 0 !important;
             box-shadow: none  !important;
             position:relative;
-            top:-5px;
+            top:-10px;
         }
 
         label {
@@ -66,16 +66,10 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="tel_number_code">Vehicle Type: </label>&nbsp;&nbsp;&nbsp;
-                        <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
-                        <label for="tel_number_code">Vehicle Type: </label>&nbsp;&nbsp;&nbsp;
-                        <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
-                    </div>
-                    <div class="form-group">
-                        <label for="tel_number_code"> &nbsp Existing Client: </label>&nbsp;
-                        <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
-                        <label for="tel_number_code"> &nbsp Existing Client: </label>&nbsp;
-                        <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                        <label for="tel_number_code">Contract No</label>
+                        <input class="custom-form-control col" name="tel_number_code" type="text" id="tel_number_code"> <br/>
+                        <label for="tel_number_code"> Sales Code</label>
+                        <input class="custom-form-control" name="tel_number_code" type="text" id="tel_number_code">
                     </div>
                 </div>
             </div>
