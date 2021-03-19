@@ -59,23 +59,23 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">New Client: </label>&nbsp;
-                        <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                        <input class="" name="new_client" type="checkbox">
                         <label for="tel_number_code"> &nbsp Existing Client: </label>&nbsp;
-                        <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                        <input class="" name="existing_client" type="checkbox">
                     </div>
                     <div class="form-group">
                         <label for="tel_number_code">Upgrade: </label>&nbsp;
-                        <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                        <input class="" name="upgrade" type="checkbox">
                         <label for="tel_number_code"> &nbsp &nbspAcc no</label>
-                        <input class="custom-form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="custom-form-control" name="account_number" type="text" id="tel_number_code">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Contract No</label>
-                        <input class="custom-form-control col" name="tel_number_code" type="text" id="tel_number_code"> <br/>
+                        <input class="custom-form-control col" name="contract_nu" type="text" id="tel_number_code"> <br/>
                         <label for="tel_number_code"> Sales Code</label>
-                        <input class="custom-form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="custom-form-control" name="sales_code" type="text" id="tel_number_code">
                     </div>
                 </div>
             </div>
@@ -86,67 +86,67 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">ID Number (if natural person)</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][id_number]" type="text" >
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Company Reg. Number</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][company_reg_nu]" type="text" >
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">VAT Number</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][vat_number]" type="text">
                     </div>
                 </div>
                  <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Tel. Number (Home)</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][tel_number_home]" type="text">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Cell Number</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][cell_number]" type="text">
                     </div>
                 </div>
                  <div class="col-sm-4">
                     <div class="form-group">
                         <label for="tel_number_code">Fax Number</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][fax_number]" type="text" id="tel_number_code">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Email Address</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][email_address]" type="text" id="tel_number_code">
                     </div>
                 </div>
                  <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Insurance Company</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][insurance_company]" type="text">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Medical Aid Name</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][medical_aid_name]" type="text">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Medical Aid Number</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][medical_aid_name]" type="text" >
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Policy Number</label>
-                        <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                        <input class="form-control" name="customer_details[][policy_number]" type="text">
                     </div>
                 </div>
             </div>
@@ -157,13 +157,13 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="street_address">Street Address</label>
-                                    <input class="form-control" name="street_address" type="text" id="street_address">
+                                    <input class="form-control" name="postal_address[][address_line_1]" type="text">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <label for="street_address (line 2)">Street Address (line 2)</label>
-                                    <input class="form-control" name="street_address_2" type="text">
+                                    <input class="form-control" name="postal_address[][address_line_2]" type="text">
                                 </div>
                             </div>
                         </div>
@@ -171,13 +171,13 @@
                     <div class="col-sm-5">
                         <div class="form-group">
                             <label for="city_1">City / Town</label>
-                            <input class="form-control" name="city_1" type="text" id="city_1">
+                            <input class="form-control" name="postal_address[][city]" type="text" id="city_1">
                         </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="form-group">
                             <label for="state">Province / State</label>
-                            <select name="fk_province" class="form-control">
+                            <select name="postal_address[province]" class="form-control">
                                 <option value="">Please Select</option>
                                 <option value="1">Eastern Cape</option>
                                 <option value="2">Free State</option>
@@ -193,8 +193,8 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="form-group">
-                                                    <label for="postal_code_1">Postal Code</label>
-                            <input class="form-control" name="postal_code_1" type="text" value="" id="postal_code_1">
+                            <label for="postal_code_1">Postal Code</label>
+                            <input class="form-control" name="postal_address[][postal_code]" type="text" value="">
                         </div>
                     </div>
                     </div>       
@@ -206,13 +206,13 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="street_address">Street Address</label>
-                                <input class="form-control" name="street_address" type="text" id="street_address">
+                                <input class="form-control" name="postal_address_line1" type="text" id="street_address">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="street_address (line 2)">Street Address (line 2)</label>
-                                <input class="form-control" name="street_address_2" type="text">
+                                <input class="form-control" name="postal_address_line2" type="text">
                             </div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
                 <div class="col-sm-5">
                     <div class="form-group">
                         <label for="city_1">City / Town</label>
-                        <input class="form-control" name="city_1" type="text" id="city_1">
+                        <input class="form-control" name="postal_city" type="text">
                     </div>
                 </div>
                 <div class="col-sm-7">
@@ -243,7 +243,7 @@
                 <div class="col-sm-4">
                     <div class="form-group">
                                                 <label for="postal_code_1">Postal Code</label>
-                        <input class="form-control" name="postal_code_1" type="text" value="" id="postal_code_1">
+                        <input class="form-control" name="postal_code" type="text" value="">
                     </div>
                 </div>
                 </div>       
@@ -257,31 +257,31 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">ID Number (if natural person)</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact_1_idnumber" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Work)</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact1_tel_nu" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Home)</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact1_tel_nu_home" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Cell Number</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact1_cell_nu" type="text" >
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Relationship / Position</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact1_relation" type="text">
                             </div>
                         </div>
                     </div>                        
@@ -292,31 +292,31 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">ID Number (if natural person)</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact2_id_number" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Work)</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact2_tel_nu" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Tel. Number (Home)</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact2_tel_nu_home" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Cell Number</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact1_cell_nu" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Relationship / Position</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="contact2_relation" type="text">
                             </div>
                         </div>
                     </div>                        
@@ -334,13 +334,13 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Name</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="driver_name" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Address</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="driver_address" type="text">
                             </div>
                         </div>
                     </div>
@@ -351,19 +351,19 @@
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Tel. No (Work)</label>
-                               <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                               <input class="form-control" name="driver_tel_nu" type="text">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Tel. No (Home)</label>
-                               <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                               <input class="form-control" name="driver_tel_nu_home" type="text">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Cell No</label>
-                               <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                               <input class="form-control" name="driver_cell_nu" type="text" >
                            </div>
                        </div>
                    </div>
@@ -382,25 +382,25 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Account Name</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="account_number" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Bank Name</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="bank_number" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Branch Name</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="branch_name" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Authorised Signature 1 X</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="bank_details_signature1" type="text" id="tel_number_code">
                             </div>
                         </div>
                     </div>
@@ -412,10 +412,10 @@
                            <div class="form-group">
                                <label for="tel_number_code">Current/Cheque</label>
                                &nbsp
-                               <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">    
+                               <input class="" name="Current/Check" type="checkbox" id="tel_number_code">    
 
                                &nbsp;&nbsp;&nbsp;
-                                <label for="tel_number_code">Current/Cheque</label>
+                                <label for="Current/Cheque">Current/Cheque</label>
                                 &nbsp
                                <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
 
@@ -425,19 +425,19 @@
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Account Number</label>
-                               <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                               <input class="form-control" name="account_number" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                <label for="tel_number_code">Branch Code</label>
-                               <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                               <input class="form-control" name="branch" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Authorised Signature 2 X</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="bank_details_signature1" type="text" id="tel_number_code">
                            </div>
                        </div>
                    </div>
@@ -456,51 +456,51 @@
                             <div class="form-group">
                                 <label for="tel_number_code">Vehicle Type: </label>&nbsp;&nbsp;&nbsp;
                                 <span for="tel_number_code">Passenger</span>&nbsp;
-                                <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                                <input class="" name="vehicle_type" type="checkbox" value = "Passenger" id="tel_number_code">
                                 <span for="tel_number_code">Commercial</span>&nbsp;
-                                <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                                <input class="" name="tel_number_code" value = "Commercial" type="checkbox" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Make</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="make" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Model</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="model" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Window Etching No</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="window_etching" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Equipment cost</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="equipment_cost" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Other</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="other" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Amount due to installer (R)</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="amount_due_intaller" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                <strong><label for="tel_number_code">Monthly subscription fee due to Matrix (R)</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="matrix_monthly_subscription" type="text">
                             </div>
                         </div>
                     </div>
@@ -512,7 +512,7 @@
                            <div class="form-group">
                                 <div class="form-group">
                                     <label for="tel_number_code">Registration</label>
-                                    <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                    <input class="form-control" name="registration_nu" type="text" id="tel_number_code">
                                 </div>
                            </div>       
 
@@ -526,38 +526,38 @@
                        <div class="col-sm-12">
                             <label for="tel_number_code">Colour: </label>&nbsp;&nbsp;&nbsp;
                             <span for="tel_number_code">Dark</span>&nbsp;
-                            <input class="" name="tel_number_code" type="checkbox" id="tel_number_code">
+                            <input class="" name="vehicle_color" value = "Light" type="checkbox" id="tel_number_code">
                             <span for="tel_number_code">Light</span>&nbsp;
-                            <input class="" name="tel_number_code" type="checkbox" id="tel_number_code"> <br/><br/>
+                            <input class="" name="vehicle_color"  value = "Dark" type="checkbox" id="tel_number_code"> <br/><br/>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Chassis No</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="vehicle_chasis_nu" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-6">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Module Code</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="module_code" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-6">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Beacon Code</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="baecon_code" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">Equipment Serial No</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="equipment_serial_nu" type="text" id="tel_number_code">
                            </div>
                        </div>
                        <div class="col-sm-12">
                            <div class="form-group">
                                 <strong><label for="tel_number_code">TS/TD (Remote) Number Sticker</label></strong>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="td_number_sticker" type="text">
                            </div>
                        </div>
                    </div>
@@ -575,19 +575,19 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Signature X</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="tc_and_c_signature" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Name in print</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="name_in_print" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="tel_number_code">Date</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="date" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -614,25 +614,25 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Signature: Fitment Centre</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="fitment_center_signature" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Date</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="fitment_signature_date" type="text" >
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Fitment Centre Name</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="fitment_center_name" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Fitment Centre Code</label>
-                                <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
+                                <input class="form-control" name="fitment_center_code" type="text">
                             </div>
                         </div>
                     </div>                        
