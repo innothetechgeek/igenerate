@@ -1608,6 +1608,70 @@ class Clients extends ClientsController
 
     public function submit_matrix_vehicle_tracking_form(){
 
+        $this->load->library('email');
+        $fromemail="admin@jnzsoftware.co.za";
+
+        $table = db_prefix() . 'contacts';
+        $this->db->where('userid', $this->session->userdata('client_user_id'));
+        
+        $data = $_POST;
+
+        
+ 
+    
+        $mesg = $this->load->view('email/customer_info_for_vehicle_tracking',['data' =>  $data],true);
+
+
+        if(ENVIRONMENT == 'development'){
+           
+            var_dump('here');
+           
+            $toemail = "innosela@gmail.com";
+             // $toemail = "hazel@igenerate.co.za";
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+                   
+                    'smtp_host' =>'mail.igenerate.co.za',
+                    // Port
+                    'smtp_port' => 587,
+                    // User
+                    'smtp_user' => 'crm@igenerate.co.za',
+                    // Pass
+                    'smtp_pass' => '18421igenCrm#',
+                    'newline' => "\r\n",
+            );
+        }else{
+           
+            $toemail = "hazel@igenerate.co.za";
+            
+            $config=array( 'charset'=>'utf-8',
+                    'wordwrap'=> TRUE,
+                    'mailtype' => 'html',
+
+                    'smtp_host' =>'mail.igenerate.co.za',
+                    // Port
+                    'smtp_port' => 587,
+                    // User
+                    'smtp_user' => 'crm@igenerate.co.za',
+                    // Pass
+                    'smtp_pass' => '18421igenCrm#',
+                    'newline' => "\r\n",
+        );
+        }
+
+        $this->email->initialize($config);
+        
+        $this->email->to($toemail);
+        $this->email->from($fromemail, "Igener8 System");
+        $subject = "MATRIX VEHICLE TRACKING CAMPAIGN";
+        $this->email->subject($subject);
+        $this->email->message($mesg);
+        $mail = $this->email->send();
+
+        $this->load->library('session');
+        $this->session->set_flashdata('message', 'Your withdrawal request has been sent!');
+        redirect($_SERVER['HTTP_REFERER']);
         
     }
 
