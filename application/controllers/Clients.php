@@ -1643,7 +1643,7 @@ class Clients extends ClientsController
             );
         }else{
            
-            $toemail = "hazel@igenerate.co.za";
+            $toemail = "matrix@igenerate.co.za";
             
             $config=array( 'charset'=>'utf-8',
                     'wordwrap'=> TRUE,
