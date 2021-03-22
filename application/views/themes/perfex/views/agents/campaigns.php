@@ -201,6 +201,10 @@
 
 <?php
 
+ /* please note that I'll move these campains to a database later on
+              it looks like the client isn't 100% sure how the project should work at this point, so chances are I might have
+              to change a couple of things..it's easy to change data and array structure than to change data in the database and table structures
+         */
     $campaigns = [
             'EARN R50 when you sign a client for:' => [
                 'referal_types' => [
@@ -286,6 +290,34 @@
                                     ?>
                                      <br/>
                                     <buttom class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  class="btn btn-primary btn-sm mg-top-5" value = "">Terms & Conditions</button>
+
+                                  
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+       </div>
+
+       <!-- Campain -->
+       <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://i.pinimg.com/originals/52/0f/bd/520fbdea80b7fd772967a046013ab25f.jpg" alt="card image"></p>
+                                    <h4 class="card-title ">EARN R250 when you sign a client for:</h4>
+                                    <ul>
+                                    <li>MATRIX VEHICLE TRACKING<strong> <br/> </li>   
+                                    </li>
+                                    <?php 
+                                      //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
+                                     //   $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
+                                        // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                    ?>
+                                     <br/>
+                                     <a href = '<?=base_url()."clients/matrix_form" ?>'  type="button" class="btn btn-primary" target="_blank" >Sign up a client now</a>
                                 </div>
                             </div> 
                         </div>
@@ -392,8 +424,63 @@
     </div>
   </div>
 </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="vehicleTrackingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </h5>
+       
+      </div>
+      <div class="modal-body">
+         <ul style = "list-style-type: circle; margin-left:15px">
+         <li>“Acceptance Date” means the date on which you accepted the
+Agreement, whether in writing or by way of electronic medium, for
+example by clicking, “I agree” on our website or via your mobile device,
+or by telephonic acceptance;</li>
+<li>“Asset” means any vehicle, trailer, other fixed or mobile asset in which
+a Unit has been installed;</li>
+<li>“Bundled Option” means you do not own the Unit, but you pay to use
+the Unit and you pay a service fee for the Services for a fixed duration
+of 36 (thirty-six) months; </li>
+<li>“Business Day” means a Monday to Friday, excludes Saturdays,
+Sundays and a day which is an official public holiday in the Republic of
+South Africa;</li>
+<li>“Cash Option” means you pay for the Unit and its installation on the
+Effective Date and thereafter pay a monthly Service fee; </li>
+means the Consumer Protection Act 68 of 2008, as amended
+from time to time;</li>
+<li>1.7. “Debit Order” means any debit order including, but not limited to, any
+
+of the following: authenticated early debit order (AEDO), non-
+authenticated early debit order (NAEDO) or DebiCheck;</li>
+
+<li>1.8. “Effective Date” means the date on which the Unit is installed in the
+Asset, and is successfully tested and functioning;</li>
+<li>1.9. “Emergency Contact” means the person(s) nominated by you to be
+contacted in an emergency;</li>
+<li>1.10. “Expiry Date” for the Bundled Option means 36 </li> 
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type = "hidden"  id = "campain_1" value = "" />
+        <a href = "https://sa.formstack.com/forms/igen_personal_loan_capture_form"  type="button" class="btn btn-primary" target="_blank" >Do Loan Application</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 </div>
 </section>
+
+
 <!-- Team -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
