@@ -59,6 +59,34 @@
                                             </li>      
                                         <?php } ?>                                     
                                     </ul>
+
+                                    Emergency Contact 2:
+                                    <ul style = "list-style-type:none;padding:0px;line-height:1.5">
+                                        <?php foreach($data['customer_details'] as $input => $value ) { ?>
+                                            <li>
+                                            
+                                                <?= ucwords(str_replace('_', ' ', $input)) ?> <span  style = "color: #51647c"><strong><?= $value  ?></strong></span>
+                                            </li>      
+                                        <?php } ?>                                     
+                                    </ul>
+
+                                    Driver Details (If Different From Contract Holder)
+                                    <ul style = "list-style-type:none;padding:0px;line-height:1.5">
+                                        <?php foreach($data['customer_details'] as $input => $value ) { ?>
+                                            <li>
+                                            
+                                                <?= ucwords(str_replace('_', ' ', $input)) ?> <span  style = "color: #51647c"><strong><?= $value  ?></strong></span>
+                                            </li>      
+                                        <?php } ?>                                     
+                                    </ul>
+                                    Banking Details
+
+
+                                    Vehicle And Unit Details
+
+                                    Acceptance Of Terms And Conditions
+
+                                    Declaration By The Fitment Centre
                                 </td>
                             </tr>
                         </table>

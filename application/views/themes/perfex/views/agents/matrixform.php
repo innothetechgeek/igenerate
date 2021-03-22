@@ -47,12 +47,46 @@
             line-height: 24px;
         }
 
+        .info-form{
+            
+            background: white; *
+            border: 0 none;
+            border-radius: 0px;
+            box-shadow: 0 2px 2px 2px rgb(0 0 0 / 20%);
+            padding: 20px 40px 30px 40px;
+            box-sizing: border-box;
+            width: 94%;
+            margin: 0 3% 20px 3%;
+            position: relative;
+        }
+
+        @media only screen and (max-width: 795px) {
+            #mainRow{
+                width:95% !important;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            .sub-heading{
+                font-size: 18px !important;
+            }
+
+            #inpt-account-number{
+
+                height:24px;
+                top:-1px;
+
+            }
+        }
+
      </style>
-  <div class="row justify-content-center mt-0" id ="mainRow" style =  "margin: auto;
-  width: 60%;
-  padding: 10px;">
+  <div class="row justify-content-center mt-0 info-form" id ="mainRow" style =  "margin: auto;
+  width: 65%;
+  padding: 25px;">
         <form>
-            <div class="row">
+            <div class="row ">
                 <div class="col-sm-12">
                     <img  src = "<?php echo base_url() . 'assets/images/matrix_form_logo.png'; ?>"> </img>
                 </div>
@@ -63,17 +97,20 @@
                         <label for="tel_number_code"> &nbsp Existing Client: </label>&nbsp;
                         <input class="" name="existing_client" type="checkbox">
                     </div>
-                    <div class="form-group">
-                        <label for="tel_number_code">Upgrade: </label>&nbsp;
-                        <input class="" name="upgrade" type="checkbox">
-                        <label for="tel_number_code"> &nbsp &nbspAcc no</label>
-                        <input class="custom-form-control" name="account_number" type="text" id="tel_number_code">
+                    <div class="form-group">                       
+                                       
+                            <label for="tel_number_code">Upgrade: </label>&nbsp;
+                            <input class="" name="upgrade" type="checkbox">   &nbsp;&nbsp;                      
+                            
+                            <label for="tel_number_code">Acc no:</label>
+                            <input class="custom-form-control" id = "inpt-account-number" name="account_number" type="text" id="tel_number_code">
+                                                   
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Contract No</label>
-                        <input class="custom-form-control col" name="contract_nu" type="text" id="tel_number_code"> <br/>
+                        <input class="custom-form-control" name="contract_nu" type="text" id="tel_number_code"> <br/>
                         <label for="tel_number_code"> Sales Code</label>
                         <input class="custom-form-control" name="sales_code" type="text" id="tel_number_code">
                     </div>
@@ -151,8 +188,9 @@
                 </div>
             </div>
             <div class="row">  
-                <div class="col-sm-6">                             
-                        <h3 class="sub-heading">Postal Address</h3>
+                   
+                <div class="col-sm-6"> 
+                    <h3 class="sub-heading">Physical Address</h3>                             
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
@@ -198,58 +236,56 @@
                         </div>
                     </div>
                     </div>       
-                </div>            
-             <div class="col-sm-6">
-                <div class="row">               
-                    <h3 class="sub-heading">Postal Address</h3>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="street_address">Street Address</label>
-                                <input class="form-control" name="postal_address[][postal_address_line_1]" type="text" id="street_address">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="street_address (line 2)">Street Address (line 2)</label>
-                                <input class="form-control" name="postal_address[]postal_address_line_2" type="text">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                <div class="col-sm-5">
-                    <div class="form-group">
-                        <label for="city_1">City / Town</label>
-                        <input class="form-control" name="postal_address[][city]" type="text">
-                    </div>
-                </div>
-                <div class="col-sm-7">
-                    <div class="form-group">
-                        <label for="state">Province / State</label>
-                        <select name="postal_address[][province]" class="form-control">
-                            <option value="">Please Select</option>
-                            <option value="1">Eastern Cape</option>
-                            <option value="2">Free State</option>
-                            <option value="3">Gauteng</option>
-                            <option value="4">KwaZulu-Natal</option>
-                            <option value="5">Limpopo</option>
-                            <option value="6">Mpumalanga</option>
-                            <option value="7">Northern Cape</option>
-                            <option value="8">North West</option>
-                            <option value="9">Western Cape</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                                                <label for="postal_code_1">Postal Code</label>
-                        <input class="form-control" name="postal_address[][postal_code]" type="text" value="">
-                    </div>
-                </div>
-                </div>       
-             </div>
-             </div>   
-            </div>
+                </div>  
+                <div class="col-sm-6">   
+                    <h3 class="sub-heading">Postal Address</h3>                          
+                       <div class="row">
+                           <div class="col-sm-6">
+                               <div class="form-group">
+                                   <label for="street_address">Street Address</label>
+                                   <input class="form-control" name="postal_address[][address_line_1]" type="text">
+                               </div>
+                           </div>
+                           <div class="col-sm-6">
+                               <div class="form-group">
+                                   <label for="street_address (line 2)">Street Address (line 2)</label>
+                                   <input class="form-control" name="postal_address[][address_line_2]" type="text">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                   <div class="col-sm-5">
+                       <div class="form-group">
+                           <label for="city_1">City / Town</label>
+                           <input class="form-control" name="postal_address[][city]" type="text" id="city_1">
+                       </div>
+                   </div>
+                   <div class="col-sm-7">
+                       <div class="form-group">
+                           <label for="state">Province / State</label>
+                           <select name="postal_address[province]" class="form-control">
+                               <option value="">Please Select</option>
+                               <option value="1">Eastern Cape</option>
+                               <option value="2">Free State</option>
+                               <option value="3">Gauteng</option>
+                               <option value="4">KwaZulu-Natal</option>
+                               <option value="5">Limpopo</option>
+                               <option value="6">Mpumalanga</option>
+                               <option value="7">Northern Cape</option>
+                               <option value="8">North West</option>
+                               <option value="9">Western Cape</option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="col-sm-4">
+                       <div class="form-group">
+                           <label for="postal_code_1">Postal Code</label>
+                           <input class="form-control" name="postal_address[][postal_code]" type="text" value="">
+                       </div>
+                   </div>
+                   </div>       
+               </div>     
+               </div>     
               <div class="row">
                 <div class="col-sm-6"> 
                     <h3 class="sub-heading">Emergency Contact 1</h3>
@@ -323,7 +359,7 @@
                 </div>
              </div>
              <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <h3 class="sub-heading">Driver Details (if different from contract holder)</h3>
                 </div>
              </div>
@@ -371,7 +407,7 @@
              </div>   
 
               <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <h3 class="sub-heading">Banking Details</h3>
                 </div>
              </div>
@@ -444,7 +480,7 @@
                </div>
              </div>        
              <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12">
                     <h3 class="sub-heading">Vehicle and Unit Details</h3>
                 </div>
              </div>
