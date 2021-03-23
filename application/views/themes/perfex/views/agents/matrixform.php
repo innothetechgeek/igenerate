@@ -84,7 +84,7 @@
      </style>
   <div class="row justify-content-center mt-0 info-form" id ="mainRow" style =  "margin: auto;
   width: 65%;
-  padding: 25px;">
+  padding: 25px;margin-top:20px;">
        <?php if(!empty($this->session->flashdata('message'))) { ?>
                 <div class="alert alert-secondary" role="alert" style = "color: #383d41;
             background-color: #e2e3e5;
