@@ -39,9 +39,9 @@
                     <td  valign="top">
                         <table border="0" cellpadding="" cellspacing="0" width="100%" id="emailBody">
                             <tr>
-                                <td  valign="top">
+                                <td  valign="top"><br/><br/>
                                 Hi <span>Admin, a new customer has signed up for vehicle tracking. Below are thier details:</span>
-                                    Customer Details:
+                                <br/>Customer Details:
                                     <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                         <?php foreach($data['customer_details'] as $input => $value ) { ?>
                                             <li>

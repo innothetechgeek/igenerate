@@ -11,7 +11,7 @@
                         
                      </div>
                      <div class="col-md-4">
-                        
+                     <a href="#" class="btn btn-success pull-right mright5">Send Payment Link To All BPs</a>
                      </div>
                   </div>
                   <hr class="hr-panel-heading hr-10" />

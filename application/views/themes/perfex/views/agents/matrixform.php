@@ -85,35 +85,42 @@
   <div class="row justify-content-center mt-0 info-form" id ="mainRow" style =  "margin: auto;
   width: 65%;
   padding: 25px;">
+       <?php if(!empty($this->session->flashdata('message'))) { ?>
+                <div class="alert alert-secondary" role="alert" style = "color: #383d41;
+            background-color: #e2e3e5;
+            border-color: #d6d8db;">
+                    <?= $this->session->flashdata('message');?>
+            </div>
+        <?php } ?>
         <form action = "submit_matrix_vehicle_tracking_form" method = "post">
             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
             <div class="row ">
                 <div class="col-sm-12">
-                    <img  src = "<?php echo base_url() . 'assets/images/matrix_form_logo.png'; ?>"> </img>
+                    <img  src = "<?php echo base_url() . 'assets/images/matrix_form_logo.PNG'; ?>"> </img>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">New Client: </label>&nbsp;
-                        <input class="" name="new_client" type="checkbox">
+                        <input class="" name="customer_details[new_client]" value = "Yes" type="checkbox">
                         <label for="tel_number_code"> &nbsp Existing Client: </label>&nbsp;
-                        <input class="" name="existing_client" type="checkbox">
+                        <input class="" name="customer_details[existing_client]" value = "Yes" type="checkbox">
                     </div>
                     <div class="form-group">                       
                                        
                             <label for="tel_number_code">Upgrade: </label>&nbsp;
-                            <input class="" name="upgrade" type="checkbox">   &nbsp;&nbsp;                      
+                            <input class="" name="customer_details[upgrade]" value = "Yes" type="checkbox">   &nbsp;&nbsp;                      
                             
                             <label for="tel_number_code">Acc no:</label>
-                            <input class="custom-form-control" id = "inpt-account-number" name="account_number" type="text" id="tel_number_code">
+                            <input class="custom-form-control" id = "inpt-account-number" name="customer_details[account_number]" type="text" id="tel_number_code">
                                                    
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Contract No</label>
-                        <input class="custom-form-control" name="contract_nu" type="text" id="tel_number_code"> <br/>
+                        <input class="custom-form-control" name="customer_details[contract_nu]" type="text" id="tel_number_code"> <br/>
                         <label for="tel_number_code"> Sales Code</label>
-                        <input class="custom-form-control" name="sales_code" type="text" id="tel_number_code">
+                        <input class="custom-form-control" name="customer_details[sales_code]" type="text" id="tel_number_code">
                     </div>
                 </div>
             </div>

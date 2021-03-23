@@ -1614,9 +1614,7 @@ class Clients extends ClientsController
         $table = db_prefix() . 'contacts';
         $this->db->where('userid', $this->session->userdata('client_user_id'));
         
-        $data = $_POST;
-
-        
+        $data = $_POST;     
  
     
         $mesg = $this->load->view('email/customer_info_for_vehicle_tracking',['data' =>  $data],true);
@@ -1670,7 +1668,7 @@ class Clients extends ClientsController
         $mail = $this->email->send();
 
         $this->load->library('session');
-        $this->session->set_flashdata('message', 'Your withdrawal request has been sent!');
+        $this->session->set_flashdata('message', "We received your details, we'll get in touch with you shortly!");
         redirect($_SERVER['HTTP_REFERER']);
         
     }
