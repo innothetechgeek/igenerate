@@ -298,7 +298,7 @@
                 </div>
        </div>
 
-       <!-- Campain -->
+       <!-- Campain
        <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" >
                     <div class="mainflip flip-0">
@@ -322,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-       </div>
+       </div> -->
         
         
         <?php 
