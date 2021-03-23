@@ -208,7 +208,6 @@
     $campaigns = [
             'EARN R50 when you sign a client for:' => [
                 'referal_types' => [
-                'Loan Application',
                 'Vehicle tracking system-lead only not sale',
                 'Motorplan-refer lead for vehicle owner for motorplan',
                 'Extended Vehicle warranty-refer vehicle owner',
