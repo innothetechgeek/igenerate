@@ -57,6 +57,38 @@
         .campain-disabled{
             color: grey !important;
         }
+
+        .card-header:first-child {
+             border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+        }
+
+        .accordian-card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+        }
+
+        .accordion-card-body{
+            font-weight: normal;
+            font-family: 'Martel', serif;
+            padding:15px;
+            line-height:2;
+
+        }
+        .card-header{
+          
+            margin-bottom: 0;
+            background-color: rgba(0,0,0,.03);
+            border-bottom: 1px solid rgba(0,0,0,.125)
+        }
      </style>
 
 <style>
@@ -315,9 +347,10 @@
                                         // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
                                     ?>
                                      <br/>
-                                     <a href = '<?=base_url()."clients/matrix_form" ?>'  type="button" class="btn btn-primary" target="_blank" >MX3 system for R249</a>
+                                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"  class="btn btn-primary btn-sm mg-top-5" value = "">MX3 system for R249</button>
+
                                      <br/><br/>
-                                     <a href = '<?=base_url()."clients/beame_form" ?>'  type="button" class="btn btn-primary" target="_blank" >BEAME for R120</a>
+                                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"  class="btn btn-primary btn-sm mg-top-5" value = "">BEAME for R120</button>
                                 </div>
                             </div> 
                         </div>
@@ -417,8 +450,76 @@
                             'Funeral Cover-lead only  (coming soon)',
                             'School Online Tutor System  (coming soon)'],]
                             ];  ?>
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<!-- <div class="modal beame_modal" id="beame_modal" tabindex="-1" role="dialog" aria-labelledby="beame_modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="beame_modal">Campaign Overview
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </h5>
+       
+      </div>
+      <div class="modal-body">
+      <div id="accordion">
+        <div class="accordian-card">
+            <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Campaign overview & terms
+                </button>
+            </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="accordion-card-body">
+                    <p>THE MX3 OFFERS ADVANCED SAFETY, SECURITY, TRACKING AND RECOVERY FEATURES &
+                    SERVICES.</p>
+                    <p>The MX3 not only provides you with all the tracking and recovery services of the MX2, but
+                    oers complete peace of mind with the added personal safety services that protect you as
+                    well as your vehicle on the road.</p>
+                    <p>The Matrix App and Online Platform provides 24/7 vehicle monitoring including vehicle
+                    position, trips, device battery status, customisable alerts, and enable/disable GeoLoc
+                    Advanced Alert.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordian-card">
+            <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Brochure
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="accordion-card-body">
+                <div class = "col-sm-12" style = "vertical-align: top;
+                                    display: inline-block;
+                                    text-align: center;margin-bottom:6px;">
+                    <a  target = "_blank" href ="<?php echo base_url() . 'assets/beame_terms.pdf'; ?>">
+                        <img  style = "width:45%;margin-top:10px"  src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" > </img>                
+                        <span style = "display: block;padding-right:15px;font-style: italic;color:#66cc33">Open Brochure</span>
+                    </a>
+                </div>
+        </div>
+    </div>
+  </div>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type = "hidden"  id = "campain_1" value = "" />
+        <a href = "<?=base_url()."clients/beame_form" ?>"  type="button" class="btn btn-primary" target="_blank" >Sign Your Client Up</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -450,8 +551,8 @@
   </div>
 </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="vehicleTrackingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -463,46 +564,159 @@
        
       </div>
       <div class="modal-body">
-         <ul style = "list-style-type: circle; margin-left:15px">
-         <li>“Acceptance Date” means the date on which you accepted the
-Agreement, whether in writing or by way of electronic medium, for
-example by clicking, “I agree” on our website or via your mobile device,
-or by telephonic acceptance;</li>
-<li>“Asset” means any vehicle, trailer, other fixed or mobile asset in which
-a Unit has been installed;</li>
-<li>“Bundled Option” means you do not own the Unit, but you pay to use
-the Unit and you pay a service fee for the Services for a fixed duration
-of 36 (thirty-six) months; </li>
-<li>“Business Day” means a Monday to Friday, excludes Saturdays,
-Sundays and a day which is an official public holiday in the Republic of
-South Africa;</li>
-<li>“Cash Option” means you pay for the Unit and its installation on the
-Effective Date and thereafter pay a monthly Service fee; </li>
-means the Consumer Protection Act 68 of 2008, as amended
-from time to time;</li>
-<li>1.7. “Debit Order” means any debit order including, but not limited to, any
+          <div id="accordion">
+        <div class="accordian-card">
+            <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Campaign overview & terms
+                </button>
+            </h5>
+            </div>
 
-of the following: authenticated early debit order (AEDO), non-
-authenticated early debit order (NAEDO) or DebiCheck;</li>
-
-<li>1.8. “Effective Date” means the date on which the Unit is installed in the
-Asset, and is successfully tested and functioning;</li>
-<li>1.9. “Emergency Contact” means the person(s) nominated by you to be
-contacted in an emergency;</li>
-<li>1.10. “Expiry Date” for the Bundled Option means 36 </li> 
-        </ul>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="accordion-card-body">
+                    <p>THE MX3 OFFERS ADVANCED SAFETY, SECURITY, TRACKING AND RECOVERY FEATURES &
+                    SERVICES.</p>
+                    <p>The MX3 not only provides you with all the tracking and recovery services of the MX2, but
+                    oers complete peace of mind with the added personal safety services that protect you as
+                    well as your vehicle on the road.</p>
+                    <p>The Matrix App and Online Platform provides 24/7 vehicle monitoring including vehicle
+                    position, trips, device battery status, customisable alerts, and enable/disable GeoLoc
+                    Advanced Alert.</p>
+                    <a href="<?php echo base_url() ."assets/matrix_terms.pdf" ?>" target="_blank" class="btn btn-secondary">View Terms And Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordian-card">
+            <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Product Brochure
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="accordion-card-body">
+                <div class = "col-sm-12" style = "vertical-align: top;
+                                    display: inline-block;
+                                    text-align: center;margin-bottom:6px;">
+                    <a  target = "_blank" href ="<?php echo base_url() . 'assets/beame_terms.pdf'; ?>">
+                        <img  style = "width:45%;margin-top:10px"  src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" > </img>                
+                        <span style = "display: block;padding-right:15px;font-style: italic;color:#66cc33">Open Brochure</span>
+                    </a>
+                </div>
+        </div>
+    </div>
+    </div>
+  </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <input type = "hidden"  id = "campain_1" value = "" />
-        <a href = "https://sa.formstack.com/forms/igen_personal_loan_capture_form"  type="button" class="btn btn-primary" target="_blank" >Do Loan Application</a>
+        <a href = "<?=base_url()."clients/matrix_form" ?>"  type="button" class="btn btn-primary" target="_blank" >Sign Your Client Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </h5>
+       
+      </div>
+      <div class="modal-body">
+      <div id="accordion">
+        <div class="accordian-card">
+            <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Campaign overview & terms
+                </button>
+            </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="accordion-card-body">
+                    <p>THE MX3 OFFERS ADVANCED SAFETY, SECURITY, TRACKING AND RECOVERY FEATURES &
+                    SERVICES.</p>
+                    <p>The MX3 not only provides you with all the tracking and recovery services of the MX2, but
+                    oers complete peace of mind with the added personal safety services that protect you as
+                    well as your vehicle on the road.</p>
+                    <p>The Matrix App and Online Platform provides 24/7 vehicle monitoring including vehicle
+                    position, trips, device battery status, customisable alerts, and enable/disable GeoLoc
+                    Advanced Alert.</p><a href="<?php echo base_url() ."assets/beame_terms.pdf" ?>" target="_blank" class="btn btn-secondary">View Terms And Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordian-card">
+            <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Product Brochure
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="accordion-card-body">
+                <div class = "col-sm-12" style = "vertical-align: top;
+                                    display: inline-block;
+                                    text-align: center;margin-bottom:6px;">
+                    <a  target = "_blank" href ="<?php echo base_url() . 'assets/beame_terms.pdf'; ?>">
+                        <img  style = "width:45%;margin-top:10px"  src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" > </img>                
+                        <span style = "display: block;padding-right:15px;font-style: italic;color:#66cc33">Open Brochure</span>
+                    </a>
+                </div>
+        </div>
+    </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type = "hidden"  id = "campain_1" value = "" />
+        <a href = "<?=base_url()."clients/beame_form" ?>"  type="button" class="btn btn-primary" target="_blank" >Sign Your Client Up</a>
       </div>
     </div>
   </div>
 </div>
 
 
+
+    <!-- Modal
+<div class="modal fade" id="matrix_modal" tabindex="-1" role="dialog" aria-labelledby="matrix_modal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="matrix_modal">Campaign Overview
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </h5>
+       
+      </div>
+      <div class="modal-body">
+        
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type = "hidden"  id = "campain_1" value = "" />
+       
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+</div> -->
 </section>
 
 

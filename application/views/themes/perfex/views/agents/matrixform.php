@@ -100,13 +100,6 @@
                     <div class="col-sm-6">
                         <img  src = "<?php echo base_url() . 'assets/images/matrix_form_logo.PNG'; ?>"> </img>
                     </div>
-                   
-                    <div class = "col-sm-6" style = "vertical-align: top;
-    display: inline-block;
-    text-align: right;margin-bottom:6px;">
-                        <img  style = "width:55%;position:relative;top:-15px"  src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" width = "25%"> </img>                
-                        <span style = "display: block;position:relative;top:-15px;padding-right:15px;font-style: italic;color:#66cc33">view product info</span>
-                    </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
@@ -133,7 +126,15 @@
                         <input class="custom-form-control" name="customer_details[sales_code]" type="text" id="tel_number_code">
                     </div>
                 </div>
+
+                <div class="col-sm-12">
+                    <label style = "color:red">IMPORTANT: If you are subscribing to the “Cash Plan”
+                    (paying upfront for your unit), please tick this box. If you
+                    are subscribing to the “Budget Plan” (no upfront payment),
+                    please leave this box open.  <input name="customer_details[subscribing_to_cash_plan]" value = "Yes" type="checkbox"></label> 
+                </div>
             </div>
+            <br/>
             <div class="row">
                 <div class="col-sm-12">
                     <h3 class="sub-heading">Customer Details</h3>
