@@ -93,6 +93,7 @@
             </div>
         <?php } ?>
         <form action = "submit_matrix_vehicle_tracking_form" method = "post">
+            <input type = "hidden" name = "type" value = "BEAME" />
             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
             <div class="row ">
                 <div class="col-sm-12">                    
