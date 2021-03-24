@@ -1667,10 +1667,10 @@ class Clients extends ClientsController
         }
 
         $this->email->initialize($config);
-        
+        $campaign_type = $_POST['type'];
         $this->email->to($toemail);
         $this->email->from($fromemail, "Igener8 System");
-        $subject = "MATRIX VEHICLE TRACKING CAMPAIGN";
+        $subject = "MATRIX VEHICLE TRACKING CAMPAIGN($campaign_type)";
         $this->email->subject($subject);
         $this->email->message($mesg);
         $mail = $this->email->send();
