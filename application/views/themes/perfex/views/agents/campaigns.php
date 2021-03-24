@@ -347,10 +347,10 @@
                                         // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
                                     ?>
                                      <br/>
-                                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"  class="btn btn-primary btn-sm mg-top-5" value = "">MX3 system for R249</button>
+                                     <button class="btn btn-primary" data-toggle="modal" data-target="#matrix_form"  class="btn btn-primary btn-sm mg-top-5" value = "">MX3 system for R249</button>
 
                                      <br/><br/>
-                                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"  class="btn btn-primary btn-sm mg-top-5" value = "">BEAME for R120</button>
+                                     <button class="btn btn-primary" data-toggle="modal" data-target="#beame_modal"  class="btn btn-primary btn-sm mg-top-5" value = "">BEAME for R120</button>
                                 </div>
                             </div> 
                         </div>
@@ -358,31 +358,7 @@
                 </div>
        </div>
 
-       <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" >
-                    <div class="mainflip flip-0">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://i.pinimg.com/originals/52/0f/bd/520fbdea80b7fd772967a046013ab25f.jpg" alt="card image"></p>
-                                    <h4 class="card-title ">EARN R250 when you sign a client for:</h4>
-                                    <ul>
-                                    <li>MATRIX VEHICLE TRACKING<strong> <br/> </li>   
-                                    </li>
-                                    <?php 
-                                      //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
-                                     //   $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
-                                        // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
-                                    ?>
-                                     <br/>
-                                     <a href = '<?=base_url()."clients/matrix_form" ?>'  type="button" class="btn btn-primary" target="_blank" >Sign up a client now</a>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-       </div>
-        
+              
         
         <?php 
         $i = 1;
@@ -552,11 +528,11 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="matrix_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions
+        <h5 class="modal-title" id="exampleModalLabel">Product overview
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -569,7 +545,7 @@
             <div class="card-header" id="headingOne">
             <h5 class="mb-0">
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Campaign overview & terms
+                    Product overview
                 </button>
             </h5>
             </div>
@@ -584,7 +560,7 @@
                     <p>The Matrix App and Online Platform provides 24/7 vehicle monitoring including vehicle
                     position, trips, device battery status, customisable alerts, and enable/disable GeoLoc
                     Advanced Alert.</p>
-                    <a href="<?php echo base_url() ."assets/matrix_terms.pdf" ?>" target="_blank" class="btn btn-secondary">View Terms And Conditions</a>
+                    <a style = "color: #66cc33" href="<?php echo base_url() ."assets/matrix_terms.pdf" ?>" target="_blank" class="btn btn-secondary">View Terms And Conditions</a>
                 </div>
             </div>
         </div>
@@ -601,7 +577,7 @@
                 <div class = "col-sm-12" style = "vertical-align: top;
                                     display: inline-block;
                                     text-align: center;margin-bottom:6px;">
-                    <a  target = "_blank" href ="<?php echo base_url() . 'assets/beame_terms.pdf'; ?>">
+                    <a  target = "_blank" href ="<?php echo base_url() . 'assets/vehicle_tracking_brouche.pdf'; ?>">
                         <img  style = "width:45%;margin-top:10px"  src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" > </img>                
                         <span style = "display: block;padding-right:15px;font-style: italic;color:#66cc33">Open Brochure</span>
                     </a>
@@ -621,11 +597,11 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="beame_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions
+        <h5 class="modal-title" id="exampleModalLabel">Product overview
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -638,21 +614,16 @@
             <div class="card-header" id="headingOne">
             <h5 class="mb-0">
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Campaign overview & terms
+                    Product overview
                 </button>
             </h5>
             </div>
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="accordion-card-body">
-                    <p>THE MX3 OFFERS ADVANCED SAFETY, SECURITY, TRACKING AND RECOVERY FEATURES &
-                    SERVICES.</p>
-                    <p>The MX3 not only provides you with all the tracking and recovery services of the MX2, but
-                    oers complete peace of mind with the added personal safety services that protect you as
-                    well as your vehicle on the road.</p>
-                    <p>The Matrix App and Online Platform provides 24/7 vehicle monitoring including vehicle
-                    position, trips, device battery status, customisable alerts, and enable/disable GeoLoc
-                    Advanced Alert.</p><a href="<?php echo base_url() ."assets/beame_terms.pdf" ?>" target="_blank" class="btn btn-secondary">View Terms And Conditions</a>
+                    <p>Beame is a small, fully mobile recovery device that fits easily into a vehicle or any other moveable assets, including motorbikes, quadbikes, trailers, caravans and bicycles, ensuring that they can be easily recovered if stolen.</p>
+                    <p>What makes Beame even more awesome, is that it is almost impossible to locate once installed, making it difficult for criminals to remove. Now that’s what we call innovation!</p>
+                  <a  style = "color: #66cc33" href="<?php echo base_url() ."assets/beame_terms.pdf" ?>" target="_blank" class="btn btn-secondary">View Terms And Conditions</a>
                 </div>
             </div>
         </div>
@@ -669,7 +640,7 @@
                 <div class = "col-sm-12" style = "vertical-align: top;
                                     display: inline-block;
                                     text-align: center;margin-bottom:6px;">
-                    <a  target = "_blank" href ="<?php echo base_url() . 'assets/beame_terms.pdf'; ?>">
+                    <a  target = "_blank" href ="<?php echo base_url() . 'assets/vehicle_tracking_brouche.pdf'; ?>">
                         <img  style = "width:45%;margin-top:10px"  src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" > </img>                
                         <span style = "display: block;padding-right:15px;font-style: italic;color:#66cc33">Open Brochure</span>
                     </a>
