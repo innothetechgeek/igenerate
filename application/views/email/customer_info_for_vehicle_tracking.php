@@ -102,7 +102,7 @@
                                     Banking Details:
 
                                     <ul style = "list-style-type:none;padding:0px;line-height:1.5">
-                                        <?php foreach($data['driver_details'] as $input => $value ) { ?>
+                                        <?php foreach($data['banking_details'] as $input => $value ) { ?>
                                             <li>
                                             
                                                 <?= ucwords(str_replace('_', ' ', $input)) ?> <span  style = "color: #51647c"><strong><?= $value  ?></strong></span>
@@ -122,7 +122,7 @@
 
                                     Acceptance Of Terms And Conditions:
                                         <ul style = "list-style-type:none;padding:0px;line-height:1.5">
-                                            <?php foreach($data['vehicle_details'] as $input => $value ) { ?>
+                                            <?php foreach($data['terms_and_conditions'] as $input => $value ) { ?>
                                                 <li>
                                                 
                                                     <?= ucwords(str_replace('_', ' ', $input)) ?> <span  style = "color: #51647c"><strong><?= $value  ?></strong></span>

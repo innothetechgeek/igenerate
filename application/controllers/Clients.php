@@ -1606,6 +1606,16 @@ class Clients extends ClientsController
         
     }
 
+    public function beame_form(){
+
+        $data = [];
+
+        $this->data($data);
+        $this->view('agents/beame_form');
+        $this->layout();
+        
+    }
+
     public function submit_matrix_vehicle_tracking_form(){
 
         $this->load->library('email');
@@ -1621,9 +1631,7 @@ class Clients extends ClientsController
 
 
         if(ENVIRONMENT == 'development'){
-           
-            var_dump('here');
-           
+                      
             $toemail = "innosela@gmail.com";
              // $toemail = "hazel@igenerate.co.za";
             $config=array( 'charset'=>'utf-8',

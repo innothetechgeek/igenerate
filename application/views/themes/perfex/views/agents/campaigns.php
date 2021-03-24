@@ -298,7 +298,33 @@
                 </div>
        </div>
 
-       <!-- Campain
+       <!-- <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://i.pinimg.com/originals/52/0f/bd/520fbdea80b7fd772967a046013ab25f.jpg" alt="card image"></p>
+                                    <h4 class="card-title ">EARN R250 when you sign a client for:</h4>
+                                    <ul>
+                                    <li>MATRIX VEHICLE TRACKING<strong> <br/> </li>   
+                                    </li>
+                                    <?php 
+                                      //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
+                                     //   $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
+                                        // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                    ?>
+                                     <br/>
+                                     <a href = '<?=base_url()."clients/matrix_form" ?>'  type="button" class="btn btn-primary" target="_blank" >MX3 system for R249</a>
+                                     <br/><br/>
+                                     <a href = '<?=base_url()."clients/beame_form" ?>'  type="button" class="btn btn-primary" target="_blank" >BEAME for R120</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+       </div>
+
        <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" >
                     <div class="mainflip flip-0">
