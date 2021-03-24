@@ -97,7 +97,9 @@
             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
             <div class="row ">
                 <div class="col-sm-12">                    
-                    <img  src = "<?php echo base_url() . 'assets/images/beame_logo.PNG'; ?>" width = "60%"> </img>                
+                    <img  src = "<?php echo base_url() . 'assets/images/beame_logo.PNG'; ?>" width = "60%"> </img> 
+
+                     <img  style = "text-align: right" src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" width = "25%"> </img>                
                     <br/> <br/>
                 </div>
                 <div class="col-sm-6">

@@ -97,9 +97,16 @@
             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
             <div class="row ">
                 <div class="col-sm-12">
-                    
-                    <img  src = "<?php echo base_url() . 'assets/images/matrix_form_logo.PNG'; ?>"> </img>
-                
+                    <div class="col-sm-6">
+                        <img  src = "<?php echo base_url() . 'assets/images/matrix_form_logo.PNG'; ?>"> </img>
+                    </div>
+                   
+                    <div class = "col-sm-6" style = "vertical-align: top;
+    display: inline-block;
+    text-align: right;margin-bottom:6px;">
+                        <img  style = "width:55%;position:relative;top:-15px"  src = "<?php echo base_url() . 'assets/images/vehicle_tracking.PNG'; ?>" width = "25%"> </img>                
+                        <span style = "display: block;position:relative;top:-15px;padding-right:15px;font-style: italic;color:#66cc33">view product info</span>
+                    </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
