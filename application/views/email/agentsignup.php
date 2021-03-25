@@ -111,8 +111,7 @@
                         <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailFooter">
                             <tr>
                                 <td valign="top">
-                                    <p style = "font-size: 11px;
-    color: #686f7a;" >Delivered by Igenerate 284 Oak Avenue, Randburg, Gauteng.</p>
+                                    <p style = "font-size: 11px; color: #686f7a;" >Delivered by Igenerate 284 Oak Avenue, Randburg, Gauteng.</p>
                                 </td>
                             </tr>
                         </table>
