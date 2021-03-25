@@ -694,9 +694,7 @@
                 </div>  
               </div>  
             <button type = "submit" class="btn btn-primary">Submit
-                                </button>   
-            <a href="<?=base_url('assets/vehicle_tracking_terms.pdf')?>"  target = "_blank" class="btn btn-secondary">View Terms And Conditions
-            </a>              
+                                </button>            
         </form>        
     </div>
 </body>
