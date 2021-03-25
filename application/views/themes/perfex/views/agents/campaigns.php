@@ -358,6 +358,31 @@
                 </div>
        </div>
 
+       <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTneFpBXegB8V-Aao96M_KSrI0JFA7GvHAz1w&usqp=CAU" alt="card image"></p>
+                                    <h4 class="card-title ">EARN R50 for every lead sent through for:</h4>
+                                    <ul>
+                                    <li>MATRIX VEHICLE TRACKING<strong> <br/> </li>   
+                                    </li>
+                                    <?php 
+                                      //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
+                                     //   $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
+                                        // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                    ?>
+                                     <br/>
+                                     <a class="btn btn-primary" href = '<?=base_url()."clients/lead_form" ?>'  class="btn btn-primary btn-sm mg-top-5" value = "">Leadform</a>                                     
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+       </div> 
+
               
         
         <?php 
