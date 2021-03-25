@@ -240,7 +240,6 @@
     $campaigns = [
             'EARN R50 when you sign a client for:' => [
                 'referal_types' => [
-                'Vehicle tracking system-lead only not sale',
                 'Motorplan-refer lead for vehicle owner for motorplan',
                 'Extended Vehicle warranty-refer vehicle owner',
                 'Funeral Cover-lead only',
@@ -375,13 +374,38 @@
                                         // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
                                     ?>
                                      <br/>
-                                     <a class="btn btn-primary" href = '<?=base_url()."clients/lead_form" ?>'  class="btn btn-primary btn-sm mg-top-5" value = "">Leadform</a>                                     
+                                     <a class="btn btn-primary" href = '<?=base_url()."clients/vehicle_tracking_lead" ?>'  class="btn btn-primary btn-sm mg-top-5" value = "">Leadform</a>                                     
                                 </div>
                             </div> 
                         </div>
                     </div>
                 </div>
-       </div> 
+        </div> 
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTneFpBXegB8V-Aao96M_KSrI0JFA7GvHAz1w&usqp=CAU" alt="card image"></p>
+                                    <h4 class="card-title ">EARN R40 for every lead sent through for:</h4>
+                                    <ul>
+                                    <li>Funeral Plan Policy<strong> <br/> </li>   
+                                    </li>
+                                    <?php 
+                                      //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
+                                     //   $btn_text =  $i != 1 ? "Coming soon" : "Terms & Conditions";
+                                        // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
+                                    ?>
+                                     <br/>
+                                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  class="btn btn-primary btn-sm mg-top-5" value = "">Terms & Conditions</button>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+        </div> 
 
               
         
@@ -445,7 +469,6 @@
                         'EARN R50 when you sign a client for:' => [
                             'referal_types' => [
                             'Loan Application',
-                            'Vehicle tracking system-lead only not sale  (coming soon)',
                             'Motorplan-refer lead for vehicle owner for motorplan (coming soon)',
                             'Extended Vehicle warranty-refer vehicle owner  (coming soon)',
                             'Funeral Cover-lead only  (coming soon)',
@@ -683,14 +706,12 @@
   </div>
 </div>
 
-
-
-    <!-- Modal
-<div class="modal fade" id="matrix_modal" tabindex="-1" role="dialog" aria-labelledby="matrix_modal" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="matrix_modal">Campaign Overview
+        <h5 class="modal-title" id="exampleModalLabel">Terms and Conditions
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
@@ -698,23 +719,24 @@
        
       </div>
       <div class="modal-body">
-        
-        </div>
+         <ul style = "list-style-type: circle; margin-left:15px">
+            <li>The Business Partner will look for people interested in taking out a funeral cover.</li>
+            <li>The Business Partner will get paid R40 for every successful lead where the client is called and
+is interested in a funeral cover.</li>
+            <li>All Lead sent in ,before the last day of the month,will be paid to you by the 7 th of the
+following month.eg ALL LEADS SENT IN BY 31 MARCH 2021 ,will be paid by 7 th April 2021.<li>            
+        </ul>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <input type = "hidden"  id = "campain_1" value = "" />
-       
+        <a href = "https://sa.formstack.com/forms/igen_personal_loan_capture_form"  type="button" class="btn btn-primary" target="_blank" >Do Loan Application</a>
       </div>
     </div>
   </div>
 </div>
 
-
-
-
-</div> -->
 </section>
-
 
 <!-- Team -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
