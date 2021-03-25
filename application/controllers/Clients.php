@@ -1681,4 +1681,14 @@ class Clients extends ClientsController
         
     }
 
+    public function vehicle_tracking_lead(){
+
+        $data = [];
+
+        $this->data($data);
+        $this->view('agents/vehicle_lead_form');
+        $this->layout();
+        
+    }
+
 }
