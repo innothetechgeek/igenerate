@@ -39,7 +39,7 @@
                                         <div class="col-7 text-center">
                                             <h5>You Have Successfully Signed Up, you'll be allowed to use our system for free for a period of 28 days. We'll contact you
                                             after 28 days to find out if you're happy with our system and are willing make a payment. If you're not happy with our system 
-                                            you can delete your account.</h5>
+                                            you can delete your account. all WOMEN GET FREE ACCESS FOR 24 MONTHS.</h5>
                                         </div>
                                     </div>
                                 </div>

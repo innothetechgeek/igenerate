@@ -97,8 +97,8 @@
             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
             <div class="row ">
                     <div class="col-sm-12">                    
-                    <div class="col-sm-6">
-                        <img  src = "<?php echo base_url() . 'assets/images/matrix_form_logo.PNG'; ?>"> </img>
+                    <div class="col-sm-7">
+                        <img width = "100%"  src = "<?php echo base_url() . 'assets/images/beame_logo.PNG'; ?>"> </img>
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -692,10 +692,8 @@
                     </div>                        
                 </div>  
               </div>  
-            <button type = "submit" class="btn btn-primary">Submit
-                                </button>   
-            <a href="<?=base_url('assets/beame_terms.pdf')?>"  target = "_blank" class="btn btn-secondary">View Terms And Conditions
-            </a>              
+            <button type = "submit" class="btn btn-primary">Submit</button>   
+                      
         </form>        
     </div>
 </body>

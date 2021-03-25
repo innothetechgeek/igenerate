@@ -92,7 +92,7 @@
                     <?= $this->session->flashdata('message');?>
             </div>
         <?php } ?>
-        <form action = "submit_matrix_vehicle_tracking_form" method = "post">
+        <form action = "vehicle_tracking_lead" method = "post">
             <input type = "hidden" name = "type" value = "BEAME" />
             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
             <div class="row">
@@ -102,439 +102,161 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Name</label>
-                        <input class="form-control" name="customer_details[name]" type="text" >
+                        <input class="form-control" name="lead_details[name]" type="text" >
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">ID Number</label>
-                        <input class="form-control" name="customer_details[id_number]" type="text" >
+                        <input class="form-control" name="lead_details[id_number]" type="text" >
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Cell Number 1</label>
-                        <input class="form-control" name="customer_details[cell_number_1]" type="text">
+                        <input class="form-control" name="lead_details[cell_number_1]" type="text">
                     </div>
                 </div>
                  <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Alternate contact number</label>
-                        <input class="form-control" name="customer_details[alternate_contact_number]" type="text">
+                        <input class="form-control" name="lead_details[alternate_contact_number]" type="text">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Emergency name &amp; number 2</label>
-                        <input class="form-control" name="customer_details[cell_number]" type="text">
+                        <input class="form-control" name="lead_details[cell_number]" type="text">
                     </div>
                 </div>
                  <div class="col-sm-4">
                     <div class="form-group">
                         <label for="tel_number_code">Emergency name &amp;number 3</label>
-                        <input class="form-control" name="customer_details[fax_number]" type="text" id="tel_number_code">
+                        <input class="form-control" name="lead_details[fax_number]" type="text" id="tel_number_code">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Email Address</label>
-                        <input class="form-control" name="customer_details[email_address]" type="text" id="tel_number_code">
+                        <input class="form-control" name="lead_details[email_address]" type="text">
                     </div>
-                </div>       
-               </div>     
-               </div>     
-              <div class="row">
-                <div class="col-sm-6"> 
-                    <h3 class="sub-heading">Emergency Contact 1</h3>
-                    <div class="row">
-                        <div class="col-sm-12">
+                </div>                 
+               </div> <br/><br/>
+               <div class="row">
+                        <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="tel_number_code">ID Number (if natural person)</label>
-                                <input class="form-control" name="emergy_contact1[contact_1_idnumber]" type="text">
+                                <label for="tel_number_code">Vehicle Make</label>
+                                <input class="form-control" name="lead_vehicle_details[vehicle_make]" type="text">
+                            </div>
+                        </div> 
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Vehicle Model</label>
+                                <input class="form-control" name="lead_vehicle_details[vehicle_model]" type="text">
+                            </div>
+                        </div> 
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Registration number</label>
+                                <input class="form-control" name="lead_vehicle_details[registration_number]" type="text">
+                            </div>
+                        </div> 
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Colour</label>
+                                <input class="form-control" name="lead_vehicle_details[color]" type="text" >
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Year</label>
+                                <input class="form-control" name="lead_vehicle_details[year]" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Engine number:</label>
+                                <input class="form-control" name="lead_vehicle_details[engine_number]" type="text">
+                            </div>
+                        </div>
+                </div>   
+                <br/> <br/>
+               <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Bank name</label>
+                                <input class="form-control" name="lead_bank_details[email_address]" type="text" >
+                            </div>
+                        </div> 
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Account number</label>
+                                <input class="form-control" name="lead_bank_details[email_address]" type="text">
+                            </div>
+                        </div> 
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Debit Order</label>
+                                <input class="form-control" name="lead_bank_details[email_address]" type="text" >
+                            </div>
+                        </div> 
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Name of account holder</label>
+                                <input class="form-control" name="lead_bank_details[email_address]" type="text">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="tel_number_code">Branch code</label>
+                                <input class="form-control" name="lead_bank_details[email_address]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Tel. Number (Work)</label>
-                                <input class="form-control" name="emergy_contact1[tel_number_(home)]" type="text">
-                            </div>
+                            <p>Matrix is a division of Mix Telematics, on your statement the Debit will appear as a
+                            Mix Telematics transaction.</p>
                         </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Tel. Number (Home)</label>
-                                <input class="form-control" name="emergy_contact1[tel_number_home]" type="text">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Cell Number</label>
-                                <input class="form-control" name="emergy_contact1[cell_number]" type="text" >
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Relationship / Position</label>
-                                <input class="form-control" name="emergy_contact1[relationship]" type="text">
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-sm-6"> 
-                    <h3 class="sub-heading">Emergency Contact 2</h3>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">ID Number (if natural person)</label>
-                                <input class="form-control" name="emergy_contact2[idnumber]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Tel. Number (Work)</label>
-                                <input class="form-control" name="emergy_contact2[work_tel_number]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Tel. Number (Home)</label>
-                                <input class="form-control" name="emergy_contact2[work_tel_number]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Cell Number</label>
-                                <input class="form-control" name="emergy_contact2[cell_number]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Relationship / Position</label>
-                                <input class="form-control" name="emergy_contact2[relationship]" type="text">
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-             </div>
-             <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="sub-heading">Driver Details (if different from contract holder)</h3>
-                </div>
-             </div>
-             <div class="row">
-                <div class="col-sm-6"> 
-                   
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Name</label>
-                                <input class="form-control" name="driver_details[name]" type="text">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Address</label>
-                                <input class="form-control" name="driver_details[address]" type="text">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6"> 
-                   
-                   <div class="row">
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Tel. No (Work)</label>
-                               <input class="form-control" name="driver_details[tel_nu]" type="text">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Tel. No (Home)</label>
-                               <input class="form-control" name="driver_details[tel_nu_home]" type="text">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Cell No</label>
-                               <input class="form-control" name="driver_details[cell_nu]" type="text" >
-                           </div>
-                       </div>
-                   </div>
-               </div>
-             </div>   
+                    </div>   <br/> <br/>         
 
-              <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="sub-heading">Banking Details</h3>
-                </div>
-             </div>
-             <div class="row">
-                <div class="col-sm-6"> 
-                   
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="tel_number_code">Account Name</label>
-                                <input class="form-control" name="banking_details[account_number]" type="text" id="tel_number_code">
+                                <label for="tel_number_code">Installation Centre</label>
+                                <input class="form-control" name="installation_details[installation_center]" type="text" id="tel_number_code">
                             </div>
-                        </div>
-                        <div class="col-sm-12">
+                        </div> 
+                        <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="tel_number_code">Bank Name</label>
-                                <input class="form-control" name="banking_details[bank_name]" type="text" id="tel_number_code">
+                                <label for="tel_number_code">Installation Date</label>
+                                <input class="form-control" name="installation_details[installation_date]" type="text" id="tel_number_code">
                             </div>
-                        </div>
-                        <div class="col-sm-12">
+                        </div> 
+                        <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="tel_number_code">Branch Name</label>
-                                <input class="form-control" name="banking_details[branch_name]" type="text" id="tel_number_code">
+                                <label for="tel_number_code">Date of Sale</label>
+                                <input class="form-control" name="installation_details[date_of_sale]" type="text" id="tel_number_code">
                             </div>
-                        </div>
-                        <div class="col-sm-12">
+                        </div> 
+                        <div class="col-sm-6">
                             <div class="form-group">
-                               <strong><label for="tel_number_code">Authorised Signature 1 X</label></strong>
-                                <input class="form-control" name="banking_details[bank_details_signature1]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6"> 
-                   
-                   <div class="row">
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Current/Cheque</label>
-                               &nbsp
-                               <input class="" name="banking_details['account_type]" type="checkbox" id="tel_number_code">    
-
-                               &nbsp;&nbsp;&nbsp;
-                                <label for="Current/Cheque">Current/Cheque</label>
-                                &nbsp
-                               <input class="" name="banking_details['account_type]" type="checkbox" id="tel_number_code">
-
-                           </div>       
-
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Account Number</label>
-                               <input class="form-control" name="banking_details[account_number]" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Branch Code</label>
-                               <input class="form-control" name="banking_details[branch]" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                                <strong><label for="tel_number_code">Authorised Signature 2 X</label></strong>
-                                <input class="form-control" name="banking_details[authorised_signature_1]" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                   </div>
-               </div>
-             </div>        
-             <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="sub-heading">Vehicle and Unit Details</h3>
-                </div>
-             </div>
-             <div class="row">
-                <div class="col-sm-6"> 
-                   
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Vehicle Type: </label>&nbsp;&nbsp;&nbsp;
-                                <span for="tel_number_code">Passenger</span>&nbsp;
-                                <input class="" name="vehicle_details[vehicle_type]" type="checkbox" value = "Passenger" id="tel_number_code">
-                                <span for="tel_number_code">Commercial</span>&nbsp;
-                                <input class="" name="vehicle_details[vehicle_type]" value = "Commercial" type="checkbox" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Make</label>
-                                <input class="form-control" name="vehicle_details[make]" type="text">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Model</label>
-                                <input class="form-control" name="vehicle_details[model]" type="text">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                               <strong><label for="tel_number_code">Window Etching No</label></strong>
-                                <input class="form-control" name="vehicle_details[window_etching_no]" type="text">
+                                <label for="tel_number_code">BUSINESS PARTNER FULL NAME</label>
+                                <input class="form-control" name="installation_details[business_partner_full_name]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                               <strong><label for="tel_number_code">Equipment cost</label></strong>
-                                <input class="form-control" name="vehicle_details[equipment_cost]" type="text">
+                                <label for="tel_number_code">BUSINESS PARTNER CELL NUM</label>
+                                <input class="form-control" name="installation_details[business_partner_cell_num]" type="text" id="tel_number_code">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                               <strong><label for="tel_number_code">Other</label></strong>
-                                <input class="form-control" name="other" type="text">
+                                <label for="tel_number_code">BUSINESS PARTNER ID NUMBER</label>
+                                <input class="form-control" name="installation_details[business_partner_id_number]" type="text" id="tel_number_code">
                             </div>
                         </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                               <strong><label for="tel_number_code">Amount due to installer (R)</label></strong>
-                                <input class="form-control" name="vehicle_details[amount_due_intaller]" type="text">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                               <strong><label for="tel_number_code">Monthly subscription fee due to Matrix (R)</label></strong>
-                                <input class="form-control" name="vehicle_details[monthly_subscription_fee_due_to_matrix]" type="text">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6"> 
-                   
-                   <div class="row">
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                                <div class="form-group">
-                                    <label for="tel_number_code">Registration</label>
-                                    <input class="form-control" name="vehicle_details[registration]" type="text" id="tel_number_code">
-                                </div>
-                           </div>       
-
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                               <label for="tel_number_code">Model</label>
-                               <input class="form-control" name="tel_number_code" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                            <label for="tel_number_code">Colour: </label>&nbsp;&nbsp;&nbsp;
-                            <span for="tel_number_code">Dark</span>&nbsp;
-                            <input class="" name="vehicle_details[vehicle_color]" value = "Light" type="checkbox" id="tel_number_code">
-                            <span for="tel_number_code">Light</span>&nbsp;
-                            <input class="" name="vehicle_details[vehicle_color]"  value = "Dark" type="checkbox" id="tel_number_code"> <br/><br/>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                                <strong><label for="tel_number_code">Chassis No</label></strong>
-                                <input class="form-control" name="vehicle_details[chassis_no]" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                       <div class="col-sm-6">
-                           <div class="form-group">
-                                <strong><label for="tel_number_code">Module Code</label></strong>
-                                <input class="form-control" name="vehicle_details[module_code]" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                       <div class="col-sm-6">
-                           <div class="form-group">
-                                <strong><label for="tel_number_code">Beacon Code</label></strong>
-                                <input class="form-control" name="vehicle_details[baecon_code]" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                                <strong><label for="tel_number_code">Equipment Serial No</label></strong>
-                                <input class="form-control" name="vehicle_details[equipment_serial_nu]" type="text" id="tel_number_code">
-                           </div>
-                       </div>
-                       <div class="col-sm-12">
-                           <div class="form-group">
-                                <strong><label for="tel_number_code">TS/TD (Remote) Number Sticker</label></strong>
-                                <input class="form-control" name="vehicle_details[td_number_sticker]" type="text">
-                           </div>
-                       </div>
-                   </div>
-               </div>
-             </div>   
-             <div class="row">
-                <div class="col-sm-12"> 
-                    <h3 class="sub-heading">Acceptance of Terms And Conditions</h3>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p>I, the undersigned, having read and understood Matrix’s terms and conditions, agree thereto and acknowledge that all details on this contract are correct.
-                            I confirm that I indicated my desired payment plan by either ticking or not ticking the check box above. I acknowledge further that this agreement
-                            commences on the date of signature below.</p>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Signature X</label>
-                                <input class="form-control" name="terms_and_conditions[signature]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Name in print</label>
-                                <input class="form-control" name="terms_and_conditions[name_in_print]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <label for="tel_number_code">Date</label>
-                                <input class="form-control" name="terms_and_conditions[date]" type="text" id="tel_number_code">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                Signed for and on behalf of the Subscriber (who warrants his authority hereto)
-                            </div>
-                        </div>
-                    </div>                        
-                </div>  
-              </div> 
-              <div class="row">
-                <div class="col-sm-12"> 
-                    <h3 class="sub-heading">Declaration by the Fitment Centre</h3>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p>The fitment centre, which acts independently and is not an agent of Matrix, declares that:</p>
-                            <ul>
-                                <li>It fitted the unit professionally and in accordance with Matrix’s standards;</li>
-                                <li>The unit is installed in the prescribed location and the correct installation details are given to Matrix.</li>
-                                <li>If the fitment of the unit is of sub-standard quality, the fitment centre, and not Matrix, will be liable for
-                                    damages and/or re-installation of the unit.</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="tel_number_code">Signature: Fitment Centre</label>
-                                <input class="form-control" name="declaration[fitness_center_signature]" type="text">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="tel_number_code">Date</label>
-                                <input class="form-control" name="declaration[date]" type="text" >
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="tel_number_code">Fitment Centre Name</label>
-                                <input class="form-control" name="declaration[fitment_center_name]" type="text">
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="tel_number_code">Fitment Centre Code</label>
-                                <input class="form-control" name="declaration[fitment_center_code]" type="text">
-                            </div>
-                        </div>
-                    </div>                        
-                </div>  
-              </div>  
-            <button type = "submit" class="btn btn-primary">Submit
-                                </button>   
-            <a href="<?=base_url('assets/beame_terms.pdf')?>"  target = "_blank" class="btn btn-secondary">View Terms And Conditions
-            </a>              
+                    </div>            
+                    <button type = "submit" class="btn btn-primary">Submit</button>            
         </form>        
     </div>
 </body>
