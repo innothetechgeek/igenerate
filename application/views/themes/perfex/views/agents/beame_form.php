@@ -692,10 +692,8 @@
                     </div>                        
                 </div>  
               </div>  
-            <button type = "submit" class="btn btn-primary">Submit
-                                </button>   
-            <a href="<?=base_url('assets/beame_terms.pdf')?>"  target = "_blank" class="btn btn-secondary">View Terms And Conditions
-            </a>              
+            <button type = "submit" class="btn btn-primary">Submit</button>   
+                      
         </form>        
     </div>
 </body>
