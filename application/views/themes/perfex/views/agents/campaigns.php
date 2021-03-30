@@ -311,7 +311,7 @@
                                     <p><img class=" img-fluid" src="https://www.buyundetectablecounterfeit.com/images/product/gallery/5c613c30aacecR%2050.jpg" alt="card image"></p>
                                     <h4 class="card-title ">EARN R50 when you sign a client for:</h4>
                                     <ul>
-                                    <li>Loan Application <br/> <strong>(you can charge your  face to face client R50 cash)<strong> <br/> </li>   
+                                    <li>Loan Application <br/> <strong>(you can charge your  face to face client R50 cash)</strong> <br/> </li>   
                                     </li>
                                     <?php 
                                       //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
@@ -338,7 +338,7 @@
                                     <p><img class=" img-fluid" src="https://i.pinimg.com/originals/52/0f/bd/520fbdea80b7fd772967a046013ab25f.jpg" alt="card image"></p>
                                     <h4 class="card-title ">EARN R250 when you sign a client for:</h4>
                                     <ul>
-                                    <li>MATRIX VEHICLE TRACKING<strong> <br/> </li>   
+                                    <li><strong>MATRIX VEHICLE TRACKING</strong> <br/> </li>   
                                     </li>
                                     <?php 
                                       //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
@@ -366,7 +366,7 @@
                                     <p><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTneFpBXegB8V-Aao96M_KSrI0JFA7GvHAz1w&usqp=CAU" alt="card image"></p>
                                     <h4 class="card-title ">EARN R50 for every lead sent through for:</h4>
                                     <ul>
-                                    <li>MATRIX VEHICLE TRACKING<strong> <br/> </li>   
+                                    <li><strong>MATRIX VEHICLE TRACKING<strong> <br/> </li>   
                                     </li>
                                     <?php 
                                       //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
@@ -391,7 +391,7 @@
                                     <p><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTneFpBXegB8V-Aao96M_KSrI0JFA7GvHAz1w&usqp=CAU" alt="card image"></p>
                                     <h4 class="card-title ">EARN R40 for every lead sent through for:</h4>
                                     <ul>
-                                    <li>Funeral Plan Policy<strong> <br/> </li>   
+                                    <li><strong>Funeral Plan Policy</strong> <br/> </li>   
                                     </li>
                                     <?php 
                                       //  $is_btn_disabled = $i != 1 ? "btn-disabled" : "";
@@ -399,7 +399,7 @@
                                         // $data_target =   $i == 1 ? 'data-toggle="modal" data-target="#exampleModal"' : '';
                                     ?>
                                      <br/>
-                                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  class="btn btn-primary btn-sm mg-top-5" value = "">Terms & Conditions</button>
+                                     <button class="btn btn-primary" data-toggle="modal" data-target="#funeralLeadSalesTerms"  class="btn btn-primary btn-sm mg-top-5" value = "">Terms & Conditions</button>
                                 </div>
                             </div> 
                         </div>
@@ -570,6 +570,71 @@
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <input type = "hidden"  id = "campain_1" value = "" />
         <a href = "https://sa.formstack.com/forms/igen_personal_loan_capture_form"  type="button" class="btn btn-primary" target="_blank" >Do Loan Application</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="funeralLeadSalesTerms" tabindex="-1" role="dialog" aria-labelledby="funeralLeadSalesTerms" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="funeralLeadSalesTerms">Terms and Conditions
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </h5>
+       
+      </div>
+      <div class="modal-body" style = "font-weight: normal; font-size:1em; font-family: 'Helvetica Neue', sans-serif;">
+         <ul style = "list-style-type: circle; margin-left:15px">
+            <li>The Business Partner will look for people interested in taking out a funeral cover.</li>
+            <li>The Business Partner will get paid R40 for every successful lead where the client is called and
+            is interested in a funeral cover.</li>
+                        <li>All Lead sent in ,before the last day of the month,will be paid to you by the 7 th of the
+            following month.eg ALL LEADS SENT IN BY 31 MARCH 2021 ,will be paid by 7 th April 2021</li>
+        </ul>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type = "hidden"  id = "campain_1" value = "" />
+        <a  data-dismiss="modal" class="btn btn-primary" data-toggle="modal" data-target="#funeralLeadSalesPitch" type="button" class="btn btn-primary" target="_blank" >Sales Pitch</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="funeralLeadSalesPitch" tabindex="-1" role="dialog" aria-labelledby="funeralLeadSalesPitch" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="funeralLeadSalesPitch">Terms and Conditions
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </h5>
+       
+      </div>
+      <div class="modal-body" style = "font-weight: normal; font-size:1em; font-family: 'Helvetica Neue', sans-serif;">
+        <p>GOODDAY TO YOU,MY NAME IS <input type = "text" style = "border:none; border-bottom:1px solid #bfcbd9 !important; position:relative; top:-2px;"/> AND I AM PART OF THE IGNERATE
+        NETWORK,We are earning an income when we find people that are interested in a funeral plan or
+        would like to find a cheaper one then they currently have.</p>
+        <p>So how it works,we will take down all your details and submit it on our platform.
+        Then within 24/48 hours the call centre agent from the FUNERAL PLAN company will call you and
+        explain you your options and will sign you up.</p>
+
+        <p>Once again SIR/MAM,I am doing an honest living and get paid for every lead that I sent through.</p>
+
+        <p>Thank you.
+        Also do you have any friends or family that will be interested.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type = "hidden"  id = "campain_1" value = "" />
+        <a href = "https://sa.formstack.com/forms/igen_personal_loan_capture_form"  type="button" class="btn btn-primary" target="_blank" >Lead Form</a>
       </div>
     </div>
   </div>

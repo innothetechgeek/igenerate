@@ -1745,7 +1745,7 @@ class Clients extends ClientsController
     
             $this->load->library('session');
             $this->session->set_flashdata('message', "We received your details, we'll get in touch with you shortly!");
-            
+            redirect($_SERVER['HTTP_REFERER']);
 
         }else{
 
