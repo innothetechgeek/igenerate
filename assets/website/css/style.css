@@ -33,7 +33,7 @@
 
 #bottom-banner {
    
-    width:50%; /* Set a default minimum width */
+    width:30%; /* Set a default minimum width */
    
 	background-color: #AFA939; /* Black background color */
     color: #fff; /* White text color */
@@ -42,7 +42,7 @@
     padding: 16px; /* Padding */
     position: fixed; /* Sit on top of the screen */
     z-index: 10000; /* Add a z-index if needed */
-    left:25%;
+    left:36%;
     bottom: 30px; /* 30px from the bottom */
   }
   #banner-link{
