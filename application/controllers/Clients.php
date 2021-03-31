@@ -1755,7 +1755,84 @@ class Clients extends ClientsController
             $this->view('agents/vehicle_tracking_lead_form');
             $this->layout();
 
-        }        
+        }  
+    }     
+        
+    public function funeral_cover_lead_form(){
+
+        if($_POST){
+
+            
+            $this->load->library('email');
+            $fromemail="admin@jnzsoftware.co.za";
+    
+            $table = db_prefix() . 'contacts';
+            $this->db->where('userid', $this->session->userdata('client_user_id'));
+            
+            $data = $_POST;     
+        
+        
+            $mesg = $this->load->view('email/customer_info_for_vehicle_tracking',['data' =>  $data],true);
+    
+    
+            if(ENVIRONMENT == 'development'){
+                            
+                $toemail = "innosela@gmail.com";
+                
+                $config=array( 'charset'=>'utf-8',
+                        'wordwrap'=> TRUE,
+                        'mailtype' => 'html',
+                        
+                        'smtp_host' =>'mail.igenerate.co.za',
+                        // Port
+                        'smtp_port' => 587,
+                        // User
+                        'smtp_user' => 'crm@igenerate.co.za',
+                        // Pass
+                        'smtp_pass' => '18421igenCrm#',
+                        'newline' => "\r\n",
+                );
+            }else{
+                
+                $toemail = "funeralleads@igenerate.co.za";
+                
+                $config=array( 'charset'=>'utf-8',
+                        'wordwrap'=> TRUE,
+                        'mailtype' => 'html',
+    
+                        'smtp_host' =>'mail.igenerate.co.za',
+                        // Port
+                        'smtp_port' => 587,
+                        // User
+                        'smtp_user' => 'crm@igenerate.co.za',
+                        // Pass
+                        'smtp_pass' => '18421igenCrm#',
+                        'newline' => "\r\n",
+            );
+            }
+    
+            $this->email->initialize($config);
+            $campaign_type = $_POST['type'];
+            $this->email->to($toemail);
+            $this->email->from($fromemail, "Igener8 System");
+            $subject = "New Funeral Lead";
+            $this->email->subject($subject);
+            $this->email->message($mesg);
+            $mail = $this->email->send();
+    
+            $this->load->library('session');
+            $this->session->set_flashdata('message', "We received your details, we'll get in touch with you shortly!");
+            redirect($_SERVER['HTTP_REFERER']);
+
+        }else{
+
+            $data = [];
+
+            $this->data($data);
+            $this->view('agents/funeral_cover_lead_form');
+            $this->layout();
+
+        }       
         
     }
 

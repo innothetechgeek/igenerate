@@ -357,7 +357,7 @@
                 </div>
        </div>
 
-       <!-- <div class="col-xs-12 col-sm-6 col-md-4">
+       <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" >
                     <div class="mainflip flip-0">
                         <div class="frontside">
@@ -380,9 +380,9 @@
                         </div>
                     </div>
                 </div>
-        </div>  -->
+        </div> 
 
-        <!-- <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" >
                     <div class="mainflip flip-0">
                         <div class="frontside">
@@ -405,7 +405,7 @@
                         </div>
                     </div>
                 </div>
-        </div>  -->
+        </div> 
 
               
         
@@ -634,7 +634,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <input type = "hidden"  id = "campain_1" value = "" />
-        <a href = "https://sa.formstack.com/forms/igen_personal_loan_capture_form"  type="button" class="btn btn-primary" target="_blank" >Lead Form</a>
+        <a   href="<?php echo base_url() ."clients/funeral_cover_lead_form" ?>"  type="button" class="btn btn-primary" target="_blank" >Lead Form</a>
       </div>
     </div>
   </div>
