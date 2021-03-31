@@ -51,11 +51,11 @@
                                     <input type="text" name="agent_name" placeholder="Name" /> 
                                     <input type="text" name="suname" placeholder="Surname" /> 
                                     <input type="number" name="agent_cellphone_number" placeholder="Cell Phone Number" /> 
-                                    <!-- <label for="gender">Gender: </label> <br/>
-                                    <!-- <select name="gender" id="gender">
+                                    <label for="gender">Gender: </label> <br/>
+                                    <select name="gender" id="gender">
                                         <option value="Male">Male</option>
                                         <option value="Femail">Female</option>
-                                    </select> <br/> <br/> --> -->
+                                    </select> <br/> <br/>
                                     <input type="number"  data-not-required = "true" name="agent_landline" placeholder="Landline Number (if available)" /> 
                                 </div> 
                                 <input type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
