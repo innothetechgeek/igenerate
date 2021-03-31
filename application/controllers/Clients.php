@@ -1772,7 +1772,7 @@ class Clients extends ClientsController
             $data = $_POST;     
         
         
-            $mesg = $this->load->view('email/customer_info_for_vehicle_tracking',['data' =>  $data],true);
+            $mesg = $this->load->view('email/lead_info_for_funeral_cover',['data' =>  $data],true);
     
     
             if(ENVIRONMENT == 'development'){

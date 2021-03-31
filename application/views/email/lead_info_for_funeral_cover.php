@@ -46,98 +46,88 @@
                                     <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                        
                                         <li>                                            
-                                          <?= $data['lead_name']  ?> 
+                                            Name: <span  style = "color: #51647c"><strong><?= $data['lead_name']  ?></strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['id_number']  ?> 
+                                            ID Number: <span  style = "color: #51647c"><strong><?= $data['id_number']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['cell_number']  ?> 
+                                            Cell Number 1: <span  style = "color: #51647c"><strong><?= $data['cell_number']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['emergency_number_name']  ?> 
+                                           Emergency name &number 3: <span  style = "color: #51647c"><strong><?= $data['emergency_number_name']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['email_address']  ?> 
+                                            Email Addres: <span  style = "color: #51647c"><strong><?= $data['email_address']  ?> </strong></span>
                                         </li> 
                                                                                                       
                                     </ul>
-                                    Vehicle Details:
+                                    General Question:
                                     <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                         <li>                                            
-                                          <?= $data['where_do_you_live']  ?> 
+                                          Where do you live: <span  style = "color: #51647c"><strong><?= $data['have_funeral_cover']  ?></strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['maried']  ?> 
+                                            Are You Married?  <span  style = "color: #51647c"><strong><?= $data['maried']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['name_of_wife']  ?> 
+                                            Name Of Wife:   <span  style = "color: #51647c"><strong><?= $data['name_of_wife']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['number_of_children']  ?> 
+                                            Number of Children:  <span  style = "color: #51647c"><strong><?= $data['number_of_children']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                          <?= $data['funeral_cover_company']  ?> 
+                                             If Yes,Which Company is it with?  <span  style = "color: #51647c"><strong><?= $data['funeral_cover_company']  ?> </strong></span>
                                         </li>    
                                         <li>                                            
-                                          <?= $data['funeral_cover_amount']  ?> 
+                                            If YES/What are you paying ?  <span  style = "color: #51647c"><strong><?= $data['funeral_cover_amount']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                        If Yes,Which Company is it with?<?= $data['funeral_cover_name']  ?> 
+                                            If Yes,Which Company is it with?  <span  style = "color: #51647c"><strong> <?= $data['funeral_cover_name']  ?> </strong></span>
                                         </li> 
                                         <li>                                            
-                                          Medical Aid: <?= $data['have_medical_aid']  ?> 
+                                          Medical Aid:  <span  style = "color: #51647c"><strong> <?= $data['have_medical_aid']  ?> </strong></span>
                                         </li>                                      
                                     </ul>
 
-                                    Bank Details:
+                                      Bank Details:
                                     <ul style = "list-style-type:none;padding:0px;line-height:1.5">
                                             <li>                                            
-                                                Bank Name:<?= $data['bank_name']  ?> 
+                                                Bank Name:  <span  style = "color: #51647c"><strong><?= $data['bank_name']  ?> </strong></span>
                                             </li> 
                                             <li>                                            
-                                                Account Number: <?= $data['account_number']  ?> 
+                                                Account Number:  <span  style = "color: #51647c"><strong> <?= $data['account_number']  ?> </strong></span>
                                             </li> 
                                             <li>                                            
-                                                Account Number: <?= $data['account_type']  ?> 
+                                                Account Number:  <span  style = "color: #51647c"><strong> <?= $data['account_type']  ?> </strong></span>
                                             </li> 
                                             <li>                                            
-                                                Debit Order: <?= $data['debit_order']  ?> 
+                                                Debit Order:  <span  style = "color: #51647c"><strong> <?= $data['debit_order']  ?> </strong></span>
                                             </li> 
                                             <li>                                            
-                                                Account Holder: <?= $data['account_holder']  ?> 
+                                                Account Holder:  <span  style = "color: #51647c"><strong> <?= $data['account_holder']  ?> </strong></span>
                                             </li>    
                                             <li>                                            
-                                                Branch Code: <?= $data['branch_code']  ?> 
+                                                Branch Code:  <span  style = "color: #51647c"><strong><?= $data['branch_code']  ?> </strong></span>
                                             </li> 
                                             <li>                                            
-                                                When can the call centre call you? <?= $data['when_can_we_call']  ?> 
+                                                When can the call centre call you?  <span  style = "color: #51647c"><strong> <?= $data['when_can_we_call']  ?> </strong></span>
                                             </li> 
                                             <li>                                            
-                                                Date of LEAD and Place:<?= $data['date_place']  ?> 
+                                                Date of LEAD and Place:  <span  style = "color: #51647c"><strong> <?= $data['date_place']  ?> </strong></span>
                                             </li>  
                                             <li>                                            
-                                                BUSINESS PARTNER FULL NAME: <?= $data['business_partner_name']  ?> 
+                                                BUSINESS PARTNER FULL NAME:  <span  style = "color: #51647c"><strong> <?= $data['business_partner_name']  ?> </strong></span>
                                             </li>
                                             <li>                                            
-                                                BUSINESS PARTNER CELL NUM: <?= $data['business_partner_cell_number']  ?> 
+                                                BUSINESS PARTNER CELL NUM:  <span  style = "color: #51647c"><strong> <?= $data['business_partner_cell_number']  ?> </strong></span>
                                             </li>
                                             <li>                                            
-                                                What time is best for you? <?= $data['best_time']  ?> 
+                                                What time is best for you?  <span  style = "color: #51647c"><strong> <?= $data['best_time']  ?> </strong></span>
                                             </li>  
                                             <li>                                            
-                                                BUSINESS PARTNER ID NUMBER:  <?= $data['business_partner_id_number']  ?> 
+                                                BUSINESS PARTNER ID NUMBER:  <span  style = "color: #51647c"><strong> <?= $data['business_partner_id_number']  ?> </strong></span>
                                             </li>                                
-                                    </ul>
-
-                                    Intallation:
-                                    <ul style = "list-style-type:none;padding:0px;line-height:1.5">
-                                        <?php foreach($data['installation_details'] as $input => $value ) { ?>
-                                            <li>
-                                            
-                                                <?= ucwords(str_replace('_', ' ', $input)) ?> <span  style = "color: #51647c"><strong><?= $value  ?></strong></span>
-                                            </li>      
-                                        <?php } ?>                                     
                                     </ul>
                                 </td>
                             </tr>

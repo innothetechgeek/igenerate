@@ -170,7 +170,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Do you have existing Funeral Cover?</label>
-                                <input class="form-control" name="lead_vehicle_details[year]" type="text">
+                                <input class="form-control" name="have_funeral_cover" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
