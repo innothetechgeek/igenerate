@@ -1,18 +1,12 @@
 <?php
 
-class Migration_Version_287 extends CI_Migration
+class Migration_Version_288 extends CI_Migration
 {
       public function up(){
 
 
-            $this->dbforge->add_field(array(
+            $fields = array(
 
-                  'id' => array(
-                        'type' => 'INT',
-                        'constraint' => 10,
-                        'unsigned' => TRUE,
-                        'auto_increment' => TRUE
-                  ),
                   'lead_name' => array(
                         'type' => 'VARCHAR',
                         'constraint' => '200',
@@ -137,11 +131,14 @@ class Migration_Version_287 extends CI_Migration
                         'constraint' => '200',
                   ),
 
+                  'lead_type' => array(
+                        'type' => 'VARCHAR',
+                        'constraint' => '200',
+                  ),
 
-            ));
+            );
 
-            $this->dbforge->add_key('id', TRUE);
-            $this->dbforge->create_table('lead_signup_reasons');
+            $this->dbforge->add_column('leads', $fields);
 
       }
 

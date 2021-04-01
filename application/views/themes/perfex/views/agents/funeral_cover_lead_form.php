@@ -92,8 +92,7 @@
                     <?= $this->session->flashdata('message');?>
             </div>
         <?php } ?>
-        <form action = "vehicle_tracking_lead" method = "post">
-            <input type = "hidden" name = "type" value = "BEAME" />
+        <form action = "funeral_cover_lead_form" method = "post">
             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
             <div class="row">
                 <div class="col-sm-12">
@@ -129,12 +128,12 @@
                         <input class="form-control" name="emergency_number_name2" type="text">
                     </div>
                 </div>
-                 <div class="col-sm-4">
+                 <!-- <div class="col-sm-4">
                     <div class="form-group">
                         <label for="tel_number_code">Emergency name &amp;number 3</label>
-                        <input class="form-control" name="lead_details[fax_number]" type="text" id="tel_number_code">
+                        <input class="form-control" name="lead_details[emergec]" type="text" id="tel_number_code">
                     </div>
-                </div>
+                </div> -->
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Email Address</label>

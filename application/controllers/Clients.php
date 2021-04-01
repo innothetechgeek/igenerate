@@ -1735,7 +1735,7 @@ class Clients extends ClientsController
             }
     
             $this->email->initialize($config);
-            $campaign_type = $_POST['type'];
+        
             $this->email->to($toemail);
             $this->email->from($fromemail, "Igener8 System");
             $subject = "MATRIX VEHICLE TRACKING CAMPAIGN($campaign_type)";
@@ -1810,16 +1810,24 @@ class Clients extends ClientsController
                         'newline' => "\r\n",
             );
             }
+            
     
             $this->email->initialize($config);
             $campaign_type = $_POST['type'];
             $this->email->to($toemail);
             $this->email->from($fromemail, "Igener8 System");
-            $subject = "New Funeral Lead";
+            $subject = "New Funeral Cover Lead";
             $this->email->subject($subject);
             $this->email->message($mesg);
             $mail = $this->email->send();
-    
+
+            $data['lead_type'] = 'Funeral Cover Lead';
+
+            // var_dump($data);
+            // die();
+            $this->db->insert('tblleads', $data);
+
+
             $this->load->library('session');
             $this->session->set_flashdata('message', "We received your details, we'll get in touch with you shortly!");
             redirect($_SERVER['HTTP_REFERER']);
