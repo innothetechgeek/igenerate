@@ -1742,6 +1742,10 @@ class Clients extends ClientsController
             $this->email->subject($subject);
             $this->email->message($mesg);
             $mail = $this->email->send();
+
+             // var_dump($data);
+            // die();
+            $this->db->insert('tblleads', $data);
     
             $this->load->library('session');
             $this->session->set_flashdata('message', "We received your details, we'll get in touch with you shortly!");

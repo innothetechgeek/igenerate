@@ -102,7 +102,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="tel_number_code">Name</label>
-                        <input class="form-control" name="lead_details[name]" type="text" >
+                        <input class="form-control" name="lead_details[lead_name]" type="text" >
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -185,31 +185,31 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Bank name</label>
-                                <input class="form-control" name="lead_bank_details[email_address]" type="text" >
+                                <input class="form-control" name="lead_bank_details[bank_name]" type="text" >
                             </div>
                         </div> 
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Account number</label>
-                                <input class="form-control" name="lead_bank_details[email_address]" type="text">
+                                <input class="form-control" name="lead_bank_details[account_number]" type="text">
                             </div>
                         </div> 
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Debit Order</label>
-                                <input class="form-control" name="lead_bank_details[email_address]" type="text" >
+                                <input class="form-control" name="lead_bank_details[debit_order]" type="text" >
                             </div>
                         </div> 
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Name of account holder</label>
-                                <input class="form-control" name="lead_bank_details[email_address]" type="text">
+                                <input class="form-control" name="lead_bank_details[account_holder]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel_number_code">Branch code</label>
-                                <input class="form-control" name="lead_bank_details[email_address]" type="text">
+                                <input class="form-control" name="lead_bank_details[branch_code]" type="text">
                             </div>
                         </div>
                         <div class="col-sm-12">
